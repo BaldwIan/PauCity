@@ -8,11 +8,19 @@ if (distance_to_point(mouse_x, mouse_y) <= 1)
 		#region actions
 		switch (action)
 		{
+		case actions.no_action:
+			break;
+			
 		case actions.exit_game:
 			game_end();
+			break;
 			
 		case actions.destroy_self:
 			instance_destroy(self);
+			break;
+			
+		default:
+			break;
 		}
 		#endregion actions
 	}

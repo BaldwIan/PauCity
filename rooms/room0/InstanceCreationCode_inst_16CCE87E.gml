@@ -1,1 +1,0 @@
-action = actions.destroy_self;

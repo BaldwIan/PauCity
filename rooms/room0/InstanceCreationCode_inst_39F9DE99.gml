@@ -1,1 +1,1 @@
-action = actions.destroy_self;
+action = actions.no_action;

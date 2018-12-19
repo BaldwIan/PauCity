@@ -1,0 +1,1 @@
+action = actions.exit_game;
