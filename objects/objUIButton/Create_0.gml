@@ -6,4 +6,4 @@ enum actions
 actionTexts = ["Exit Game", "Destroy Self"];
 
 action = actions.exit_game;
-alarm[1] = 1; // Alarm to set text must be alarm when text is set in creation code
+alarm[1] = 1; // Alarm to set text must be alarm when action is set in creation code
