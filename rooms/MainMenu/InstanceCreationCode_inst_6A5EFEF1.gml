@@ -1,2 +1,2 @@
 action = actions.goto_room;
-_room = rm2;
+_room = AltMenu1;
