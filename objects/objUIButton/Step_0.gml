@@ -19,6 +19,10 @@ if (distance_to_point(mouse_x, mouse_y) <= 1)
 			instance_destroy(self);
 			break;
 			
+		case actions.goto_room:
+			room_goto(_room);
+			break;
+			
 		default:
 			break;
 		}
