@@ -5,6 +5,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1)
 	
 	if (mouse_check_button_pressed(mb_left))
 	{
+		audio_play_sound(sndClick, 1, false);
 		#region actions
 		switch (action)
 		{
