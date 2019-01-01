@@ -39,8 +39,10 @@ if (onGround)
 } else
 {
 	// Control jump height
-	if (keyboard_check_released(kUp) && velocity_[vector2Y] <= -(jumpSpd/3))
+	var onCeiling = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right - 1, bbox_bottom]);
+	
+	if (keyboard_check_released(kUp) && velocity_[vector2Y] <= -(jumpSpd/2) || onCeiling && velocity_[vector2Y] <= (jumpSpd/2))
 	{
-		velocity[vector2Y] = -(jumpSpd/3);
+		velocity_[vector2Y] = -(jumpSpd/2);
 	}
 }
