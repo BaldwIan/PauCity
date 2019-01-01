@@ -1,1 +1,0 @@
-action = actions.no_action;
