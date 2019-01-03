@@ -7,7 +7,7 @@ enum cammode
 	move_to_target,
 }
 
-mode = cammode.follow_mouse_peak;
+mode = cammode.follow_object;
 
 camera = camera_create();
 cwidth = 960;

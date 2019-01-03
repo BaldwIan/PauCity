@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
+            "Value": {
+                "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
+                "resourcePath": "objects\\objJournal\\objJournal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "324576b6-ed2a-4a9b-97c5-544b95e64678",
             "Value": {
                 "id": "4b1d34da-1acb-4db4-89ca-8930a18fbaed",
@@ -92,6 +100,14 @@
                 "id": "3ecbe83b-4cbd-4641-908d-900704134235",
                 "resourcePath": "sprites\\sprPlayer\\sprPlayer.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e2e2434-a037-4d42-863a-eed6c5970dd4",
+            "Value": {
+                "id": "ca770fe3-1d38-462f-bff0-1ccfabad0e4d",
+                "resourcePath": "scripts\\addJournalEntry\\addJournalEntry.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -212,6 +228,14 @@
                 "id": "36456f1b-ce95-4183-9afb-5c4af0d2fe8a",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "8819e725-966e-4325-b91a-0aeaac938289",
+            "Value": {
+                "id": "2ca0fed8-dbba-4967-8e41-d9f5e3a46882",
+                "resourcePath": "objects\\objJournalGUI\\objJournalGUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -425,7 +449,8 @@
     ],
     "script_order": [
         "8f239ad5-21d7-4719-bce2-c2ad93248872",
-        "04cdfe48-6ef5-45d7-bdc8-01318f8f231e"
+        "04cdfe48-6ef5-45d7-bdc8-01318f8f231e",
+        "4e2e2434-a037-4d42-863a-eed6c5970dd4"
     ],
     "tutorial": ""
 }
