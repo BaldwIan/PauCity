@@ -2,7 +2,7 @@
     "id": "bd1d5925-aa19-472d-86e1-3e7db16ed372",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objUIButton",
+    "name": "objGUIButton",
     "eventList": [
         {
             "id": "82c02536-7d9e-4f29-8dcf-4181dd8b8b4f",
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
+            "enumb": 64,
             "eventtype": 8,
             "m_owner": "bd1d5925-aa19-472d-86e1-3e7db16ed372"
         },
@@ -42,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 1,
             "eventtype": 2,
+            "m_owner": "bd1d5925-aa19-472d-86e1-3e7db16ed372"
+        },
+        {
+            "id": "617a88e3-8410-4df6-9ef7-93451ed3498a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "bd1d5925-aa19-472d-86e1-3e7db16ed372"
         }
     ],

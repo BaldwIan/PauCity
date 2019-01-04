@@ -1,6 +1,18 @@
+// resize GUI to window size
+display_set_gui_size(display_get_width(), display_get_height());
+
+// Set draw allignment
+draw_set_valign(fa_center);
+draw_set_halign(fa_middle);
+
+// Set font
+draw_set_font(fntDefault);
+
+#region globals
+
+// Journal
 global.journalWidth = 4;
 global.journal = ds_grid_create(global.journalWidth, 0);
-
 enum journal
 {
 	title,
@@ -8,6 +20,10 @@ enum journal
 	date,
 	author,
 }
+
+#endregion globals
+
+
 
 addJournalEntry("Journal Test", "Content Test inside the journal", "01/02/2019", "Ian B");
 addJournalEntry("Journal Test1", "Content Test inside the journal1", "01/03/2019", "Ian B");

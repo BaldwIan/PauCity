@@ -3,16 +3,16 @@
 visible = false;
 
 // Set position
-x = view_wport[0]/2 - sprite_get_width(sprite_index)/2;
-y = view_hport[0]/2 - sprite_get_height(sprite_index)/2;
+x = display_get_gui_width()/2 - sprite_get_width(sprite_index)/2;
+y = display_get_gui_height()/2 - sprite_get_height(sprite_index)/2;
 
 // Measurements on sprite
-lBorder = 16;
-rBorder = 16;
-tBorder = 16;
-bBorder = 16;
+lBorder = 32;
+rBorder = 32;
+tBorder = 32;
+bBorder = 32;
 
-spacing = 8;
+spacing = 16;
 
 // Selection data
 journalSelected = 0;

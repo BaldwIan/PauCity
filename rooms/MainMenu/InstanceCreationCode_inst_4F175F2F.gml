@@ -1,1 +1,1 @@
-action = actions.exit_game;
+action = buttonActions.exit_game;

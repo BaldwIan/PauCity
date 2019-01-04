@@ -2,7 +2,7 @@
     "id": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objUISlider",
+    "name": "objGUISlider",
     "eventList": [
         {
             "id": "7f4ad561-2ad3-422e-8689-ead1f4d935b5",
@@ -20,7 +20,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
+            "enumb": 64,
             "eventtype": 8,
             "m_owner": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847"
         },
@@ -32,6 +32,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847"
+        },
+        {
+            "id": "2c41acf9-c502-4de3-9b1a-9f049a989dcf",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847"
         }
     ],

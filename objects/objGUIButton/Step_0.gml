@@ -1,5 +1,5 @@
 // Mouse hovering button
-if (distance_to_point(mouse_x, mouse_y) <= 1)
+if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 {
 	image_index = 1;
 	
@@ -9,18 +9,18 @@ if (distance_to_point(mouse_x, mouse_y) <= 1)
 		#region actions
 		switch (action)
 		{
-		case actions.no_action:
+		case buttonActions.no_action:
 			break;
 			
-		case actions.exit_game:
+		case buttonActions.exit_game:
 			game_end();
 			break;
 			
-		case actions.destroy_self:
+		case buttonActions.destroy_self:
 			instance_destroy(self);
 			break;
 			
-		case actions.goto_room:
+		case buttonActions.goto_room:
 			room_goto(_room);
 			break;
 			

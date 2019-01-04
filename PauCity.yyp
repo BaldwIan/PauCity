@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0eb27362-915c-4bbe-8193-96d64adfcca7",
+            "Value": {
+                "id": "fbc1ca0f-7ec6-4482-8dd6-777b73d7e0f5",
+                "resourcePath": "sounds\\sndPlayback\\sndPlayback.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
             "Value": {
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
@@ -98,7 +106,7 @@
             "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
             "Value": {
                 "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
-                "resourcePath": "objects\\objJournal\\objJournal.yy",
+                "resourcePath": "objects\\objGUI\\objGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "7db53420-e6b1-4562-8970-30cfee0ef8a5",
+            "Value": {
+                "id": "f8790118-53cf-48a0-829b-7dde131f1959",
+                "resourcePath": "fonts\\fntDefault\\fntDefault.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7f6677e7-0b7a-43db-bf3c-8990561e0866",
             "Value": {
                 "id": "4e49b91e-fa3b-46ea-9d8e-8e9d75d03411",
@@ -282,7 +298,7 @@
             "Key": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847",
             "Value": {
                 "id": "410d0e18-45e0-4e9e-9426-cc4065e9cb8b",
-                "resourcePath": "objects\\objUISlider\\objUISlider.yy",
+                "resourcePath": "objects\\objGUISlider\\objGUISlider.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -362,7 +378,7 @@
             "Key": "bd1d5925-aa19-472d-86e1-3e7db16ed372",
             "Value": {
                 "id": "6e84c709-2777-4657-bcd4-e08af734ac5f",
-                "resourcePath": "objects\\objUIButton\\objUIButton.yy",
+                "resourcePath": "objects\\objGUIButton\\objGUIButton.yy",
                 "resourceType": "GMObject"
             }
         },
