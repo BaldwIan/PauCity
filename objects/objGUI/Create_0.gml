@@ -25,7 +25,7 @@ enum journal
 
 
 
-addJournalEntry("Journal Test", "Content Test inside the journal", "01/02/2019", "Ian B");
+addJournalEntry("Journal Test", "Content Test inside the journal 111111 111111111111 11111 111111111 1111111111 11111111111 111111111111 1111111 11111 111111111111 111111 111111 111111 1111111111 111111111 1111111", "01/02/2019", "Ian B");
 addJournalEntry("Journal Test1", "Content Test inside the journal1", "01/03/2019", "Ian B");
 addJournalEntry("Journal Test2", "Content Test inside the journal2", "01/03/2019", "Ian B");
 addJournalEntry("Journal Test3", "Content Test inside the journal3", "01/03/2019", "Ian B");
