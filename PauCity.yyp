@@ -42,7 +42,7 @@
             "Key": "053245c7-c715-4d96-bc88-19d6a5e2a809",
             "Value": {
                 "id": "a5c423ad-375d-4dc2-86cc-032f79373b7f",
-                "resourcePath": "sprites\\sprUISliderButton\\sprUISliderButton.yy",
+                "resourcePath": "sprites\\sprGUISliderButton\\sprGUISliderButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -52,6 +52,22 @@
                 "id": "96e37748-4aa9-4796-b758-16cfefe55216",
                 "resourcePath": "tilesets\\tilTest\\tilTest.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "27e0a2a1-fb1b-407f-9456-93a5a5c21887",
+            "Value": {
+                "id": "4b8a51bb-eb26-4eb2-ac89-4409dddfdcd8",
+                "resourcePath": "sprites\\sprJournalTitle\\sprJournalTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a500622-48fd-4a96-8903-7b74f3da5bff",
+            "Value": {
+                "id": "6e100a7d-18f2-4ffb-bb47-987a57565663",
+                "resourcePath": "views\\2a500622-48fd-4a96-8903-7b74f3da5bff.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -143,6 +159,14 @@
             }
         },
         {
+            "Key": "60fa5cd8-5d99-4183-be2b-3b18a902e002",
+            "Value": {
+                "id": "4108095e-bca6-4c90-bb4c-eac19a209d9f",
+                "resourcePath": "sprites\\sprJournalDate\\sprJournalDate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6416a70e-0b4d-40fb-bdde-15d591c7d79b",
             "Value": {
                 "id": "e3b8d59a-5aeb-4379-8734-9faec119d8d4",
@@ -202,7 +226,7 @@
             "Key": "7f6677e7-0b7a-43db-bf3c-8990561e0866",
             "Value": {
                 "id": "4e49b91e-fa3b-46ea-9d8e-8e9d75d03411",
-                "resourcePath": "sprites\\sprUISliderBar\\sprUISliderBar.yy",
+                "resourcePath": "sprites\\sprGUISliderBar\\sprGUISliderBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -314,7 +338,7 @@
             "Key": "b42b473e-fd8b-4d1c-88d5-767b4314ece9",
             "Value": {
                 "id": "8c512bc8-45f1-4955-843b-083264df5d17",
-                "resourcePath": "sprites\\sprUIButton\\sprUIButton.yy",
+                "resourcePath": "sprites\\sprGUIButton\\sprGUIButton.yy",
                 "resourceType": "GMSprite"
             }
         },
