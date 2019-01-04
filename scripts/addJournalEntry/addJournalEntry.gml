@@ -18,7 +18,4 @@ ds_grid_set(journal, 1, newSpot, content);
 ds_grid_set(journal, 2, newSpot, date);
 ds_grid_set(journal, 3, newSpot, author);
 
-for (var i = 0; i < ds_grid_width(journal); i++)
-{
-	show_debug_message("Journal Entry: " + string(ds_grid_get(journal, i, 0)));
-}
+

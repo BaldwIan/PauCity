@@ -24,7 +24,6 @@ view_camera[0] = camera;
 following = objPlayer;
 xTo = x;
 yTo = y;
-yTo = y;
 
 mouseXPrev = -1;
 mouseYPrev = -1;
