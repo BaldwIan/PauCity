@@ -1,0 +1,2 @@
+/// @description Journal GUI Logic
+

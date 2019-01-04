@@ -1,6 +1,13 @@
-globalvar journal, journalWidth;
-journalWidth = 4;
-journal = ds_grid_create(journalWidth, 0);
+global.journalWidth = 4;
+global.journal = ds_grid_create(global.journalWidth, 0);
+
+enum journal
+{
+	title,
+	content,
+	date,
+	author,
+}
 
 addJournalEntry("Journal Test", "Content Test inside the journal", "01/02/2019", "Ian B");
 addJournalEntry("Journal Test1", "Content Test inside the journal1", "01/03/2019", "Ian B");
@@ -16,18 +23,3 @@ addJournalEntry("Journal Test10", "Content Test inside the journal10", "01/03/20
 addJournalEntry("Journal Test11", "Content Test inside the journal11", "01/03/2019", "Ian B");
 addJournalEntry("Journal Test12", "Content Test inside the journal12", "01/03/2019", "Ian B");
 addJournalEntry("Journal Test13", "Content Test inside the journal13", "01/03/2019", "Ian B");
-
-
-#region testing
-
-// For testing only
-for (var yy = 0; yy < ds_grid_height(journal); yy++)
-{
-	show_debug_message("\n");
-	for (var xx = 0; xx < ds_grid_width(journal); xx++)
-	{
-		show_debug_message("Journal Entry: " + string(ds_grid_get(journal, xx, yy)));
-	}
-	show_debug_message("\n");
-}
-#endregion testing

@@ -9,13 +9,13 @@ var date    = argument2;
 var author  = argument3;
 
 // Change height of grid
-ds_grid_resize(journal, journalWidth, ds_grid_height(journal) + 1);
+ds_grid_resize(global.journal, global.journalWidth, ds_grid_height(global.journal) + 1);
 
 // Add characteristics of new entry
-var newSpot = ds_grid_height(journal) - 1;
-ds_grid_set(journal, 0, newSpot, title);
-ds_grid_set(journal, 1, newSpot, content);
-ds_grid_set(journal, 2, newSpot, date);
-ds_grid_set(journal, 3, newSpot, author);
+var newSpot = ds_grid_height(global.journal) - 1;
+ds_grid_set(global.journal, 0, newSpot, title);
+ds_grid_set(global.journal, 1, newSpot, content);
+ds_grid_set(global.journal, 2, newSpot, date);
+ds_grid_set(global.journal, 3, newSpot, author);
 
 

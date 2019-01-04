@@ -55,10 +55,18 @@
             }
         },
         {
+            "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
+            "Value": {
+                "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
+                "resourcePath": "sprites\\sprJournalBase\\sprJournalBase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27e0a2a1-fb1b-407f-9456-93a5a5c21887",
             "Value": {
                 "id": "4b8a51bb-eb26-4eb2-ac89-4409dddfdcd8",
-                "resourcePath": "sprites\\sprJournalTitle\\sprJournalTitle.yy",
+                "resourcePath": "sprites\\sprJournalEntry\\sprJournalEntry.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -372,6 +380,14 @@
                 "id": "699e403c-623b-4aaa-8c6b-36e99e10b030",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd882fcf-f848-4395-8fc7-0248ca2c1f6e",
+            "Value": {
+                "id": "640f2fbb-bbd3-411f-93a2-cb620e69527f",
+                "resourcePath": "sprites\\sprJournalTitleDate\\sprJournalTitleDate.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
