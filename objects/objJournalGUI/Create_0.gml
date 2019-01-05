@@ -17,3 +17,4 @@ spacing = 16;
 // Selection data
 journalSelected = 0;
 scrolledAmount = 0;
+
