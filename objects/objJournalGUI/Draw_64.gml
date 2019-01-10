@@ -20,5 +20,3 @@ draw_text_ext(bbox_left + lBorder + sprite_get_width(sprJournalContent)/2, bbox_
 // Draw Title text
 draw_sprite(sprJournalTitle, 0, bbox_right+1 - sprite_get_width(sprJournalTitle) - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sprJournalTitle));
 draw_text_ext(bbox_right+1 - sprite_get_width(sprJournalTitle)/2 - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sprJournalTitle)/2 - spacing, titleSelected, 16, sprite_get_width(sprJournalTitle) - spacing);
-
-
