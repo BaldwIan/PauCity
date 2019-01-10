@@ -15,7 +15,7 @@ draw_text_ext(bbox_left + lBorder + sprite_get_width(sprJournalTitleDate)/2, bbo
 
 // Draw content text
 draw_sprite(sprJournalContent, 0, bbox_left+1 + lBorder, bbox_top + tBorder + sprite_get_height(sprJournalTitleDate) + spacing);
-draw_text_ext(bbox_left + lBorder + sprite_get_width(sprJournalContent)/2, bbox_top*2 + tBorder + sprite_get_height(sprJournalTitleDate) + spacing, contentSelected, 32, sprite_get_width(sprJournalContent) - spacing);
+draw_text_ext(bbox_left + lBorder + sprite_get_width(sprJournalContent)/2, bbox_top*8 + tBorder + sprite_get_height(sprJournalTitleDate) + spacing, contentSelected, 32, sprite_get_width(sprJournalContent) - spacing);
 
 // Draw Title text
 draw_sprite(sprJournalTitle, 0, bbox_right+1 - sprite_get_width(sprJournalTitle) - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sprJournalTitle));
