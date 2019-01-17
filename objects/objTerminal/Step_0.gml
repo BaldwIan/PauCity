@@ -8,3 +8,5 @@ else {
 	textAlpha -= 0.02;
 }
 textAlpha = clamp(textAlpha, 0, 0.6);
+
+//keyboard_key_press

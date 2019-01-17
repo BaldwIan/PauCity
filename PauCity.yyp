@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "1211792d-0234-4c60-a71b-f22bc3135d00",
+            "Value": {
+                "id": "c3640ac5-bb5f-4fe7-8d89-eaaab562d571",
+                "resourcePath": "sprites\\sprJournalBase2\\sprJournalBase2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
             "Value": {
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
@@ -140,6 +148,14 @@
                 "id": "9ea71951-9440-4f52-818b-afed2c51387c",
                 "resourcePath": "views\\3b0f4756-f8d0-456c-b54d-f4a346e3ba8d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3c9df144-15d9-4adf-bd96-edabd81a0442",
+            "Value": {
+                "id": "86abc62e-5399-4a5c-a1d2-8fc16e3a7611",
+                "resourcePath": "sprites\\sprJournalTabDown\\sprJournalTabDown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "71cd5227-989c-4d5c-87a8-faa1c7ec680f",
+            "Value": {
+                "id": "e8a9ec10-ad46-48a5-8c8f-0f01471f7830",
+                "resourcePath": "sprites\\sprJournalTabUp\\sprJournalTabUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73a72f32-7c10-4bc4-ad24-18ddf5141937",
             "Value": {
                 "id": "29789e1f-653b-4587-a1fc-58a12af3c0cd",
@@ -319,6 +343,14 @@
             }
         },
         {
+            "Key": "87f25573-7916-4d2b-8887-7a25b9e10b0e",
+            "Value": {
+                "id": "c5d5b191-88f1-4b12-b1d1-aedac12449e0",
+                "resourcePath": "views\\87f25573-7916-4d2b-8887-7a25b9e10b0e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8819e725-966e-4325-b91a-0aeaac938289",
             "Value": {
                 "id": "2ca0fed8-dbba-4967-8e41-d9f5e3a46882",
@@ -396,6 +428,22 @@
                 "id": "cea3ee31-2254-429e-886d-8bee0a226d3a",
                 "resourcePath": "views\\a9db71ff-db38-4374-afaa-1c723999134c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
+            "Value": {
+                "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
+                "resourcePath": "objects\\objJournalTab\\objJournalTab.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b365f8e6-0bae-43d9-a47d-3b21202d7c57",
+            "Value": {
+                "id": "fc38d352-3668-47d3-aee0-5c27e1a37fde",
+                "resourcePath": "objects\\objJournalGUI2\\objJournalGUI2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
