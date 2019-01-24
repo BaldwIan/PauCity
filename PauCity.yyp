@@ -34,7 +34,7 @@
             "Key": "018c03fb-f137-4b08-8e4b-24a6bc3c052f",
             "Value": {
                 "id": "8345a879-e45c-4552-893e-f19dda70f0ef",
-                "resourcePath": "sprites\\sprJournalContent\\sprJournalContent.yy",
+                "resourcePath": "sprites\\sJournalContent\\sJournalContent.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -74,7 +74,7 @@
             "Key": "1211792d-0234-4c60-a71b-f22bc3135d00",
             "Value": {
                 "id": "c3640ac5-bb5f-4fe7-8d89-eaaab562d571",
-                "resourcePath": "sprites\\sprJournalBase2\\sprJournalBase2.yy",
+                "resourcePath": "sprites\\sJournalBase2\\sJournalBase2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -82,7 +82,7 @@
             "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
             "Value": {
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
-                "resourcePath": "sprites\\sprJournalBase\\sprJournalBase.yy",
+                "resourcePath": "sprites\\sJournalBase\\sJournalBase.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -90,7 +90,7 @@
             "Key": "27e0a2a1-fb1b-407f-9456-93a5a5c21887",
             "Value": {
                 "id": "4b8a51bb-eb26-4eb2-ac89-4409dddfdcd8",
-                "resourcePath": "sprites\\sprJournalEntry\\sprJournalEntry.yy",
+                "resourcePath": "sprites\\sJournalEntry\\sJournalEntry.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -122,7 +122,7 @@
             "Key": "2cd2eece-5b03-4fae-826a-cd7ded19981d",
             "Value": {
                 "id": "ff45bef1-615a-44de-81ba-dbca10dcb9e6",
-                "resourcePath": "sprites\\sprTermial\\sprTermial.yy",
+                "resourcePath": "sprites\\sTermial\\sTermial.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
             "Value": {
                 "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
-                "resourcePath": "objects\\objGUI\\objGUI.yy",
+                "resourcePath": "objects\\oGUI\\oGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -138,7 +138,7 @@
             "Key": "324576b6-ed2a-4a9b-97c5-544b95e64678",
             "Value": {
                 "id": "4b1d34da-1acb-4db4-89ca-8930a18fbaed",
-                "resourcePath": "objects\\objCamera\\objCamera.yy",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -151,18 +151,10 @@
             }
         },
         {
-            "Key": "3c9df144-15d9-4adf-bd96-edabd81a0442",
-            "Value": {
-                "id": "86abc62e-5399-4a5c-a1d2-8fc16e3a7611",
-                "resourcePath": "sprites\\sprJournalTabDown\\sprJournalTabDown.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "46dc6589-87bc-496b-9f5a-e18527658ef7",
             "Value": {
                 "id": "3ecbe83b-4cbd-4641-908d-900704134235",
-                "resourcePath": "sprites\\sprPlayer\\sprPlayer.yy",
+                "resourcePath": "sprites\\sPlayer\\sPlayer.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -178,7 +170,7 @@
             "Key": "54fda5d7-384c-44e0-81a0-5a8deea4d966",
             "Value": {
                 "id": "cc535576-72bf-4d07-8387-fdc7604f818e",
-                "resourcePath": "sprites\\sprJournalButton\\sprJournalButton.yy",
+                "resourcePath": "sprites\\sJournalButton\\sJournalButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -226,7 +218,7 @@
             "Key": "60f4942f-f65c-4e64-9a4b-604339a5bd7c",
             "Value": {
                 "id": "f8808cc1-3964-4eb8-88b3-88826f7da395",
-                "resourcePath": "objects\\objTerminal\\objTerminal.yy",
+                "resourcePath": "objects\\oTerminal\\oTerminal.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -234,7 +226,7 @@
             "Key": "60fa5cd8-5d99-4183-be2b-3b18a902e002",
             "Value": {
                 "id": "4108095e-bca6-4c90-bb4c-eac19a209d9f",
-                "resourcePath": "sprites\\sprJournalDate\\sprJournalDate.yy",
+                "resourcePath": "sprites\\sJournalDate\\sJournalDate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -250,7 +242,7 @@
             "Key": "67318339-d156-4f18-9534-8f6cbfdba171",
             "Value": {
                 "id": "adbbfa7f-8421-44dc-91a3-7d77e8d159a0",
-                "resourcePath": "sprites\\sprTilCollision\\sprTilCollision.yy",
+                "resourcePath": "sprites\\sTilCollision\\sTilCollision.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -258,7 +250,7 @@
             "Key": "71cd5227-989c-4d5c-87a8-faa1c7ec680f",
             "Value": {
                 "id": "e8a9ec10-ad46-48a5-8c8f-0f01471f7830",
-                "resourcePath": "sprites\\sprJournalTabUp\\sprJournalTabUp.yy",
+                "resourcePath": "sprites\\sJournalTabUp\\sJournalTabUp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -354,7 +346,7 @@
             "Key": "8819e725-966e-4325-b91a-0aeaac938289",
             "Value": {
                 "id": "2ca0fed8-dbba-4967-8e41-d9f5e3a46882",
-                "resourcePath": "objects\\objJournalGUI\\objJournalGUI.yy",
+                "resourcePath": "objects\\oJournalGUI\\oJournalGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -370,7 +362,7 @@
             "Key": "8b2aaf97-a04a-423f-b2cb-8a8c523bd847",
             "Value": {
                 "id": "410d0e18-45e0-4e9e-9426-cc4065e9cb8b",
-                "resourcePath": "objects\\objGUISlider\\objGUISlider.yy",
+                "resourcePath": "objects\\oGUISlider\\oGUISlider.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -386,7 +378,7 @@
             "Key": "8d78c336-4dbe-4454-97f9-d2d276f2ab70",
             "Value": {
                 "id": "9dc0ba78-30b3-45f4-95d0-472e59b6c64f",
-                "resourcePath": "objects\\objPlayer\\objPlayer.yy",
+                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -439,18 +431,10 @@
             }
         },
         {
-            "Key": "b365f8e6-0bae-43d9-a47d-3b21202d7c57",
-            "Value": {
-                "id": "fc38d352-3668-47d3-aee0-5c27e1a37fde",
-                "resourcePath": "objects\\objJournalGUI2\\objJournalGUI2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "b42b473e-fd8b-4d1c-88d5-767b4314ece9",
             "Value": {
                 "id": "8c512bc8-45f1-4955-843b-083264df5d17",
-                "resourcePath": "sprites\\sprGUIButton\\sprGUIButton.yy",
+                "resourcePath": "sprites\\sGUIButton\\sGUIButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -466,7 +450,7 @@
             "Key": "bb64b225-8052-4fb5-bd4c-fcc0d3f7c6cd",
             "Value": {
                 "id": "3990036a-54d4-4fe3-9df9-c5f2435139df",
-                "resourcePath": "sprites\\sprJournalTitle\\sprJournalTitle.yy",
+                "resourcePath": "sprites\\sJournalTitle\\sJournalTitle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -474,7 +458,7 @@
             "Key": "bd1d5925-aa19-472d-86e1-3e7db16ed372",
             "Value": {
                 "id": "6e84c709-2777-4657-bcd4-e08af734ac5f",
-                "resourcePath": "objects\\objGUIButton\\objGUIButton.yy",
+                "resourcePath": "objects\\oGUIButton\\oGUIButton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -498,7 +482,7 @@
             "Key": "cd882fcf-f848-4395-8fc7-0248ca2c1f6e",
             "Value": {
                 "id": "640f2fbb-bbd3-411f-93a2-cb620e69527f",
-                "resourcePath": "sprites\\sprJournalTitleDate\\sprJournalTitleDate.yy",
+                "resourcePath": "sprites\\sJournalTitleDate\\sJournalTitleDate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -506,7 +490,7 @@
             "Key": "d3ce6238-9d9e-4b66-8266-a14a87b692e6",
             "Value": {
                 "id": "865c2e63-adab-42a1-818b-01f70ec721a8",
-                "resourcePath": "sprites\\sprTilTest\\sprTilTest.yy",
+                "resourcePath": "sprites\\sTilTest\\sTilTest.yy",
                 "resourceType": "GMSprite"
             }
         },
