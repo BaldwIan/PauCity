@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "6e5bac43-7094-42ca-982f-dc40c97ca431",
+            "Value": {
+                "id": "fecb6dae-922f-49dd-9378-f35ca80c56c3",
+                "resourcePath": "objects\\oGUITablet\\oGUITablet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "71cd5227-989c-4d5c-87a8-faa1c7ec680f",
             "Value": {
                 "id": "e8a9ec10-ad46-48a5-8c8f-0f01471f7830",
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "8e891813-4eb3-4825-99db-ea983119fafe",
+            "Value": {
+                "id": "15fb217e-b4b3-4fae-b225-4782b11d5c73",
+                "resourcePath": "sprites\\sprTest\\sprTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8f239ad5-21d7-4719-bce2-c2ad93248872",
             "Value": {
                 "id": "10b02ccd-ab1d-475f-8cbd-2da48314c665",
@@ -426,7 +442,7 @@
             "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
             "Value": {
                 "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
-                "resourcePath": "objects\\objJournalTab\\objJournalTab.yy",
+                "resourcePath": "objects\\oJournalTab\\oJournalTab.yy",
                 "resourceType": "GMObject"
             }
         },

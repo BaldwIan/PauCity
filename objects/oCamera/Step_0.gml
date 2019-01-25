@@ -48,6 +48,10 @@ switch (mode)
 		}
 		break;
 		
+	case cammode.shake_point:
+		if (!alarm[1]) alarm[1] = room_speed * 0.05;
+		break;
+		
 		
 	default:
 		break;

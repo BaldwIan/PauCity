@@ -5,9 +5,13 @@ enum cammode
 	follow_mouse_border,
 	follow_mouse_peak,
 	move_to_target,
+	shake_point,
+	shake_object,
 }
 
 mode = cammode.follow_object;
+shakeX = 100;
+shakeY = 50;
 
 camera = camera_create();
 cwidth = 960;
