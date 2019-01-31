@@ -24,7 +24,8 @@ if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 			room_goto(_room);
 			break;
 			
-		case buttonActions.closeJournal:
+		case buttonActions.GUIJournalswitch:
+			
 			break;
 			
 		default:

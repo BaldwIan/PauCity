@@ -48,10 +48,15 @@ switch (mode)
 		}
 		break;
 		
-	case cammode.shake_point:
-		if (!alarm[1]) alarm[1] = room_speed * 0.05;
+	case cammode.shake:
+		rotation++;
 		break;
 		
+	case cammode.shake_follow:
+		if (!instance_exists(following)) break;
+		rotation += 0.1;
+		xTo = following.x;
+		yTo = following.y;
 		
 	default:
 		break;
@@ -66,8 +71,10 @@ if (smoothPan)
 	y = yTo;
 }
 
-var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
+var vm = matrix_build_lookat(x, y, -10, x, y, 0, rotation, 1, 0);
 camera_set_view_mat(camera, vm);
 
 x = clamp(x, 0 + cwidth / 2, room_width - cwidth / 2);
 y = clamp(y, 0 + cheight / 2, room_height - cheight / 2);
+
+

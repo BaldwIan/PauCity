@@ -1,4 +1,3 @@
-/*
 enum tabletMode
 {
 	journal,
@@ -6,4 +5,3 @@ enum tabletMode
 }
 
 mode = tabletMode.journal;
-*/

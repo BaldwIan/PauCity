@@ -1,2 +1,2 @@
-xTo += random_range(-shakeX, shakeX);
-yTo += random_range(-shakeY, shakeY);
+/// @description Rotation shake
+rotation += 5;

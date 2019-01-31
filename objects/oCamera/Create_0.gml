@@ -5,13 +5,11 @@ enum cammode
 	follow_mouse_border,
 	follow_mouse_peak,
 	move_to_target,
-	shake_point,
-	shake_object,
+	shake,
+	shake_follow,
 }
 
 mode = cammode.follow_object;
-shakeX = 100;
-shakeY = 50;
 
 camera = camera_create();
 cwidth = 960;
@@ -24,6 +22,8 @@ camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
 
 view_camera[0] = camera;
+
+rotation = 0;
 
 following = oPlayer;
 xTo = x;

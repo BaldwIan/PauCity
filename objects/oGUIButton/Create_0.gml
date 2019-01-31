@@ -4,7 +4,7 @@ enum buttonActions
 	exit_game,
 	destroy_self,
 	goto_room,
-	closeJournal,
+	GUIJournalswitch,
 }
 
 _room = room;

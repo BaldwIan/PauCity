@@ -2,7 +2,7 @@
 display_set_gui_size(display_get_width(), display_get_height());
 
 // Set draw allignment
-draw_set_valign(fa_middle);
+//draw_set_valign(fa_top);
 draw_set_halign(fa_center);
 
 // Set font
