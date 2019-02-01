@@ -71,18 +71,10 @@
             }
         },
         {
-            "Key": "1211792d-0234-4c60-a71b-f22bc3135d00",
-            "Value": {
-                "id": "c3640ac5-bb5f-4fe7-8d89-eaaab562d571",
-                "resourcePath": "sprites\\sJournalBase2\\sJournalBase2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
             "Value": {
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
-                "resourcePath": "sprites\\sJournalBase\\sJournalBase.yy",
+                "resourcePath": "sprites\\sTabletBase\\sTabletBase.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -143,6 +135,14 @@
             }
         },
         {
+            "Key": "34860d8a-965c-439b-aa71-56fb01c7f06e",
+            "Value": {
+                "id": "0ed5dcbf-8252-4560-931f-6e496289aeda",
+                "resourcePath": "views\\34860d8a-965c-439b-aa71-56fb01c7f06e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3b0f4756-f8d0-456c-b54d-f4a346e3ba8d",
             "Value": {
                 "id": "9ea71951-9440-4f52-818b-afed2c51387c",
@@ -159,10 +159,26 @@
             }
         },
         {
+            "Key": "486e3bd4-2eb6-4d84-a85d-cef0c483b819",
+            "Value": {
+                "id": "fc90f7ee-0c35-468c-ad1e-928fef1d5420",
+                "resourcePath": "views\\486e3bd4-2eb6-4d84-a85d-cef0c483b819.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "498e65a5-c0a6-4b6e-b309-334014877b0f",
+            "Value": {
+                "id": "8ce78edd-ea9f-4228-a1c4-b1d27aafaf9c",
+                "resourcePath": "views\\498e65a5-c0a6-4b6e-b309-334014877b0f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4e2e2434-a037-4d42-863a-eed6c5970dd4",
             "Value": {
                 "id": "ca770fe3-1d38-462f-bff0-1ccfabad0e4d",
-                "resourcePath": "scripts\\addJournalEntry\\addJournalEntry.yy",
+                "resourcePath": "scripts\\add_journal_entry\\add_journal_entry.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -255,14 +271,6 @@
             }
         },
         {
-            "Key": "71cd5227-989c-4d5c-87a8-faa1c7ec680f",
-            "Value": {
-                "id": "e8a9ec10-ad46-48a5-8c8f-0f01471f7830",
-                "resourcePath": "sprites\\sJournalTabUp\\sJournalTabUp.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "73a72f32-7c10-4bc4-ad24-18ddf5141937",
             "Value": {
                 "id": "29789e1f-653b-4587-a1fc-58a12af3c0cd",
@@ -343,14 +351,6 @@
             }
         },
         {
-            "Key": "87f25573-7916-4d2b-8887-7a25b9e10b0e",
-            "Value": {
-                "id": "c5d5b191-88f1-4b12-b1d1-aedac12449e0",
-                "resourcePath": "views\\87f25573-7916-4d2b-8887-7a25b9e10b0e.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "8819e725-966e-4325-b91a-0aeaac938289",
             "Value": {
                 "id": "2ca0fed8-dbba-4967-8e41-d9f5e3a46882",
@@ -394,7 +394,7 @@
             "Key": "8e891813-4eb3-4825-99db-ea983119fafe",
             "Value": {
                 "id": "15fb217e-b4b3-4fae-b225-4782b11d5c73",
-                "resourcePath": "sprites\\sprTest\\sprTest.yy",
+                "resourcePath": "sprites\\sDefault32\\sDefault32.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -475,6 +475,14 @@
             "Value": {
                 "id": "6e84c709-2777-4657-bcd4-e08af734ac5f",
                 "resourcePath": "objects\\oGUIButton\\oGUIButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c54f9d51-7972-43f5-b021-6fff7c27896e",
+            "Value": {
+                "id": "b673b4ae-ecdb-4250-887e-4ee6e7cdf32a",
+                "resourcePath": "objects\\oJournalPickup\\oJournalPickup.yy",
                 "resourceType": "GMObject"
             }
         },

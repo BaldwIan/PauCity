@@ -18,3 +18,5 @@ spacing = 16;
 journalSelected = 0;
 scrolledAmount = 0;
 
+// TEST ONLY
+alarm[2] = room_speed * 2;

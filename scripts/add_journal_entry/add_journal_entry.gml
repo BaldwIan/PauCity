@@ -1,7 +1,7 @@
-/// @param0 Journal_Title
-/// @param1 Journal_Content
-/// @param2 Journal_Date
-/// @param3 Journal_Author
+/// @param Journal_Title
+/// @param Journal_Content
+/// @param Journal_Date
+/// @param Journal_Author
 
 var title   = argument0;
 var content = argument1;
