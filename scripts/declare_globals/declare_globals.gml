@@ -1,5 +1,14 @@
+#region hotkeys
+
 // Set hotkeys
-global.HKTablet = ord("E");
+global.HKTablet = ord("Q");
+global.HKInteract = ord("E");
+
+#endregion hotkeys
+
+#region GUI
+
+#region button_actions
 
 // Set GUI Button Actions
 enum buttonActions
@@ -8,8 +17,13 @@ enum buttonActions
 	exit_game,
 	destroy_self,
 	goto_room,
-	GUIJournalswitch,
+	Tjournal_switch,
+	Tpuzzle_switch,
 }
+
+#endregion button_actions
+
+#region slider_actions
 
 // Set GUI Slider Actions
 enum sliderActions
@@ -17,6 +31,10 @@ enum sliderActions
 	no_action,
 	volume,
 }
+
+#endregion slider_actions
+
+#region journal
 
 // Set Journal Vars
 global.journalWidth = 4;
@@ -28,3 +46,7 @@ enum journal
 	date,
 	author,
 }
+
+#endregion journal
+
+#endregion GUI

@@ -7,7 +7,7 @@ if (mode == tabletMode.closed)
 	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2, 0.15);
 }
 
-if (keyboard_check_pressed(global.tabletHotkey))
+if (keyboard_check_pressed(global.HKTablet))
 {
 	switch (mode)
 	{

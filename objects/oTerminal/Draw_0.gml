@@ -5,7 +5,8 @@ draw_self();
 //if (not broken) {
 	
 //}
-draw_text_color(x, y - 64, string(global.HKTablet), c_blue, c_blue, c_blue, c_blue, textAlpha);
+var c = c_blue
+draw_text_color(x, y - 64, chr(global.HKInteract), c, c, c, c, textAlpha);
 //else {
 //	draw_text_color(x, y - 64, "(X)", c_blue, c_blue, c_blue, c_blue, txtAlpha);
 //}
