@@ -1,4 +1,4 @@
-/// @description Change Journal Entries
+/// @description Change Journal Entries (TMP)
 if (journalSelected+1 >= ds_grid_height(global.journal))
 {
 	journalSelected = 0;

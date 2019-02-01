@@ -34,7 +34,17 @@ enum sliderActions
 
 #endregion slider_actions
 
-#region journal
+#region tablet
+
+enum tabletMode
+{
+	journal,
+	puzzle,
+	closed,
+}
+
+#endregion tablet
+#region tJournal
 
 // Set Journal Vars
 global.journalWidth = 4;
@@ -47,6 +57,6 @@ enum journal
 	author,
 }
 
-#endregion journal
+#endregion tJournal
 
 #endregion GUI

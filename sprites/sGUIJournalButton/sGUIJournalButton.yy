@@ -2,7 +2,7 @@
     "id": "08593f79-ee9d-4eab-bd8c-57926e2f4e2d",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sGUIJournalTabButton",
+    "name": "sGUIJournalButton",
     "For3D": false,
     "HTile": false,
     "VTile": false,

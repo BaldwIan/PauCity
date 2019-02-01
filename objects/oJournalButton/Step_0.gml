@@ -9,9 +9,12 @@ if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 		
 		switch (action)
 		{
-		case buttonActions.GUIJournalSwitch:
-			
+		case buttonActions.Tjournal_switch:
+			oGUITablet.mode = tabletMode.journal;
 			break;
+			
+		case buttonActions.Tpuzzle_switch:
+			oGUITablet.mode = tabletMode.puzzle;
 			
 		default:
 			break;

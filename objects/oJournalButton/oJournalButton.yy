@@ -2,7 +2,7 @@
     "id": "b1a1a123-c388-41a9-885a-236c2d2220cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oJournalTabButton",
+    "name": "oJournalButton",
     "eventList": [
         {
             "id": "a4cfcc3e-4571-4775-bf46-8c86acf8ab54",

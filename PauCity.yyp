@@ -58,7 +58,7 @@
             "Key": "08593f79-ee9d-4eab-bd8c-57926e2f4e2d",
             "Value": {
                 "id": "a810aadc-b0dc-485a-bac8-8e012f3a6730",
-                "resourcePath": "sprites\\sGUIJournalTabButton\\sGUIJournalTabButton.yy",
+                "resourcePath": "sprites\\sGUIJournalButton\\sGUIJournalButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -92,6 +92,14 @@
                 "id": "4b8a51bb-eb26-4eb2-ac89-4409dddfdcd8",
                 "resourcePath": "sprites\\sJournalEntry\\sJournalEntry.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a0c03e0-b724-4abf-928d-723e636f0a94",
+            "Value": {
+                "id": "673eaf4d-4cbf-4819-9788-4cda4bb870ea",
+                "resourcePath": "views\\2a0c03e0-b724-4abf-928d-723e636f0a94.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -450,7 +458,7 @@
             "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
             "Value": {
                 "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
-                "resourcePath": "objects\\oJournalTabButton\\oJournalTabButton.yy",
+                "resourcePath": "objects\\oJournalButton\\oJournalButton.yy",
                 "resourceType": "GMObject"
             }
         },
