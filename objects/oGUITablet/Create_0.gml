@@ -34,5 +34,9 @@ scrolledAmount = 0;
 
 #endregion console
 
+#region TESTING-ONLY
+
 // TEST ONLY - CHANGE JOURNAL ENTRIES
 alarm[11] = room_speed * 2;
+
+#endregion TESTING-ONLY

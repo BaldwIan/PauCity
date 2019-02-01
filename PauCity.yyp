@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "08593f79-ee9d-4eab-bd8c-57926e2f4e2d",
+            "Value": {
+                "id": "a810aadc-b0dc-485a-bac8-8e012f3a6730",
+                "resourcePath": "sprites\\sGUIJournalTabButton\\sGUIJournalTabButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "091c7b52-d08e-4a89-a8af-9204e8831d98",
             "Value": {
                 "id": "96e37748-4aa9-4796-b758-16cfefe55216",
@@ -122,7 +130,7 @@
             "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
             "Value": {
                 "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
-                "resourcePath": "objects\\oGUI\\oGUI.yy",
+                "resourcePath": "objects\\oGlobalGUI\\oGlobalGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -180,14 +188,6 @@
                 "id": "ca770fe3-1d38-462f-bff0-1ccfabad0e4d",
                 "resourcePath": "scripts\\add_journal_entry\\add_journal_entry.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "54fda5d7-384c-44e0-81a0-5a8deea4d966",
-            "Value": {
-                "id": "cc535576-72bf-4d07-8387-fdc7604f818e",
-                "resourcePath": "sprites\\sJournalButton\\sJournalButton.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -351,14 +351,6 @@
             }
         },
         {
-            "Key": "8819e725-966e-4325-b91a-0aeaac938289",
-            "Value": {
-                "id": "2ca0fed8-dbba-4967-8e41-d9f5e3a46882",
-                "resourcePath": "objects\\oJournalGUI\\oJournalGUI.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "88756879-0194-49f7-a8d6-7007738e6c8d",
             "Value": {
                 "id": "d1667668-1f4a-474a-b83d-89c132b7bfab",
@@ -423,6 +415,14 @@
             }
         },
         {
+            "Key": "a53cc0c5-78d9-44cd-8473-dc097a5a7328",
+            "Value": {
+                "id": "09462d98-ba2d-40fa-8a15-ff656e42d1df",
+                "resourcePath": "scripts\\declare_globals\\declare_globals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "7936bbc5-3b23-4bbf-b795-469c92153d45",
@@ -442,7 +442,7 @@
             "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
             "Value": {
                 "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
-                "resourcePath": "objects\\oJournalTab\\oJournalTab.yy",
+                "resourcePath": "objects\\oJournalTabButton\\oJournalTabButton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -619,7 +619,8 @@
         "8f239ad5-21d7-4719-bce2-c2ad93248872",
         "04cdfe48-6ef5-45d7-bdc8-01318f8f231e",
         "4e2e2434-a037-4d42-863a-eed6c5970dd4",
-        "f1595985-777d-488e-8628-a054fb6a204b"
+        "f1595985-777d-488e-8628-a054fb6a204b",
+        "a53cc0c5-78d9-44cd-8473-dc097a5a7328"
     ],
     "tutorial": ""
 }

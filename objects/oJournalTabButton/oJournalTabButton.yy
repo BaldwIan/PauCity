@@ -2,7 +2,7 @@
     "id": "b1a1a123-c388-41a9-885a-236c2d2220cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oJournalTab",
+    "name": "oJournalTabButton",
     "eventList": [
         {
             "id": "a4cfcc3e-4571-4775-bf46-8c86acf8ab54",
@@ -22,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "b1a1a123-c388-41a9-885a-236c2d2220cd"
+        },
+        {
+            "id": "e874af15-983c-4091-a9e7-bf1be6944f68",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "b1a1a123-c388-41a9-885a-236c2d2220cd"
         }
     ],

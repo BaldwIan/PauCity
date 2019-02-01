@@ -1,13 +1,13 @@
 /// @description Move to position
 if (mode == tabletMode.closed)
 {
-	y = lerp(y, display_get_gui_height()+10, 0.2);
+	y = lerp(y, display_get_gui_height()+10, 0.25);
 } else
 {
-	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2, 0.1);
+	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2, 0.15);
 }
 
-if (keyboard_check_pressed(ord("T")))
+if (keyboard_check_pressed(global.tabletHotkey))
 {
 	switch (mode)
 	{

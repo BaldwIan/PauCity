@@ -1,3 +1,6 @@
+// Set globals
+declare_globals();
+
 // resize GUI to window size
 display_set_gui_size(display_get_width(), display_get_height());
 
@@ -7,22 +10,6 @@ draw_set_halign(fa_center);
 
 // Set font
 draw_set_font(fntDefault);
-
-#region globals
-
-// Journal
-global.journalWidth = 4;
-global.journal = ds_grid_create(global.journalWidth, 0);
-enum journal
-{
-	title,
-	content,
-	date,
-	author,
-}
-
-#endregion globals
-
 
 // JOURNAL TESTING
 add_journal_entry("Journal Test", "Content Test inside the journal 111111 111111111111 11111 111111111 1111111111 11111111111 111111111111 1111111 11111 111111111111 111111 111111 111111 1111111111 111111111 1111111", "01/02/2019", "Ian B");

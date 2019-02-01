@@ -8,8 +8,7 @@
         "60fa5cd8-5d99-4183-be2b-3b18a902e002",
         "cd882fcf-f848-4395-8fc7-0248ca2c1f6e",
         "018c03fb-f137-4b08-8e4b-24a6bc3c052f",
-        "bb64b225-8052-4fb5-bd4c-fcc0d3f7c6cd",
-        "54fda5d7-384c-44e0-81a0-5a8deea4d966"
+        "bb64b225-8052-4fb5-bd4c-fcc0d3f7c6cd"
     ],
     "filterType": "GMSprite",
     "folderName": "Journal",
