@@ -3,7 +3,7 @@ velocity_ = [0, 0];
 gravity_ = 1.5;
 jumpSpd = 32;
 maxVelocity = [6, 32];
-acceleration = 2.1;
+acceleration = 2;
 
 
 // Get tile map id

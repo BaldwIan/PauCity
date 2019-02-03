@@ -77,6 +77,4 @@ camera_set_view_mat(camera, vm);
 x = clamp(x, 0 + cwidth / 2, room_width - cwidth / 2);
 y = clamp(y, 0 + cheight / 2, room_height - cheight / 2);
 
-show_debug_message("CAM ROTATION: " + string(rotation));
-
 

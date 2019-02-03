@@ -1,8 +1,14 @@
 #region hotkeys
 
-// Set hotkeys
+// Movement
+global.HKUp = gp_face1;
+global.HKLeft = ord("A");
+global.HKDown = ord("S");
+global.HKRight = ord("D");
+
+// UI
 global.HKTablet = ord("Q");
-global.HKInteract = ord("E");
+global.HKInteract = gp_start; //ord("E");
 
 #endregion hotkeys
 

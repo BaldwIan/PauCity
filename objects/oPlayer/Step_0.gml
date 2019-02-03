@@ -1,13 +1,13 @@
 /// @description Movement logic
 
 // Movement keys
-var kUp = vk_space;
-var kLeft = ord("A");
-var kDown = ord("S");
-var kRight = ord("D");
+var kUp = global.HKUp;
+var vMove = gamepad_axis_value(0, gp_axislh);
+var kRight = global.HKRight;
 
 // Get the input
-var xInput = (keyboard_check(kRight) - keyboard_check(kLeft)) * acceleration;
+if (vMove < 0.1 && vMove > -0.1) vMove = 0;
+var xInput = vMove * acceleration; //(keyboard_check(kRight) - keyboard_check(kLeft)) * acceleration;
 
 // Vector variables
 var vector2X = 0;
@@ -33,14 +33,14 @@ var onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bo
 if (onGround)
 {
 	// Jumping
-	if (keyboard_check_pressed(vk_space))
+	if (gamepad_button_check_pressed(0, kUp))
 	{
 		velocity_[vector2Y] = -jumpSpd;
 	}
 } else
 {
 	// Control jump height
-	if (keyboard_check_released(vk_space) && velocity_[vector2Y] <= -(jumpSpd/3))
+	if (gamepad_button_check_released(0, kUp) && velocity_[vector2Y] <= -(jumpSpd/3))
 	{
 		velocity_[vector2Y] = -(jumpSpd/3);
 	}
