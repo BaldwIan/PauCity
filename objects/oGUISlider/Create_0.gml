@@ -1,5 +1,5 @@
 // Set slider data
-action = sliderActions.no_action;
+action = slider_actions.no_action;
 val = 0;
 cap = 1;
 active = false;

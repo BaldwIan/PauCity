@@ -3,7 +3,7 @@ draw_self();
 
 switch (mode)
 {
-case (tabletMode.journal):
+case (tablet_mode.journal):
 	// Get journal data
 	var titleSelected = ds_grid_get(global.journal, journal.title, journalSelected);
 	var contentSelected = ds_grid_get(global.journal, journal.content, journalSelected);

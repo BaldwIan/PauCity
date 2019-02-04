@@ -9,18 +9,18 @@ if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 		#region actions
 		switch (action)
 		{
-		case buttonActions.no_action:
+		case button_actions.no_action:
 			break;
 			
-		case buttonActions.exit_game:
+		case button_actions.exit_game:
 			game_end();
 			break;
 			
-		case buttonActions.destroy_self:
+		case button_actions.destroy_self:
 			instance_destroy(self);
 			break;
 			
-		case buttonActions.goto_room:
+		case button_actions.goto_room:
 			room_goto(_room);
 			break;
 			

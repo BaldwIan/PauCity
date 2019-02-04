@@ -1,4 +1,4 @@
-mode = tabletMode.closed;
+mode = tablet_mode.closed;
 
 #region general
 
@@ -20,10 +20,10 @@ y = display_get_gui_height();
 #endregion position
 
 #region buttons
-
+/*
 journalSwitch = instance_create_layer(bbox_right - sprite_get_width(sGUIJournalButton) - rBorder - spacing, bbox_top -  sprite_get_height(sGUIJournalButton), "GUI", oJournalButton);
 with (journalSwitch) text = "Journal";
-
+*/
 #endregion buttons
 
 

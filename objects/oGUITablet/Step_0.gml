@@ -1,5 +1,5 @@
 /// @description Move to position
-if (mode == tabletMode.closed)
+if (mode == tablet_mode.closed)
 {
 	y = lerp(y, display_get_gui_height()+10, 0.25);
 } else
@@ -7,16 +7,16 @@ if (mode == tabletMode.closed)
 	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2, 0.15);
 }
 
-if (keyboard_check_pressed(global.HKTablet))
+if (gamepad_button_check_pressed(0, global.HKTablet))
 {
 	switch (mode)
 	{
-	case (tabletMode.closed):
-		mode = tabletMode.journal;
+	case (tablet_mode.closed):
+		mode = tablet_mode.journal;
 		break;
 		
 	default:
-		mode = tabletMode.closed;
+		mode = tablet_mode.closed;
 		break;
 	}
 }

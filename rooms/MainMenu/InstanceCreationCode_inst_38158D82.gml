@@ -1,1 +1,1 @@
-action = sliderActions.volume;
+action = slider_actions.volume;

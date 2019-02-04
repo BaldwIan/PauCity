@@ -15,10 +15,10 @@ if (active)
 	
 	switch (action)
 	{
-	case sliderActions.no_action:
+	case slider_actions.no_action:
 		break;
 		
-	case sliderActions.volume:
+	case slider_actions.volume:
 		audio_set_master_gain(0, val);
 		if (!audio_is_playing(sndPlayback)) audio_play_sound(sndPlayback, 1, false);
 		break;

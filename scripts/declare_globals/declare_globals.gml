@@ -7,8 +7,8 @@ global.HKDown = ord("S");
 global.HKRight = ord("D");
 
 // UI
-global.HKTablet = ord("Q");
-global.HKInteract = gp_start; //ord("E");
+global.HKTablet = gp_start;
+global.HKInteract = gp_face2; //ord("E");
 
 #endregion hotkeys
 
@@ -17,7 +17,7 @@ global.HKInteract = gp_start; //ord("E");
 #region button_actions
 
 // Set GUI Button Actions
-enum buttonActions
+enum button_actions
 {
 	no_action,
 	exit_game,
@@ -32,7 +32,7 @@ enum buttonActions
 #region slider_actions
 
 // Set GUI Slider Actions
-enum sliderActions
+enum slider_actions
 {
 	no_action,
 	volume,
@@ -42,12 +42,13 @@ enum sliderActions
 
 #region tablet
 
-enum tabletMode
+enum tablet_mode
 {
 	journal,
 	puzzle,
 	closed,
 }
+global.tabletMode = tablet_mode.closed
 
 #endregion tablet
 #region tJournal

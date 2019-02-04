@@ -138,7 +138,7 @@
             "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
             "Value": {
                 "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
-                "resourcePath": "objects\\oGlobalGUI\\oGlobalGUI.yy",
+                "resourcePath": "objects\\oManager\\oManager.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -164,6 +164,14 @@
                 "id": "9ea71951-9440-4f52-818b-afed2c51387c",
                 "resourcePath": "views\\3b0f4756-f8d0-456c-b54d-f4a346e3ba8d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "440ba515-4283-45e1-aba7-d1c176e3419d",
+            "Value": {
+                "id": "2c28513a-4274-4850-b43a-bed8c86ffcf4",
+                "resourcePath": "sounds\\musMainLoop\\musMainLoop.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -196,6 +204,14 @@
                 "id": "ca770fe3-1d38-462f-bff0-1ccfabad0e4d",
                 "resourcePath": "scripts\\add_journal_entry\\add_journal_entry.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5389404e-b04e-45f1-9565-a1717f59b3be",
+            "Value": {
+                "id": "70af7a0a-7684-48a0-9518-8c66d5aa8652",
+                "resourcePath": "sprites\\sPJournal\\sPJournal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -479,6 +495,14 @@
             }
         },
         {
+            "Key": "b8e94d77-f811-46c2-9817-89f03489bd91",
+            "Value": {
+                "id": "9b391aad-2cf2-4d9d-8a98-630180e05773",
+                "resourcePath": "views\\b8e94d77-f811-46c2-9817-89f03489bd91.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bb64b225-8052-4fb5-bd4c-fcc0d3f7c6cd",
             "Value": {
                 "id": "3990036a-54d4-4fe3-9df9-c5f2435139df",
@@ -492,6 +516,14 @@
                 "id": "6e84c709-2777-4657-bcd4-e08af734ac5f",
                 "resourcePath": "objects\\oGUIButton\\oGUIButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bd94035d-41db-4d3f-b762-d8482fa63818",
+            "Value": {
+                "id": "ddead39e-661b-4130-9353-59df8cf97cbc",
+                "resourcePath": "sounds\\musMainIntro\\musMainIntro.yy",
+                "resourceType": "GMSound"
             }
         },
         {
