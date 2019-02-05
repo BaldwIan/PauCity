@@ -1,5 +1,5 @@
 // Draw BG with parallax
-for (i = 0; i < array_length_1d(BG); i++)
+for (i = array_length_1d(BG)-1; i >= 0; i--)
 {
-	draw_sprite(BG[i], 0, x - BGOffset * i, y);
+	draw_sprite(BG[i], 0, x - cwidth + BGOffset * (i/array_length_1d(BG)), y);
 }

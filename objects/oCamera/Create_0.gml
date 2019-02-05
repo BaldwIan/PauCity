@@ -15,7 +15,7 @@ camera = camera_create();
 cwidth = 960;
 cheight = 540;
 
-BG = [sBGDefault];
+BG = [sBGDefault, sBGDefault1, sBGDefault2];
 BGOffset = 0;
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
