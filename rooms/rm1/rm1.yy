@@ -7,8 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "ae313bcf-8fd0-41b7-92e0-1357027dad43",
         "3f79abd7-3c7f-4bb0-b04c-904bc5f04b98",
+        "ae313bcf-8fd0-41b7-92e0-1357027dad43",
         "2b92657e-98c1-40e6-acda-087904c955e0",
         "fb41befc-97a1-46ca-84fa-fd8094400b88",
         "c226d987-7c7a-4f7b-a2a2-c2d255579a50",
@@ -114,7 +114,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -154,7 +154,7 @@
             },
             "tilesetId": "fa6aaacf-69aa-4832-b33d-5a90c66dfbbe",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "x": 0,
             "y": 0
         },

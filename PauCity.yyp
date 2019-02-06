@@ -82,7 +82,7 @@
             "Key": "12ed4f31-c706-43c0-961f-40efbf16e6ec",
             "Value": {
                 "id": "80ab2f26-1c5b-4c94-9947-d40b88e2713c",
-                "resourcePath": "sprites\\sBGDefault2\\sBGDefault2.yy",
+                "resourcePath": "sprites\\sBGDefault\\sBGDefault.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "5bf29633-2722-4c8e-8200-488af116bad2",
+            "Value": {
+                "id": "899a12ed-b545-40f4-9420-565492a05185",
+                "resourcePath": "rooms\\rmBGTest\\rmBGTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5c446f0d-355d-4905-a5d2-510d416abcc6",
             "Value": {
                 "id": "97f246a2-3a19-4caf-aadb-2759b539e287",
@@ -402,7 +410,7 @@
             "Key": "8706bcee-4e19-43f8-b8b9-2ec332de56b5",
             "Value": {
                 "id": "d3b809ea-7246-450e-a469-290765c70851",
-                "resourcePath": "sprites\\sBGDefault\\sBGDefault.yy",
+                "resourcePath": "sprites\\sBGDefault2\\sBGDefault2.yy",
                 "resourceType": "GMSprite"
             }
         },

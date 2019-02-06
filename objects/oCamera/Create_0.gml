@@ -9,14 +9,13 @@ enum cammode
 	shake_follow,
 }
 
-mode = cammode.follow_object;
+mode = cammode.follow_mouse_peak;
 
 camera = camera_create();
 cwidth = 960;
 cheight = 540;
 
 BG = [sBGDefault, sBGDefault1, sBGDefault2];
-BGOffset = 0;
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
 var pm = matrix_build_projection_ortho(cwidth, cheight, 1, 10000);
