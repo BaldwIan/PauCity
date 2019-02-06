@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "120e4202-987d-412b-a5fc-5666f631df28",
+            "Value": {
+                "id": "dff26e46-f8a2-4672-8ecf-4182120c6d26",
+                "resourcePath": "shaders\\shOutline\\shOutline.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "12ed4f31-c706-43c0-961f-40efbf16e6ec",
             "Value": {
                 "id": "80ab2f26-1c5b-4c94-9947-d40b88e2713c",
