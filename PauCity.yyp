@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "2dc827a3-08f9-4bfb-a5ac-83dc1f99ebe2",
+            "Value": {
+                "id": "e74c7788-7217-432f-b5a8-90a2e8aac8bc",
+                "resourcePath": "sprites\\sGate\\sGate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31cad075-3a20-4903-973f-5f79a8609b1b",
             "Value": {
                 "id": "c63bb7c9-a083-46d0-81e3-1fd63e6e8506",
