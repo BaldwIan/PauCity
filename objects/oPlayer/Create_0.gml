@@ -1,6 +1,6 @@
 // Movement vars
 velocity_ = [0, 0];
-gravity_ = 1.5;
+gravity_ = 1.8;
 jumpSpd = 32;
 maxVelocity = [6, 32];
 acceleration = 2;

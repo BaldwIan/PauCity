@@ -8,11 +8,16 @@ global.HKRight = ord("D");
 
 // UI
 global.HKTablet = gp_start;
-global.HKInteract = gp_face2; //ord("E");
+global.HKInteract = gp_face3; //ord("E");
 
 #endregion hotkeys
 
 #region GUI
+
+// Button Selected
+global.buttonSelected = 0;
+// List of buttons in room
+global.buttons = [];
 
 #region button_actions
 

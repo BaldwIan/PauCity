@@ -33,7 +33,7 @@ var onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bo
 if (onGround)
 {
 	// Jumping
-	if (gamepad_button_check(0, kUp))
+	if (gamepad_button_check_pressed(0, kUp))
 	{
 		velocity_[vector2Y] = -jumpSpd;
 	}

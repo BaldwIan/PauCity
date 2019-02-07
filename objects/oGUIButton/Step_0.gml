@@ -1,9 +1,9 @@
 // Mouse hovering button
-if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
+if	(distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)	// For controller later (id == global.buttons[global.buttonSelected])
 {
 	image_index = 1;
 	
-	if (mouse_check_button_pressed(mb_left))
+	if (gamepad_button_check(0, global.HKInteract))	//(mouse_check_button_pressed(mb_left))
 	{
 		audio_play_sound(sndClick, 1, false);
 		#region actions
