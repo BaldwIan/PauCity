@@ -218,7 +218,7 @@
             "Key": "3c7cb7b0-0d28-4131-9f89-dcf7dbf48f03",
             "Value": {
                 "id": "4596e976-40eb-4027-8b9e-2d78d6c64b53",
-                "resourcePath": "shaders\\shRainbow\\shRainbow.yy",
+                "resourcePath": "shaders\\shXWave\\shXWave.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "b0af48ed-a58e-49dd-b1da-b039029a0c2a",
+            "Value": {
+                "id": "8bfc559d-e902-48f0-89d8-406da162db88",
+                "resourcePath": "shaders\\shLighting\\shLighting.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
             "Value": {
                 "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
@@ -668,6 +676,14 @@
                 "id": "fafb1dc1-49a5-4433-9919-302a085f68b7",
                 "resourcePath": "rooms\\rm1\\rm1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e1af5c6e-dfae-4f76-bca3-5d423742d340",
+            "Value": {
+                "id": "82e1bc2a-4601-4d3c-9a08-890a40c2293b",
+                "resourcePath": "objects\\oDrawSurface\\oDrawSurface.yy",
+                "resourceType": "GMObject"
             }
         },
         {

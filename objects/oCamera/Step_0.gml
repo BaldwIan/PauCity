@@ -15,8 +15,8 @@ switch (mode)
 	
 		if (mouse_check_button(mb_left))
 		{
-			xTo += (mouseXPrev - mx) / window_get_width() * cwidth;
-			yTo += (mouseYPrev - my) / window_get_height() * cheight;
+			xTo += (mouseXPrev - mx) / window_get_width() * global.cwidth;
+			yTo += (mouseYPrev - my) / window_get_height() * global.cheight;
 		}
 		
 		mouseXPrev = mx;
@@ -25,8 +25,8 @@ switch (mode)
 		break;
 		
 	case cammode.follow_mouse_border:
-		var borderX = cwidth/3;
-		var borderY = cheight/3;
+		var borderX = global.cwidth/3;
+		var borderY = global.cheight/3;
 		if (!point_in_rectangle(mouse_x, mouse_y, x - borderX, y - borderY, x + borderX, y + borderY))
 		{
 			xTo = lerp(xTo, mouse_x, 0.05);
@@ -63,8 +63,8 @@ switch (mode)
 }
 if (smoothPan)
 {
-	if (x + (xTo - x) / 15 > cwidth / 2) and (x + (xTo - x) / 15 < room_width - cwidth / 2) x += (xTo - x) / 5;
-	if (y + (yTo - y) / 15 > cheight / 2) and (y + (yTo - y) / 15 < room_height - cheight / 2) y += (yTo - y) / 5;
+	if (x + (xTo - x) / 15 > global.cwidth / 2) and (x + (xTo - x) / 15 < room_width - global.cwidth / 2) x += (xTo - x) / 5;
+	if (y + (yTo - y) / 15 > global.cheight / 2) and (y + (yTo - y) / 15 < room_height - global.cheight / 2) y += (yTo - y) / 5;
 } else
 {
 	x = xTo;
@@ -75,5 +75,10 @@ var vm = matrix_build_lookat(x, y, -10, x, y, 0, rotation, 1, 0);
 camera_set_view_mat(camera, vm);
 
 // Camera won't go outside room
-x = clamp(x, 0 + cwidth / 2, room_width - cwidth / 2);
-y = clamp(y, 0 + cheight / 2, room_height - cheight / 2);
+x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
+y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);
+
+
+// Shader Stuff
+translateAmount += translateAdd;
+if (translateAmount < 0 || translateAmount > 1) translateAdd *= -1;

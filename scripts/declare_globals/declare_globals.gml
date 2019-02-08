@@ -72,3 +72,10 @@ enum journal
 #endregion tJournal
 
 #endregion GUI
+
+#region camera
+
+global.cwidth = 960;
+global.cheight = 540;
+
+#endregion camera
