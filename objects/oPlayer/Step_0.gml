@@ -29,7 +29,7 @@ velocity_[vector2Y] += gravity_;
 move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
 
 // Jumping
-var onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
+onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
 if (onGround)
 {
 	// Jumping
