@@ -22,6 +22,11 @@ case (tablet_mode.journal):
 	draw_sprite(sJournalTitle, 0, bbox_right+1 - sprite_get_width(sJournalTitle) - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sJournalTitle));
 	draw_text_ext(bbox_right+1 - sprite_get_width(sJournalTitle)/2 - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sJournalTitle)/2 - spacing, titleSelected, 16, sprite_get_width(sJournalTitle) - spacing);
 
+	// Draw Journal Entries
+	for (i = 0; i < min(6, ds_grid_height(global.journal)); i++)
+	{
+		draw_sprite(sJournalEntry, 0, x + lBorder + sprite_get_width(sJournalContent) + spacing*2, y + tBorder + sprite_get_height(sJournalTitle) + (i * sprite_get_height(sJournalEntry)) + spacing*(i+1));
+	}
 default:
 	break;
 }
