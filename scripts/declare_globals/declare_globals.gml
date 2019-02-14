@@ -1,7 +1,12 @@
 #region hotkeys
 
-// Movement
-global.HKUp = gp_face1;
+// Controller movement
+global.GPUp = gp_face1;
+global.GPVert = gp_axislv;
+global.GPHoriz = gp_axislh;
+
+// Keyboard movement
+global.HKUp = vk_space;
 global.HKLeft = ord("A");
 global.HKDown = ord("S");
 global.HKRight = ord("D");
