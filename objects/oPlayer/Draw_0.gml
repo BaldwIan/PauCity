@@ -1,6 +1,5 @@
 if (onGround)
 {
-	image_xscale = sign(velocity_[0]);
 	if (image_xscale == 0) image_xscale = 1;
 	if (abs(velocity_[0]) < 0.2)
 	{
@@ -11,4 +10,5 @@ if (onGround)
 		sprite_index = sPlayerWalk;
 	}
 }
+image_xscale = sign(velocity_[0]);
 draw_self();

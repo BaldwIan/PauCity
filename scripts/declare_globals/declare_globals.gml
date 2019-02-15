@@ -1,19 +1,32 @@
 #region hotkeys
 
-// Controller movement
+// Controller
+#region movement
 global.GPUp = gp_face1;
 global.GPVert = gp_axislv;
 global.GPHoriz = gp_axislh;
+#endregion movement
+#region control
+global.GPTablet = gp_start;
+global.GPInteract = gp_face3;
+#endregion control
 
-// Keyboard movement
+// Keyboard
+#region movement
 global.HKUp = vk_space;
 global.HKLeft = ord("A");
 global.HKDown = ord("S");
 global.HKRight = ord("D");
+#endregion movement
+#region control
+global.HKTablet = ord("Q");
+global.HKInteract = ord("E");
+#endregion control
 
-// UI
-global.HKTablet = gp_start;
-global.HKInteract = gp_face3; //ord("E");
+// Mouse
+#region control
+global.MBInteract = mb_left;
+#endregion control
 
 #endregion hotkeys
 
