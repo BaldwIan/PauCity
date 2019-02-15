@@ -1,7 +1,7 @@
 if (onGround)
 {
 	if (image_xscale == 0) image_xscale = 1;
-	if (abs(velocity_[0]) < 0.2)
+	if (abs(velocity_[0]) < 0.3)
 	{
 		sprite_index = sPlayerIdle;
 	}
