@@ -2,18 +2,20 @@
 
 // Controller
 #region movement
-global.GPUp = gp_face1;
+global.GPJump = gp_face1;
 global.GPVert = gp_axislv;
 global.GPHoriz = gp_axislh;
 #endregion movement
 #region control
 global.GPTablet = gp_start;
 global.GPInteract = gp_face3;
+global.GPUp = gp_padu;
+global.GPDown = gp_padd;
 #endregion control
 
 // Keyboard
 #region movement
-global.HKUp = vk_space;
+global.HKJump = vk_space;
 global.HKLeft = ord("A");
 global.HKDown = ord("S");
 global.HKRight = ord("D");

@@ -43,10 +43,3 @@ scrolledAmount = 0;
 
 
 #endregion puzzle
-
-#region TESTING-ONLY
-
-// TEST ONLY - CHANGE JOURNAL ENTRIES
-alarm[11] = room_speed * 2;
-
-#endregion TESTING-ONLY

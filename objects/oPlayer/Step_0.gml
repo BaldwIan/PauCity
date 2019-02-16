@@ -1,8 +1,8 @@
 /// @description Movement logic
 
 // Movement keys
-var gpUp = global.GPUp;
-var kUp = global.HKUp;
+var gpUp = global.GPJump;
+var kUp = global.HKJump;
 var gpVMove = gamepad_axis_value(0, gp_axislh);
 var kRight = global.HKRight;
 var kLeft = global.HKLeft;

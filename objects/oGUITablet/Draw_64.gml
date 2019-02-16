@@ -25,7 +25,16 @@ case (tablet_mode.journal):
 	// Draw Journal Entries
 	for (i = 0; i < min(6, ds_grid_height(global.journal)); i++)
 	{
-		draw_sprite(sJournalEntry, 0, x + lBorder + sprite_get_width(sJournalContent) + spacing*2, y + tBorder + sprite_get_height(sJournalTitle) + (i * sprite_get_height(sJournalEntry)) + spacing*(i+1));
+		var entryDate = ds_grid_get(global.journal, journal.date, i);
+		var entryX = x + lBorder + sprite_get_width(sJournalContent) + spacing*2;
+		var entryY = y + tBorder + sprite_get_height(sJournalTitle) + (i * sprite_get_height(sJournalEntry)) + spacing*(i+1);
+		var entryTextX = entryX + sprite_get_width(sJournalEntry)/2;
+		var entryTextY = entryY + sprite_get_height(sJournalEntry)/2;
+		var entrySpriteIndex;
+		if (journalSelected == i) entrySpriteIndex = 1;
+		else entrySpriteIndex = 0;
+		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
+		draw_text(entryTextX, entryTextY, entryDate);
 	}
 default:
 	break;
