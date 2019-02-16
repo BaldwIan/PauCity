@@ -23,7 +23,7 @@ case (tablet_mode.journal):
 	draw_text_ext(bbox_right+1 - sprite_get_width(sJournalTitle)/2 - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sJournalTitle)/2 - spacing, titleSelected, 16, sprite_get_width(sJournalTitle) - spacing);
 
 	// Draw Journal Entries
-	for (i = 0; i < min(6, ds_grid_height(global.journal)); i++)
+	for (i = 0; i < min(5, ds_grid_height(global.journal)); i++)
 	{
 		var entryDate = ds_grid_get(global.journal, journal.date, i);
 		var entryX = x + lBorder + sprite_get_width(sJournalContent) + spacing*2;
