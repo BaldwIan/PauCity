@@ -32,8 +32,9 @@ with (journalSwitch) text = "Journal";
 #region journal
 
 // Journal Vars
-journalSelected = 0;
-scrolledAmount = 0;
+JSelected = 0;
+JScrolledAmount = 0;
+JShownEntries = 5;
 
 #endregion journal
 

@@ -5,10 +5,10 @@ switch (mode)
 {
 case (tablet_mode.journal):
 	// Get journal data
-	var titleSelected = ds_grid_get(global.journal, journal.title, journalSelected);
-	var contentSelected = ds_grid_get(global.journal, journal.content, journalSelected);
-	var dateSelected = ds_grid_get(global.journal, journal.date, journalSelected);
-	var authorSelected = ds_grid_get(global.journal, journal.author, journalSelected);
+	var titleSelected = ds_grid_get(global.journal, journal.title, JSelected);
+	var contentSelected = ds_grid_get(global.journal, journal.content, JSelected);
+	var dateSelected = ds_grid_get(global.journal, journal.date, JSelected);
+	var authorSelected = ds_grid_get(global.journal, journal.author, JSelected);
 
 	// Draw Title-Date text
 	draw_sprite(sJournalTitleDate, 0, bbox_left-1 + lBorder, bbox_top + tBorder);
@@ -23,15 +23,15 @@ case (tablet_mode.journal):
 	draw_text_ext(bbox_right+1 - sprite_get_width(sJournalTitle)/2 - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sJournalTitle)/2 - spacing, titleSelected, 16, sprite_get_width(sJournalTitle) - spacing);
 
 	// Draw Journal Entries
-	for (i = 0; i < min(5, ds_grid_height(global.journal)); i++)
+	for (i = 0; i < min(JShownEntries, ds_grid_height(global.journal)); i++)
 	{
-		var entryDate = ds_grid_get(global.journal, journal.date, i);
+		var entryDate = ds_grid_get(global.journal, journal.date, i-JScrolledAmount);
 		var entryX = x + lBorder + sprite_get_width(sJournalContent) + spacing*2;
 		var entryY = y + tBorder + sprite_get_height(sJournalTitle) + (i * sprite_get_height(sJournalEntry)) + spacing*(i+1);
 		var entryTextX = entryX + sprite_get_width(sJournalEntry)/2;
 		var entryTextY = entryY + sprite_get_height(sJournalEntry)/2;
 		var entrySpriteIndex;
-		if (journalSelected == i) entrySpriteIndex = 1;
+		if (JSelected == i + JScrolledAmount) entrySpriteIndex = 1;
 		else entrySpriteIndex = 0;
 		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
 		draw_text(entryTextX, entryTextY, entryDate);
