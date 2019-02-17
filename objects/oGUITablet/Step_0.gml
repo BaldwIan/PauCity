@@ -20,15 +20,16 @@ if (gamepad_button_check_pressed(0, global.GPTablet) || keyboard_check_pressed(g
 		break;
 	}
 }
+
 var scrollUp = (mouse_wheel_up() || gamepad_button_check_pressed(0, global.GPUp));
 var scrollDown = (mouse_wheel_down() || gamepad_button_check_pressed(0, global.GPDown));
-if (scrollUp && JSelected -1 >= 0)
+if (scrollUp ^^ scrollDown)
 {
-	JSelected--;
-	if (JSelected < JSelected + JScrolledAmount) JScrolledAmount--;
-}
-else if (scrollDown && JSelected < ds_grid_height(global.journal)-1) 
-{
-	JSelected++;
-	if (JSelected + JShownEntries > JSelected + JScrolledAmount) JScrolledAmount++;
+	if (scrollUp)
+	{
+		JSelected = clamp(JSelected-1, 0, ds_grid_height(global.journal)-1);
+	} else
+	{
+		JSelected = clamp(JSelected+1, 0, ds_grid_height(global.journal)-1);
+	}
 }
