@@ -9,6 +9,7 @@ case (tablet_mode.journal):
 	var contentSelected = ds_grid_get(global.journal, journal.content, JSelected);
 	var dateSelected = ds_grid_get(global.journal, journal.date, JSelected);
 	var authorSelected = ds_grid_get(global.journal, journal.author, JSelected);
+	var JDSHeight = ds_grid_height(global.journal);
 
 	// Draw Title-Date text
 	draw_sprite(sJournalTitleDate, 0, bbox_left-1 + lBorder, bbox_top + tBorder);
@@ -23,9 +24,9 @@ case (tablet_mode.journal):
 	draw_text_ext(bbox_right+1 - sprite_get_width(sJournalTitle)/2 - rBorder - spacing, bbox_bottom+1 - bBorder - sprite_get_height(sJournalTitle)/2 - spacing, titleSelected, 16, sprite_get_width(sJournalTitle) - spacing);
 
 	// Draw Journal Entries
-	for (i = 0; i < min(JShownEntries, ds_grid_height(global.journal)); i++)
+	for (i = 0; i < min(JShownEntries, JDSHeight - (JScrolledAmount%JShownEntries)); i++)
 	{
-		var entryDate = ds_grid_get(global.journal, journal.date, i-JScrolledAmount);
+		var entryDate = ds_grid_get(global.journal, journal.date, i+JScrolledAmount);
 		var entryX = x + lBorder + sprite_get_width(sJournalContent) + spacing*2;
 		var entryY = y + tBorder + sprite_get_height(sJournalTitle) + (i * sprite_get_height(sJournalEntry)) + spacing*(i+1);
 		var entryTextX = entryX + sprite_get_width(sJournalEntry)/2;
