@@ -2,9 +2,14 @@
 if (mode == tablet_mode.closed)
 {
 	y = lerp(y, display_get_gui_height()+10, 0.25);
+	buttonJournal.y = lerp(buttonJournal.y, bbox_top, 0.7);
+	buttonPuzzle.y = lerp(buttonPuzzle.y, bbox_top, 0.7);
 } else
 {
-	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2 + sprite_get_height(sGUIJournalButton), 0.15);
+	var tabBHeight = sprite_get_height(sGUITabletButton);
+	y = lerp(y, display_get_gui_height()/2 - sprite_get_height(sprite_index)/2 + tabBHeight, 0.15);
+	buttonJournal.y = lerp(buttonJournal.y, bbox_top - tabBHeight, 0.3);
+	buttonPuzzle.y = lerp(buttonPuzzle.y, bbox_top - tabBHeight, 0.3);
 }
 
 if (gamepad_button_check_pressed(0, global.GPTablet) || keyboard_check_pressed(global.HKTablet))

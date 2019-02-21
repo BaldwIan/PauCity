@@ -25,7 +25,12 @@ journalSwitch = instance_create_layer(bbox_right - sprite_get_width(sGUIJournalB
 with (journalSwitch) text = "Journal";
 */
 #endregion buttons
-
+var bWidth = sprite_get_width(sGUITabletButton);
+var bHeight = sprite_get_height(sGUITabletButton);
+buttonJournal = instance_create_layer(bbox_right - bWidth - spacing, bbox_top - bHeight, "GUI", oTabletButton);
+buttonPuzzle = instance_create_layer(bbox_right - bWidth*2 - spacing, bbox_top - bHeight, "GUI", oTabletButton);
+with (buttonJournal) action = button_actions.Tjournal_switch;
+with (buttonPuzzle) action = button_actions.Tpuzzle_switch;
 
 #endregion general
 

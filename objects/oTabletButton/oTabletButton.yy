@@ -2,18 +2,8 @@
     "id": "b1a1a123-c388-41a9-885a-236c2d2220cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oJournalButton",
+    "name": "oTabletButton",
     "eventList": [
-        {
-            "id": "a4cfcc3e-4571-4775-bf46-8c86acf8ab54",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 2,
-            "m_owner": "b1a1a123-c388-41a9-885a-236c2d2220cd"
-        },
         {
             "id": "91a6fb51-ad05-4c2c-88db-ef78f4f20052",
             "modelName": "GMEvent",

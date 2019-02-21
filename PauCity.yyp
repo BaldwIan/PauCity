@@ -58,7 +58,7 @@
             "Key": "08593f79-ee9d-4eab-bd8c-57926e2f4e2d",
             "Value": {
                 "id": "a810aadc-b0dc-485a-bac8-8e012f3a6730",
-                "resourcePath": "sprites\\sGUIJournalButton\\sGUIJournalButton.yy",
+                "resourcePath": "sprites\\sGUITabletButton\\sGUITabletButton.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -124,6 +124,14 @@
                 "id": "7d88bf1b-d301-4079-a42d-3f65704ae206",
                 "resourcePath": "objects\\oShaderTest\\oShaderTest.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1f6f0cc1-f354-4c78-8860-ecd3e3442da2",
+            "Value": {
+                "id": "ed1db4ce-e49d-4453-86a5-52415ce0d2cc",
+                "resourcePath": "sprites\\sTilGround\\sTilGround.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -570,7 +578,7 @@
             "Key": "b1a1a123-c388-41a9-885a-236c2d2220cd",
             "Value": {
                 "id": "bfa25c15-f569-4a9a-953c-bb90439b1673",
-                "resourcePath": "objects\\oJournalButton\\oJournalButton.yy",
+                "resourcePath": "objects\\oTabletButton\\oTabletButton.yy",
                 "resourceType": "GMObject"
             }
         },
