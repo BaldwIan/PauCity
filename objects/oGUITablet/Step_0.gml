@@ -21,18 +21,27 @@ if (gamepad_button_check_pressed(0, global.GPTablet) || keyboard_check_pressed(g
 	}
 }
 
-var scrollUp = (mouse_wheel_up() || gamepad_button_check_pressed(0, global.GPUp));
-var scrollDown = (mouse_wheel_down() || gamepad_button_check_pressed(0, global.GPDown));
-if (scrollUp ^^ scrollDown)
+
+
+switch (mode)
 {
-	if (scrollUp)
-	{
-		JSelected = clamp(JSelected-1, 0, ds_grid_height(global.journal)-1);
-	} else
-	{
-		JSelected = clamp(JSelected+1, 0, ds_grid_height(global.journal)-1);
-	}
+case tablet_mode.closed:
+	break;
 	
-	if (JSelected < JScrolledAmount) JScrolledAmount--;
-	else if (JSelected > JScrolledAmount-1 + JShownEntries) JScrolledAmount++;
+case tablet_mode.journal:
+	var scrollUp = (mouse_wheel_up() || gamepad_button_check_pressed(0, global.GPUp));
+	var scrollDown = (mouse_wheel_down() || gamepad_button_check_pressed(0, global.GPDown));
+	if (scrollUp ^^ scrollDown)
+	{
+		if (scrollUp)
+		{
+			JSelected = clamp(JSelected-1, 0, ds_grid_height(global.journal)-1);
+		} else
+		{
+			JSelected = clamp(JSelected+1, 0, ds_grid_height(global.journal)-1);
+		}
+	
+		if (JSelected < JScrolledAmount) JScrolledAmount--;
+		else if (JSelected > JScrolledAmount-1 + JShownEntries) JScrolledAmount++;
+	}
 }
