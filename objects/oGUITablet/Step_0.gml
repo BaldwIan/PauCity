@@ -32,4 +32,7 @@ if (scrollUp ^^ scrollDown)
 	{
 		JSelected = clamp(JSelected+1, 0, ds_grid_height(global.journal)-1);
 	}
+	
+	if (JSelected < JScrolledAmount) JScrolledAmount--;
+	else if (JSelected > JScrolledAmount-1 + JShownEntries) JScrolledAmount++;
 }
