@@ -72,7 +72,10 @@ if (smoothPan)
 }
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, rotation, 1, 0);
+var pm = matrix_build_projection_ortho(global.cwidth, global.cheight, 1, 10000);
 camera_set_view_mat(camera, vm);
+camera_set_proj_mat(camera, pm);
+
 
 // Camera won't go outside room
 x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
