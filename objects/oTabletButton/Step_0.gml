@@ -3,7 +3,7 @@ if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 {
 	image_index = 1;
 	
-	if (mouse_check_button_pressed(mb_left))
+	if (mouse_check_button_pressed(global.MBInteract))// ||)
 	{
 		#region actions
 		
