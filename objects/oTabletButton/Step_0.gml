@@ -3,7 +3,7 @@ if (distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)
 {
 	image_index = 1;
 	
-	if (mouse_check_button_pressed(global.MBInteract))// ||)
+	if (mouse_check_button_pressed(global.MBInteract)) || gamepad_button_check_pressed(0, global.GPInteract)
 	{
 		#region actions
 		
