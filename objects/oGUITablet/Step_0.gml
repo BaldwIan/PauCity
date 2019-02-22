@@ -7,7 +7,8 @@ if (mode == tablet_mode.closed)
 } else
 {
 	var tabBHeight = sprite_get_height(sGUITabletButton);
-	y = lerp(y, display_get_gui_height() - sprite_get_height(sprite_index) - 8, 0.15);
+	var dHeight = display_get_height();
+	y = lerp(y, dHeight/2 - sprite_get_height(sGUITabletBase)/4, 0.15);
 	buttonJournal.y = lerp(buttonJournal.y, bbox_top - tabBHeight, 0.3);
 	buttonPuzzle.y = lerp(buttonPuzzle.y, bbox_top - tabBHeight, 0.3);
 }

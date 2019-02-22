@@ -114,7 +114,7 @@
             "Key": "1d867103-4215-468b-8b86-d8d6da8aa377",
             "Value": {
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
-                "resourcePath": "sprites\\sTabletBase\\sTabletBase.yy",
+                "resourcePath": "sprites\\sGUITabletBase\\sGUITabletBase.yy",
                 "resourceType": "GMSprite"
             }
         },

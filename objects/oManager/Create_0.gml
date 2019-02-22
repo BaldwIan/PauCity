@@ -5,7 +5,9 @@ audio_play_sound(musMainIntro, 1, false);
 alarm[0] = 1;
 
 // resize GUI to window size
-display_set_gui_size(display_get_width(), display_get_height());
+var scrWidth = display_get_width();
+var scrHeight = display_get_height();
+display_set_gui_size(scrWidth*(1/(scrWidth/1920)), scrHeight*(1/(scrHeight/1080)));
 
 // Set draw allignment
 //draw_set_valign(fa_top);

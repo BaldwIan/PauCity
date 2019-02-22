@@ -2,7 +2,7 @@
     "id": "1d867103-4215-468b-8b86-d8d6da8aa377",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sTabletBase",
+    "name": "sGUITabletBase",
     "For3D": false,
     "HTile": false,
     "VTile": false,
