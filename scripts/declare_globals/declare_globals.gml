@@ -99,3 +99,19 @@ global.cwidth = 960;
 global.cheight = 540;
 
 #endregion camera
+
+#region puzzle
+
+// Puzzle types
+enum puzzles
+{
+	none,
+	color_patern,
+	memory,
+	connect_lines,
+}
+global.PActiveType = puzzles.none;
+global.PSolved = false;
+//global.PDoor =
+
+#endregion puzzle
