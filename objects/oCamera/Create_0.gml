@@ -12,8 +12,8 @@ enum cammode
 mode = cammode.follow_object;
 
 camera = camera_create();
-cwidth = global.cwidth;   // Initial used to clamp
-cheight = global.cheight; // Initial used to clamp
+//cwidth = global.cwidth;   // Initial used to clamp for zooming
+//cheight = global.cheight; // Initial used to clamp for zooming
 
 BG = [sBGDefault, sBGDefault1, sBGDefault2];//[sBGDefault];
 
