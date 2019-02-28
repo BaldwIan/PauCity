@@ -9,4 +9,10 @@ else {
 }
 textAlpha = clamp(textAlpha, 0, 0.6);
 
-//keyboard_key_press
+var kInteracting = keyboard_check_pressed(global.HKInteract);
+var gInteracting = gamepad_button_check_pressed(0, global.GPInteract);
+var interacting =  kInteracting || gInteracting;
+if (interacting)
+{
+	
+}
