@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "58b4963c-0651-479b-9e05-f1f92ded0e37",
+            "Value": {
+                "id": "c13af96a-49f3-41af-a47a-199950975ea6",
+                "resourcePath": "objects\\oDoor\\oDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "599927e2-bc9c-45ea-b17c-244e90cf8382",
             "Value": {
                 "id": "21c39457-8e19-470d-8b6a-262407f753d2",
