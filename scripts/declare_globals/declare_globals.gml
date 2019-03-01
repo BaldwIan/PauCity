@@ -115,6 +115,7 @@ enum puzzles
 }
 global.PActiveType = puzzles.none;
 global.PSolved = false;
-//global.PDoor =
+global.PDoors = [];
+global.curPDoor = 0;
 
 #endregion puzzle
