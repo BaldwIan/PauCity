@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00c68d27-4456-439b-a27c-193f1b26100f",
+            "Value": {
+                "id": "e558968f-d39c-4697-911b-70a612cb14cd",
+                "resourcePath": "objects\\oGUIPopUp\\oGUIPopUp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "018c03fb-f137-4b08-8e4b-24a6bc3c052f",
             "Value": {
                 "id": "8345a879-e45c-4552-893e-f19dda70f0ef",
@@ -588,6 +596,14 @@
                 "id": "09462d98-ba2d-40fa-8a15-ff656e42d1df",
                 "resourcePath": "scripts\\declare_globals\\declare_globals.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a73f8f2d-6f6c-4130-978c-a41e2cd5e534",
+            "Value": {
+                "id": "a7340e20-b025-4721-b60d-f9cef12eee68",
+                "resourcePath": "views\\a73f8f2d-6f6c-4130-978c-a41e2cd5e534.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

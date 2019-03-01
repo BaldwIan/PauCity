@@ -5,7 +5,7 @@ if (distance_to_object(oPlayer) < 96) {
 }
 else {
 	activatable = false;
-	textAlpha -= 0.02;
+	textAlpha -= 0.04;
 }
 textAlpha = clamp(textAlpha, 0, 0.6);
 
@@ -14,5 +14,6 @@ var gInteracting = gamepad_button_check_pressed(0, global.GPInteract);
 var interacting =  kInteracting || gInteracting;
 if (interacting)
 {
-	
+	instance_create_layer(x, y, "GUI", oGUIPopUp);
+	show_debug_message("Pop up created");
 }
