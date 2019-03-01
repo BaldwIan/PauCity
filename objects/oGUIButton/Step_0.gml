@@ -3,7 +3,7 @@ if	(distance_to_point(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)) <= 1)	
 {
 	image_index = 1;
 	
-	if (gamepad_button_check(0, global.GPInteract) || mouse_check_button_pressed(global.MBInteract))
+	if (gamepad_button_check_pressed(0, global.GPInteract) || mouse_check_button_pressed(global.MBInteract))
 	{
 		audio_play_sound(sndClick, 1, false);
 		#region actions
