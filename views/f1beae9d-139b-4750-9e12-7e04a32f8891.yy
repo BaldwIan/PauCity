@@ -4,7 +4,9 @@
     "mvc": "1.1",
     "name": "f1beae9d-139b-4750-9e12-7e04a32f8891",
     "children": [
-        "3fc04a50-13bc-4192-ac15-c3175d441267"
+        "3fc04a50-13bc-4192-ac15-c3175d441267",
+        "0a078b58-524e-41c3-b929-7f029e53dc6e",
+        "f47c9d08-dd6c-4709-8bbc-9de7ab6e72f2"
     ],
     "filterType": "GMSprite",
     "folderName": "Pop Up",

@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0a078b58-524e-41c3-b929-7f029e53dc6e",
+            "Value": {
+                "id": "ff2f5f24-d4d8-4fd1-9de6-7d76fb792e56",
+                "resourcePath": "sprites\\sPopUpJournal\\sPopUpJournal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0eb27362-915c-4bbe-8193-96d64adfcca7",
             "Value": {
                 "id": "fbc1ca0f-7ec6-4482-8dd6-777b73d7e0f5",
@@ -812,6 +820,14 @@
                 "id": "fbd4af19-6dda-4a28-a7c4-4beb5476bf72",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f47c9d08-dd6c-4709-8bbc-9de7ab6e72f2",
+            "Value": {
+                "id": "e600f010-afe0-4301-a2f3-43a184815a42",
+                "resourcePath": "sprites\\sPopUpPuzzle\\sPopUpPuzzle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
