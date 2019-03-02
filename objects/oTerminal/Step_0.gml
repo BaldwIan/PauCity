@@ -12,8 +12,7 @@ textAlpha = clamp(textAlpha, 0, 0.6);
 var kInteracting = keyboard_check_pressed(global.HKInteract);
 var gInteracting = gamepad_button_check_pressed(0, global.GPInteract);
 var interacting =  kInteracting || gInteracting;
-if (interacting)
+if (interacting && activatable)
 {
 	instance_create_layer(x, y, "GUI", oGUIPopUp);
-	show_debug_message("Pop up created");
 }
