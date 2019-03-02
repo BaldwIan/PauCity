@@ -1,14 +1,3 @@
-enum cammode
-{
-	follow_object,
-	follow_mouse_drag,
-	follow_mouse_border,
-	follow_mouse_peak,
-	move_to_target,
-	shake,
-	shake_follow,
-}
-
 mode = cammode.follow_object;
 
 camera = camera_create();

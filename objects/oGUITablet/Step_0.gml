@@ -1,14 +1,20 @@
 /// @description Move to position
 if (mode == tablet_mode.closed)
 {
+	global.GUIUp = false;
+	// Position
 	y = lerp(y, display_get_gui_height()+10, 0.25);
+	// Button position
 	buttonJournal.y = lerp(buttonJournal.y, bbox_top, 0.7);
 	buttonPuzzle.y = lerp(buttonPuzzle.y, bbox_top, 0.7);
 } else
 {
+	global.GUIUp = true;
+	// Position
 	var tabBHeight = sprite_get_height(sGUITabletButton);
 	var dHeight = display_get_height();
 	y = lerp(y, dHeight/2 - sprite_get_height(sGUITabletBase)/4, 0.15);
+	// Button position
 	buttonJournal.y = lerp(buttonJournal.y, bbox_top - tabBHeight, 0.3);
 	buttonPuzzle.y = lerp(buttonPuzzle.y, bbox_top - tabBHeight, 0.3);
 }

@@ -1,7 +1,7 @@
 onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
 
 // Only move if tablet is closed
-if (oGUITablet.mode == tablet_mode.closed)
+if (!global.GUIUp)
 {
 	// Movement keys
 	var gpUp = global.GPJump;
