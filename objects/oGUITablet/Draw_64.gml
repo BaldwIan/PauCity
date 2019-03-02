@@ -27,17 +27,32 @@ case (tablet_mode.journal):
 	var TitleW = sprite_get_width(sJournalTitle);
 	var TitleH = sprite_get_height(sJournalTitle);
 
+	// Draw Title-Date sprite
+	var TitleDateSX = bbox_left-1 + lBorder;
+	var TitleDateSY = bbox_top + tBorder;
+	draw_sprite(sJournalTitleDate, 0, TitleDateSX, TitleDateSY);
 	// Draw Title-Date text
-	draw_sprite(sJournalTitleDate, 0, bbox_left-1 + lBorder, bbox_top + tBorder);
-	draw_text_ext(bbox_left + lBorder, bbox_top + tBorder + 16, titleSelected + " - " + dateSelected, 16, TitleDateW - spacing);
+	var TitleDateTX = bbox_left + lBorder;
+	var TitleDateTY = bbox_top + tBorder + 16;
+	draw_text_ext(TitleDateTX, TitleDateTY, titleSelected + " - " + dateSelected, 16, TitleDateW - spacing);
 
+	// Draw content sprite
+	var contSX = bbox_left+1 + lBorder;
+	var contSY = bbox_top + tBorder + TitleDateH + spacing;
+	draw_sprite(sJournalContent, 0, contSX, contSY);
 	// Draw content text
-	draw_sprite(sJournalContent, 0, bbox_left+1 + lBorder, bbox_top + tBorder + TitleDateH + spacing);
-	draw_text_ext(bbox_left + lBorder, bbox_top + tBorder + TitleDateH + spacing, contentSelected, 32, ContentW - spacing);
+	var contTX = bbox_left + lBorder;
+	var contTY = bbox_top + tBorder + TitleDateH + spacing;
+	draw_text_ext(contTX, contTY, contentSelected, 32, ContentW - spacing);
 
+	// Draw Title sprite
+	var TitleSX = bbox_right+1 - TitleW - rBorder - spacing;
+	var TitleSY = bbox_bottom+1 - bBorder - TitleH;
+	draw_sprite(sJournalTitle, 0, TitleSX, TitleSY);
 	// Draw Title text
-	draw_sprite(sJournalTitle, 0, bbox_right+1 - TitleW - rBorder - spacing, bbox_bottom+1 - bBorder - TitleH);
-	draw_text_ext(bbox_right+1 - TitleW/2 - rBorder - spacing, bbox_bottom+1 - bBorder - TitleH/2 - spacing, titleSelected, 16, TitleW - spacing);
+	var TitleTX = bbox_right+1 - TitleW/2 - rBorder - spacing;
+	var TitleTY = bbox_bottom+1 - bBorder - TitleH/2 - spacing;
+	draw_text_ext(TitleTX, TitleTY, titleSelected, 16, TitleW - spacing);
 
 	// Draw Journal Entries
 	for (i = 0; i < min(JShownEntries, JDSHeight - (JScrolledAmount%JShownEntries)); i++)
