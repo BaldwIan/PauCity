@@ -210,7 +210,7 @@
             "Key": "2dc827a3-08f9-4bfb-a5ac-83dc1f99ebe2",
             "Value": {
                 "id": "e74c7788-7217-432f-b5a8-90a2e8aac8bc",
-                "resourcePath": "sprites\\sGate\\sGate.yy",
+                "resourcePath": "sprites\\sDoor\\sDoor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "611a301d-c2e1-45d4-9536-ff5532df1abf",
+            "Value": {
+                "id": "94880771-d45c-42aa-a3ea-f2d911c6cd61",
+                "resourcePath": "sprites\\sDoorFlashing\\sDoorFlashing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6416a70e-0b4d-40fb-bdde-15d591c7d79b",
             "Value": {
                 "id": "e3b8d59a-5aeb-4379-8734-9faec119d8d4",
@@ -403,6 +411,14 @@
             "Value": {
                 "id": "adbbfa7f-8421-44dc-91a3-7d77e8d159a0",
                 "resourcePath": "sprites\\sTilCollision\\sTilCollision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6d58e862-3118-419f-9a21-f656da8aa19e",
+            "Value": {
+                "id": "1f794d9a-492e-4a85-ac0a-7131b93aaaab",
+                "resourcePath": "sprites\\sDoorOpened\\sDoorOpened.yy",
                 "resourceType": "GMSprite"
             }
         },

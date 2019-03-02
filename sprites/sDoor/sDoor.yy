@@ -2,7 +2,7 @@
     "id": "2dc827a3-08f9-4bfb-a5ac-83dc1f99ebe2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sGate",
+    "name": "sDoor",
     "For3D": false,
     "HTile": false,
     "VTile": false,

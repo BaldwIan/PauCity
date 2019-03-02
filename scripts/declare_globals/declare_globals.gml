@@ -119,9 +119,9 @@ enum puzzles
 	memory,
 	connect_lines,
 }
-global.PActiveType = puzzles.none;
-global.PSolved = false;
-global.PDoors = [];
-global.curPDoor = 0;
+global.PActiveType = puzzles.none;	// Current puzzle type
+global.PSolved = false;				// When true, door will open
+global.PDoors = [];					// List of doors in room, set in creation code of doors
+global.curPDoor = 0;				// Used for indexing door list
 
 #endregion puzzle
