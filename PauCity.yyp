@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "664e7af0-cf67-47eb-954c-491431a38207",
+            "Value": {
+                "id": "a0ad0b2f-eb89-43c6-bb23-7d931cb9b11c",
+                "resourcePath": "sprites\\sPopUpMystery\\sPopUpMystery.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67318339-d156-4f18-9534-8f6cbfdba171",
             "Value": {
                 "id": "adbbfa7f-8421-44dc-91a3-7d77e8d159a0",

@@ -3,4 +3,8 @@ y = global.cheight*2 + sprite_get_height(sprite_index);
 
 targetY = global.cheight*2 - sprite_get_height(sprite_index) - 8;
 initTargetY = targetY;
+alarm[0] = room_speed*3;
 alarm[1] = room_speed*1.5;
+
+// Which event to draw
+mode = popup_actions.mystery;

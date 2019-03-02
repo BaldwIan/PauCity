@@ -68,6 +68,17 @@ enum slider_actions
 
 #endregion slider_actions
 
+#region popup_actions
+
+enum popup_actions
+{
+	mystery,
+	journal,
+	puzzle,
+}
+
+#endregion popup_actions
+
 #region tablet
 
 enum tablet_mode
