@@ -37,11 +37,6 @@ global.MBInteract = mb_left;
 // check if any GUI is active
 global.GUIUp = false;
 
-// Button Selected
-global.buttonSelected = 0;
-// List of buttons in room
-global.buttons = [];
-
 #region button_actions
 
 // Set GUI Button Actions
