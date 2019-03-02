@@ -27,23 +27,26 @@ case (tablet_mode.journal):
 	var TitleW = sprite_get_width(sJournalTitle);
 	var TitleH = sprite_get_height(sJournalTitle);
 
-	// Draw Title-Date sprite
-	var TitleDateSX = bbox_left-1 + lBorder;
-	var TitleDateSY = bbox_top + tBorder;
-	draw_sprite(sJournalTitleDate, 0, TitleDateSX, TitleDateSY);
-	// Draw Title-Date text
-	var TitleDateTX = bbox_left + lBorder;
-	var TitleDateTY = bbox_top + tBorder + 16;
-	draw_text_ext(TitleDateTX, TitleDateTY, titleSelected + " - " + dateSelected, 16, TitleDateW - spacing);
-
+	//Set text allignment for content
+	draw_set_halign(fa_center);
+	
 	// Draw content sprite
 	var contSX = bbox_left+1 + lBorder;
 	var contSY = bbox_top + tBorder + TitleDateH + spacing;
 	draw_sprite(sJournalContent, 0, contSX, contSY);
 	// Draw content text
-	var contTX = bbox_left + lBorder;
-	var contTY = bbox_top + tBorder + TitleDateH + spacing;
+	var contTX = bbox_left + lBorder + ContentW/2;
+	var contTY = bbox_top + tBorder + TitleDateH + spacing + ContentH/4;
 	draw_text_ext(contTX, contTY, contentSelected, 32, ContentW - spacing);
+	
+	// Draw Title-Date sprite
+	var TitleDateSX = bbox_left-1 + lBorder;
+	var TitleDateSY = bbox_top + tBorder;
+	draw_sprite(sJournalTitleDate, 0, TitleDateSX, TitleDateSY);
+	// Draw Title-Date text
+	var TitleDateTX = bbox_left + lBorder + TitleDateW/2;
+	var TitleDateTY = bbox_top + tBorder + 16;
+	draw_text_ext(TitleDateTX, TitleDateTY, titleSelected + " - " + dateSelected, 16, TitleDateW - spacing);
 
 	// Draw Title sprite
 	var TitleSX = bbox_right+1 - TitleW - rBorder - spacing;
@@ -67,6 +70,10 @@ case (tablet_mode.journal):
 		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
 		draw_text(entryTextX, entryTextY, entryDate);
 	}
+	
+	// Reset horiz text allignment
+	draw_set_halign(fa_left);
+	
 default:
 	break;
 }
