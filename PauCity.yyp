@@ -893,6 +893,14 @@
                 "resourcePath": "views\\fc728e49-c7af-4a15-9d90-492803d54d9c.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fcb3b165-6709-4fd0-be35-80e9ae9ac385",
+            "Value": {
+                "id": "26779a0c-4ded-4000-8575-bba0d9fef57a",
+                "resourcePath": "sprites\\sPopUpDefault\\sPopUpDefault.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [

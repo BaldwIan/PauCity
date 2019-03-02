@@ -10,8 +10,8 @@ var scrHeight = display_get_height();
 display_set_gui_size(scrWidth*(1/(scrWidth/1920)), scrHeight*(1/(scrHeight/1080)));
 
 // Set draw allignment
-//draw_set_valign(fa_top);
-draw_set_halign(fa_center);
+draw_set_valign(fa_center);
+draw_set_halign(fa_left);
 
 // Set font
 draw_set_font(fntDefault);

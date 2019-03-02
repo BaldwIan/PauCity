@@ -14,5 +14,11 @@ var gInteracting = gamepad_button_check_pressed(0, global.GPInteract);
 var interacting =  kInteracting || gInteracting;
 if (interacting && activatable)
 {
-	instance_create_layer(x, y, "GUI", oGUIPopUp);
+	var popup = instance_create_layer(x, y, "GUI", oGUIPopUp);
+	with (popup)
+	{
+		mode = popup_actions.puzzle;
+	}
 }
+
+
