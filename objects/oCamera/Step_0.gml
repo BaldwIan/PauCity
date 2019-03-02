@@ -80,8 +80,3 @@ camera_set_proj_mat(camera, pm);
 // Camera won't go outside room
 x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
 y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);
-
-
-// Shader Stuff
-translateAmount += translateAdd;
-if (translateAmount < 0 || translateAmount > 1) translateAdd *= -1;
