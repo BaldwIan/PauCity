@@ -1,2 +1,0 @@
-// TESTING FOR PDOORS ONLY
-alarm[0] = 1;

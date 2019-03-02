@@ -8,8 +8,8 @@ if (!audio_is_playing(musMainLoop) && !audio_is_playing(musMainIntro))
 // increment curDoor to access next door
 if (global.PSolved)
 {
-	show_debug_message("In manager PDoors = " + string(global.PDoors));
 	global.PSolved = false;
-	global.PDoors[global.curPDoor].sprite_index = sDoorFlashing;
-	global.curPDoor++;
+	var curDoor = global.PDoors[global.curPDoor];
+	if (curDoor.sprite_index == sDoor) curDoor.sprite_index = sDoorFlashing;
+	if (global.curPDoor+1 > array_length_1d(global.PDoors)) global.curPDoor++;
 }
