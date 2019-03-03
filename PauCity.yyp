@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0aee3e59-d74c-424d-aac9-19f9bec94e68",
+            "Value": {
+                "id": "cce960ab-8855-4fa8-8d2c-1cf630cfd69e",
+                "resourcePath": "sprites\\sBGGround1\\sBGGround1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0eb27362-915c-4bbe-8193-96d64adfcca7",
             "Value": {
                 "id": "fbc1ca0f-7ec6-4482-8dd6-777b73d7e0f5",
