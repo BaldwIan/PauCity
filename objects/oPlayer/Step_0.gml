@@ -25,7 +25,7 @@ if (!global.GUIUp)
 	var vector2X = 0;
 	var vector2Y = 1;
 
-	// Horizontal movement
+	// Clamp x velocity
 	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
 
 	// Friction

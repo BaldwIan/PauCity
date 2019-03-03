@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "dc4e700a-cb5d-49b7-8057-bc671c916f83",
+            "Value": {
+                "id": "ad8cf3c0-43a4-4706-9d85-51a8151381f6",
+                "resourcePath": "objects\\oPushable\\oPushable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ded745d0-22ca-4a6a-8ba7-9d05d1ff2116",
             "Value": {
                 "id": "fafb1dc1-49a5-4433-9919-302a085f68b7",
