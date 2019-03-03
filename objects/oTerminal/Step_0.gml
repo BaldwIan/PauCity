@@ -1,6 +1,8 @@
 activatable = !global.GUIUp && !activated && distance_to_object(oPlayer) < 96;
 if (activatable)
 {
+	image_index = 1;
+	
 	// change text alpha
 	textAlpha += 0.04;
 	textAlpha = clamp(textAlpha, 0, 0.6);
@@ -21,6 +23,8 @@ if (activatable)
 	}
 }else // Not activatable
 {
+	image_index = 0;
+	
 	activatable = false;
 	textAlpha -= 0.04;
 }
