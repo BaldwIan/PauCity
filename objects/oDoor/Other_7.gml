@@ -2,5 +2,5 @@
 if (sprite_index == sDoorFlashing)
 {
 	sprite_index = sDoorOpened;
-	show_debug_message("Flash animation ended on door");
+	if (place_meeting(x, y, oSolid)) position_destroy(x, y);
 }

@@ -12,24 +12,24 @@ var vector2Y = 1;
 // Object Collision
 #region object_collision
 //collision horizontal
-if (place_meeting(x + velocity_[vector2X], y, oSolid))
+if (place_meeting(x + velocity[vector2X], y, oSolid))
 {
-	while (!place_meeting(x + velocity_[vector2X], y, oSolid))
+	while (!place_meeting(x + velocity[vector2X], y, oSolid))
 	{
-		velocity_[vector2X] += sign(velocity_[vector2X]);
+		velocity[vector2X] += sign(velocity[vector2X]);
 	}
-	velocity_[vector2X] = 0;
+	velocity[vector2X] = 0;
 	
 }
 
 // vertical collision
-if (place_meeting(x, y + velocity_[vector2Y], oSolid))
+if (place_meeting(x, y + velocity[vector2Y], oSolid))
 {
-	while (!place_meeting(x, y + velocity_[vector2Y], oSolid))
+	while (!place_meeting(x, y + velocity[vector2Y], oSolid))
 	{
-		velocity_[vector2Y] += sign(velocity_[vector2Y]);
+		velocity[vector2Y] += sign(velocity[vector2Y]);
 	}
-	velocity_[vector2Y] = 0;
+	velocity[vector2Y] = 0;
 }
 
 #endregion object_collision
