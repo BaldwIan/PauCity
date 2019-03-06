@@ -1,4 +1,5 @@
 onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
+onGround = onGround || place_meeting(x, y+4, oSolid);
 
 // Only move if tablet is closed
 if (!global.GUIUp)
@@ -25,8 +26,7 @@ if (!global.GUIUp)
 	var vector2X = 0;
 	var vector2Y = 1;
 
-	// Clamp x velocity
-	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
+	
 
 	// Friction
 	if (xInput == 0)
@@ -39,8 +39,7 @@ if (!global.GUIUp)
 	// Gravity
 	velocity_[vector2Y] += gravity_;
 
-	// Move and contact tiles
-	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
+	
 	
 	// Jumping
 	if (onGround)
@@ -60,4 +59,9 @@ if (!global.GUIUp)
 	}
 }
 
+// Clamp x velocity
+velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
 
+// Move and contact tiles
+move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
+	

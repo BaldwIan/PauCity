@@ -9,10 +9,14 @@ if (!global.GUIUp)
 	var vector2Y = 1;
 	
 	// Get the input
-	if (colPlayer)
+	var interacting = gamepad_button_check(0, global.GPInteract) || keyboard_check(global.HKInteract);
+	if ((colPlayer) && (interacting))
 	{
 		var xVelPlayer = oPlayer.velocity_[vector2X];
-		velocity_[vector2X] = oPlayer.velocity_[vector2X];
+		velocity_[vector2X] = xVelPlayer;
+		
+		var yVelPlayer = oPlayer.velocity_[vector2Y];
+		velocity_[vector2Y] = yVelPlayer;
 	}
 	
 	// Clamp x velocity
