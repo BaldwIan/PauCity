@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "ecffab63-d31a-4060-8bde-f5a6fbae1592",
+            "Value": {
+                "id": "6f269757-2524-4be0-b37e-54c6694f7fb8",
+                "resourcePath": "scripts\\move_and_contact_objects\\move_and_contact_objects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1beae9d-139b-4750-9e12-7e04a32f8891",
             "Value": {
                 "id": "ce5d13da-94f1-45d3-b4d4-48c0afc483c4",
@@ -986,6 +994,7 @@
     "script_order": [
         "8f239ad5-21d7-4719-bce2-c2ad93248872",
         "04cdfe48-6ef5-45d7-bdc8-01318f8f231e",
+        "ecffab63-d31a-4060-8bde-f5a6fbae1592",
         "4e2e2434-a037-4d42-863a-eed6c5970dd4",
         "a53cc0c5-78d9-44cd-8473-dc097a5a7328"
     ],

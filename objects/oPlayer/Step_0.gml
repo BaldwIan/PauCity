@@ -58,32 +58,11 @@ if (!global.GUIUp)
 	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
 	velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);
 	
-	// Object Collision
-	#region object_collision
-	//collision horizontal
-	if (place_meeting(x + velocity_[vector2X], y, oSolid))
-	{
-		while (!place_meeting(x + sign(velocity_[vector2X]), y, oSolid))
-		{
-			x += sign(velocity_[vector2X]);
-		}
-		velocity_[vector2X] = 0;
-	}
-
-	// vertical collision
-	if (place_meeting(x, y + velocity_[vector2Y], oSolid))
-	{
-		while (!place_meeting(x, y + sign(velocity_[vector2Y]), oSolid))
-		{
-			y += sign(velocity_[vector2Y]);
-		}
-		velocity_[vector2Y] = 0;
-	}
-
-	#endregion object_collision
+	// Move and contact objects
+	move_and_contact_objects();										// Must have velocity_ array
 	
 	// Move and contact tiles
-	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
+	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);	// Must have velocity_ array
 }
 
 
