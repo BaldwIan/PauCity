@@ -56,6 +56,30 @@ if (!global.GUIUp)
 		}
 	}
 	
+	// Object Collision
+	#region object_collision
+	//collision horizontal
+	if (place_meeting(x + velocity_[vector2X], y, oSolid))
+	{
+		while (!place_meeting(x + sign(velocity_[vector2X]), y, oSolid))
+		{
+			x += sign(velocity_[vector2X]);
+		}
+		velocity_[vector2X] = 0;
+	}
+
+	// vertical collision
+	if (place_meeting(x, y + velocity_[vector2Y], oSolid))
+	{
+		while (!place_meeting(x, y + sign(velocity_[vector2Y]), oSolid))
+		{
+			y += sign(velocity_[vector2Y]);
+		}
+		velocity_[vector2Y] = 0;
+	}
+
+	#endregion object_collision
+	
 	// Clamp velocity
 	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
 	velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);

@@ -9,31 +9,6 @@ var velocity = argument2;
 var vector2X = 0;
 var vector2Y = 1;
 
-// Object Collision
-#region object_collision
-//collision horizontal
-if (place_meeting(x + velocity[vector2X], y, oSolid))
-{
-	while (!place_meeting(x + velocity[vector2X], y, oSolid))
-	{
-		velocity[vector2X] += sign(velocity[vector2X]);
-	}
-	velocity[vector2X] = 0;
-	
-}
-
-// vertical collision
-if (place_meeting(x, y + velocity[vector2Y], oSolid))
-{
-	while (!place_meeting(x, y + velocity[vector2Y], oSolid))
-	{
-		velocity[vector2Y] += sign(velocity[vector2Y]);
-	}
-	velocity[vector2Y] = 0;
-}
-
-#endregion object_collision
-
 // Move horizontally
 x += velocity[vector2X];
 
