@@ -56,8 +56,9 @@ if (!global.GUIUp)
 		}
 	}
 	
-	// Clamp x velocity
+	// Clamp velocity
 	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
+	velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);
 
 	// Move and contact tiles
 	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
