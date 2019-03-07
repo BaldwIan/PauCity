@@ -1,5 +1,5 @@
 onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
-onGround = onGround || place_meeting(x, y+4, oSolid);
+onGround = onGround || place_meeting(x, bbox_bottom, oSolid);
 
 // Only move if tablet is closed
 if (!global.GUIUp)
@@ -25,8 +25,6 @@ if (!global.GUIUp)
 	// Vector variables
 	var vector2X = 0;
 	var vector2Y = 1;
-
-	
 
 	// Friction
 	if (xInput == 0)
@@ -56,6 +54,10 @@ if (!global.GUIUp)
 		}
 	}
 	
+	// Clamp velocity
+	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
+	velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);
+	
 	// Object Collision
 	#region object_collision
 	//collision horizontal
@@ -80,10 +82,6 @@ if (!global.GUIUp)
 
 	#endregion object_collision
 	
-	// Clamp velocity
-	velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
-	velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);
-
 	// Move and contact tiles
 	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
 }
