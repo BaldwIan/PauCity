@@ -11,7 +11,7 @@ if (!global.GUIUp)
 	
 	// Get the input
 	var interacting = gamepad_button_check(0, global.GPInteract) || keyboard_check(global.HKInteract);
-	if ((pushable))
+	if (pushable)
 	{
 		if (interacting)
 		{
