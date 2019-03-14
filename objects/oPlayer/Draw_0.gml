@@ -9,6 +9,7 @@ if (onGround)
 	if (velocity_[1] > 0) sprite_index = sPlayerFall;
 	else if (velocity_[1] < 0) sprite_index = sPlayerJump;
 }
+
 var newXScale = sign(velocity_[0]);
 if (newXScale == 0) newXScale = image_xscale;
 image_xscale = newXScale;

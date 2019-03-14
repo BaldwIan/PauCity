@@ -8,7 +8,9 @@
         "b8e94d77-f811-46c2-9817-89f03489bd91",
         "2dc827a3-08f9-4bfb-a5ac-83dc1f99ebe2",
         "611a301d-c2e1-45d4-9536-ff5532df1abf",
-        "6d58e862-3118-419f-9a21-f656da8aa19e"
+        "6d58e862-3118-419f-9a21-f656da8aa19e",
+        "054c6e47-01aa-4370-ab1a-476d9d2bba8a",
+        "ef71721a-c1e4-40d8-b55a-43569b2a06bb"
     ],
     "filterType": "GMSprite",
     "folderName": "Interactive",

@@ -14,7 +14,7 @@ uniform float newA;
 void main()
 {
 	vec2 dist = 0.5 - v_vTexcoord;
-	vec2 newcoord = vec2(v_vTexcoord.x + dist.y * dist.y * dist.x * translate, v_vTexcoord.y);
+	vec2 newcoord = vec2(v_vTexcoord.x + dist.y * dist.y * dist.x * translate, v_vTexcoord.y + dist.x * dist.x * dist.y * translate);
 	
     gl_FragColor = v_vColour * texture2D( gm_BaseTexture, newcoord );
 }

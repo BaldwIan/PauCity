@@ -3,7 +3,7 @@ if (!global.GUIUp)
 {
 	// Check if colliding with player
 	var pushDistance = 10;
-	var pushable = distance_to_object(oPlayer)<pushDistance && y == oPlayer.y;
+	var pushable = distance_to_object(oPlayer)<pushDistance && abs(y - oPlayer.y) < pushDistance;
 	
 	// Vector variables
 	var vector2X = 0;
@@ -18,8 +18,7 @@ if (!global.GUIUp)
 			var xVelPlayer = oPlayer.velocity_[vector2X];
 			velocity_[vector2X] = xVelPlayer;
 		
-			var yVelPlayer = oPlayer.velocity_[vector2Y];
-			velocity_[vector2Y] = yVelPlayer;
+			velocity_[vector2Y] = oPlayer.velocity_[vector2Y];
 		}
 	} else // Friction
 	{
@@ -35,6 +34,8 @@ if (!global.GUIUp)
 	// Gravity
 	velocity_[vector2Y] += gravity_;
 
+	// Move and contact objects
+	move_and_contact_objects();
 	// Move and contact tiles
 	move_and_contact_tiles(collision_tile_map_id, 64, velocity_);
 	

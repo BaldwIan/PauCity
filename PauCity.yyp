@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "054c6e47-01aa-4370-ab1a-476d9d2bba8a",
+            "Value": {
+                "id": "2bf3fb87-3066-4091-90ca-c8d84a07bd4d",
+                "resourcePath": "sprites\\sPushPedastal\\sPushPedastal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08593f79-ee9d-4eab-bd8c-57926e2f4e2d",
             "Value": {
                 "id": "a810aadc-b0dc-485a-bac8-8e012f3a6730",
@@ -140,14 +148,6 @@
                 "id": "c31d77bc-d0c7-4926-b5d7-2f7cf0a4c0f1",
                 "resourcePath": "sprites\\sGUITabletBase\\sGUITabletBase.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "1dae9c16-96e0-4338-b481-aae1c4d12582",
-            "Value": {
-                "id": "7d88bf1b-d301-4079-a42d-3f65704ae206",
-                "resourcePath": "objects\\oShaderTest\\oShaderTest.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -300,6 +300,14 @@
                 "id": "8ce78edd-ea9f-4228-a1c4-b1d27aafaf9c",
                 "resourcePath": "views\\498e65a5-c0a6-4b6e-b309-334014877b0f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4a36e6a8-2956-4a17-b540-94e443e357a2",
+            "Value": {
+                "id": "185d0011-c933-4ba3-b901-6a8ef7f4b6b6",
+                "resourcePath": "objects\\oPushButton\\oPushButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -588,6 +596,14 @@
                 "id": "74eacea2-e4ac-41e1-9e40-506982437ce0",
                 "resourcePath": "sounds\\sndClick\\sndClick.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8c39f06c-a102-4499-8bf0-00106d888553",
+            "Value": {
+                "id": "b56ab19e-c82f-447f-bf45-d06cceaae351",
+                "resourcePath": "sprites\\sPlayerArm\\sPlayerArm.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -924,6 +940,14 @@
                 "id": "6f269757-2524-4be0-b37e-54c6694f7fb8",
                 "resourcePath": "scripts\\move_and_contact_objects\\move_and_contact_objects.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ef71721a-c1e4-40d8-b55a-43569b2a06bb",
+            "Value": {
+                "id": "ce2d7878-7478-4da6-bf4a-499efb9ba02e",
+                "resourcePath": "sprites\\sPushButton\\sPushButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
