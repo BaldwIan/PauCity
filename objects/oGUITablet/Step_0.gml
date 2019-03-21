@@ -56,4 +56,10 @@ case tablet_mode.journal:
 		if (JSelected < JScrolledAmount) JScrolledAmount--;
 		else if (JSelected > JScrolledAmount-1 + JShownEntries) JScrolledAmount++;
 	}
+	
+case tablet_mode.puzzle:
+	
+	
+default:
+	break;
 }
