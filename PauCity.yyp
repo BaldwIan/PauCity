@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "42db0eb3-f3b2-447b-a7dc-8173bc02e5fe",
+            "Value": {
+                "id": "0e36c147-384e-4afe-a9f0-3f88c41f764d",
+                "resourcePath": "sprites\\sTilBase\\sTilBase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "440ba515-4283-45e1-aba7-d1c176e3419d",
             "Value": {
                 "id": "2c28513a-4274-4850-b43a-bed8c86ffcf4",
