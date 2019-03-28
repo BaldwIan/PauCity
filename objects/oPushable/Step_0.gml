@@ -2,8 +2,8 @@
 if (!global.GUIUp)
 {
 	// Check if colliding with player
-	var pushDistance = 10;
-	var pushable = distance_to_object(oPlayer)<pushDistance && abs(y - oPlayer.y) < pushDistance;
+	var pushDistance = 20;
+	var pushable = distance_to_object(oPlayer) < pushDistance;	// FIX LATER
 	
 	// Vector variables
 	var vector2X = 0;
