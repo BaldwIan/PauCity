@@ -1,7 +1,7 @@
 mode = tablet_mode.closed;
+lastMode = tablet_mode.journal; // Used when journal is reopened
 
 #region general
-
 
 #region position
 

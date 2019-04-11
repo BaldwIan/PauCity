@@ -82,7 +82,7 @@ enum tablet_mode
 	puzzle,
 	closed,
 }
-global.tabletMode = tablet_mode.closed
+global.tabletMode = tablet_mode.closed;
 
 #endregion tablet
 #region tJournal

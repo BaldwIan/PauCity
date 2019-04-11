@@ -24,10 +24,11 @@ if (gamepad_button_check_pressed(0, global.GPTablet) || keyboard_check_pressed(g
 	switch (mode)
 	{
 	case (tablet_mode.closed):
-		mode = tablet_mode.journal;
+		mode = lastMode;
 		break;
 		
 	default:
+		lastMode = mode;
 		mode = tablet_mode.closed;
 		break;
 	}
@@ -58,7 +59,11 @@ case tablet_mode.journal:
 	}
 	
 case tablet_mode.puzzle:
-	//global.PText += keyboard_lastkey;
+	keyboard_lastchar = -1;
+	if (keyboard_lastchar != -1) && (keyboard_check_pressed(vk_anykey))
+	{
+		global.PText += keyboard_lastchar;
+	}
 	break;
 	
 default:
