@@ -62,7 +62,7 @@ case tablet_mode.puzzle:
 	keyboard_lastchar = -1;
 	if (keyboard_lastchar != -1) && (keyboard_check_pressed(vk_anykey))
 	{
-		string_insert(keyboard_lastchar, global.PText, curPIndex);
+		global.PText = string_replace(global.PText, "_", keyboard_lastchar);
 		curPIndex++;
 		if (curPIndex > string_length(global.PText)) curPIndex = 0;
 	}
