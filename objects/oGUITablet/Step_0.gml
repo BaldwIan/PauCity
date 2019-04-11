@@ -64,7 +64,15 @@ case tablet_mode.puzzle:
 	{
 		global.PText = string_replace(global.PText, "_", keyboard_lastchar);
 		curPIndex++;
-		if (curPIndex > string_length(global.PText)) curPIndex = 0;
+		if (curPIndex >= string_length(global.PText))
+		{
+			curPIndex = 0;
+			global.PText = "";
+			for (i = 0; i < string_length(global.PTargetString); i++)
+			{
+				global.PText += "_";
+			}
+		}
 	}
 	break;
 	
