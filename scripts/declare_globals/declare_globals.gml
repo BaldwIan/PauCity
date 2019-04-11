@@ -123,16 +123,20 @@ global.cheight = 540;
 #region puzzle
 
 // Puzzle types
+/*	FOR LATER USE
 enum puzzles
 {
 	none,
 	color_patern,
 	memory,
 	connect_lines,
-}
-global.PActiveType = puzzles.none;	// Current puzzle type
+}*/
+//global.PActiveType = puzzles.none;	MIGHT BE USED LATER IF NOT WORD PUZZLES
 global.PSolved = false;				// When true, door will open
 global.PDoors = [];					// List of doors in room, set in creation code of doors
 global.curPDoor = 0;				// Used for indexing door list
+global.PHint = "No Puzzle Active";
+global.PText = "";
+global.PTargetString = undefined;
 
 #endregion puzzle

@@ -14,14 +14,22 @@ if (activatable)
 	
 	if (interacting)
 	{
+		// Set puzzle to active
+		global.PText = "";  // Reset text for backup
+		global.PTargetString = newPuzzleText;
+		global.PHint = newPuzzleHint;
+		
+		// For this
 		activated = true; // Can no longer be activated
+		
+		// Make pop-up showing new puzzle
 		var popup = instance_create_layer(x, y, "GUI", oGUIPopUp);
 		with (popup)
 		{
 			mode = popup_actions.puzzle;
 		}
 	}
-}else // Not activatable
+} else // Not activatable
 {
 	image_index = 0;
 	

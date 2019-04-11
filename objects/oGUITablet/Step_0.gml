@@ -1,4 +1,4 @@
-/// @description Move to position
+/// @description Move to position (closed or open)
 if (mode == tablet_mode.closed)
 {
 	global.GUIUp = false;
@@ -58,7 +58,8 @@ case tablet_mode.journal:
 	}
 	
 case tablet_mode.puzzle:
-	
+	//global.PText += keyboard_lastkey;
+	break;
 	
 default:
 	break;

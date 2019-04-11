@@ -73,6 +73,12 @@ case (tablet_mode.journal):
 	
 	// Reset horiz text allignment
 	draw_set_halign(fa_left);
+	break;
+	
+case (tablet_mode.puzzle):
+	draw_text(bbox_left + 32, bbox_top + 64, global.PHint);
+	draw_text(bbox_left + 32, bbox_top + 128, global.PText);
+	break;
 	
 default:
 	break;
