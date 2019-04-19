@@ -3,8 +3,8 @@
 // Controller
 #region movement
 global.GPJump = gp_face1;
-global.GPVert = gp_axislv;
-global.GPHoriz = gp_axislh;
+//global.GPVert = gp_axislv;
+//global.GPHoriz = gp_axislh;
 #endregion movement
 #region control
 global.GPTablet = gp_start;
@@ -17,12 +17,13 @@ global.GPDown = gp_padd;
 #region movement
 global.HKJump = vk_space;
 global.HKLeft = ord("A");
-global.HKDown = ord("S");
+//global.HKDown = ord("S");
 global.HKRight = ord("D");
 #endregion movement
 #region control
 global.HKTablet = ord("Q");
 global.HKInteract = ord("E");
+global.HKConfirm = vk_enter;
 #endregion control
 
 // Mouse

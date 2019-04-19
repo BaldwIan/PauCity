@@ -59,10 +59,10 @@ case tablet_mode.journal:
 	}
 	
 case tablet_mode.puzzle:
-	keyboard_lastchar = -1;
-	if (keyboard_lastchar != -1) && (keyboard_check_pressed(vk_anykey))
+	if (keyboard_check_pressed(global.HKConfirm))
 	{
-		global.PText = string_replace(global.PText, "_", keyboard_lastchar);
+		kInput = "*";
+		global.PText = string_replace(global.PText, "_", kInput);
 		curPIndex++;
 		if (curPIndex >= string_length(global.PText))
 		{
