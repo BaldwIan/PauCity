@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "9fe146fd-f8fc-432b-bd69-bd308c07bc71",
+            "Value": {
+                "id": "003fd2f2-ff84-4046-a7b8-29fbd4032ae3",
+                "resourcePath": "sprites\\sLetterBox\\sLetterBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "018ec3e3-cab8-4076-a51e-d998a8e469d8",

@@ -76,8 +76,34 @@ case (tablet_mode.journal):
 	break;
 	
 case (tablet_mode.puzzle):
+	// Draw puzzle text
 	draw_text(bbox_left + 32, bbox_top + 64, global.PHint);
 	draw_text(bbox_left + 32, bbox_top + 128, global.PText);
+	
+	// Draw puzzle keyboard
+	for (var alphYY = 0; alphYY < 3; alphYY++)
+	{
+		var alphLen = array_length_1d(alphabet)
+		for (var alphXX = 0; alphXX < 10; alphXX++)
+		{
+			// Current pos in alphabet
+			var alphCurPos = (alphYY * alphLen + alphXX)
+			show_debug_message("alpha cur pos: " + string(alphCurPos));
+			
+			// Set letter box sprite to selected
+			var alphSInd = 0;
+			if (alphCurPos == alphPos) alphSInd = 1;
+			
+			// Letter pos
+			var lettX = bbox_left + 32 + (70 * alphXX);
+			var lettY = bbox_top + 200 + (alphYY * 70);
+			
+			// Draw letter box and letter
+			draw_sprite(sLetterBox, alphSInd, lettX, lettY);
+			//draw_text(lettX, lettY, alphabet[alphCurPos]);
+		}
+	}
+	
 	break;
 	
 default:

@@ -61,7 +61,7 @@ case tablet_mode.journal:
 case tablet_mode.puzzle:
 	if (keyboard_check_pressed(vk_anykey))
 	{
-		kInput = keyboard_lastchar;
+		kInput = alphabet[alphPos];
 		global.PText = string_replace(global.PText, "_", kInput);
 		curPIndex++;
 		if (curPIndex >= string_length(global.PText))
@@ -79,6 +79,10 @@ case tablet_mode.puzzle:
 			}
 		}
 	}
+	
+	if (keyboard_check_pressed(vk_right)) alphPos++;
+	else if (keyboard_check_pressed(vk_left)) alphPos--;
+	
 	break;
 	
 default:
