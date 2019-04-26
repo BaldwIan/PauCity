@@ -66,6 +66,11 @@ case tablet_mode.puzzle:
 		curPIndex++;
 		if (curPIndex >= string_length(global.PText))
 		{
+			if (global.PText == global.PTargetString)
+			{
+				global.PSolved = true;
+			}
+			
 			curPIndex = 0;
 			global.PText = "";
 			for (i = 0; i < string_length(global.PTargetString); i++)

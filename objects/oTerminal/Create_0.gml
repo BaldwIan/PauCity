@@ -6,4 +6,4 @@ textAlpha = 0;
 
 // for puzzle
 newPuzzleHint = "Puzzle test";
-newPuzzleText = "<null>";
+newPuzzleText = "test target";
