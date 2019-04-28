@@ -87,8 +87,7 @@ case (tablet_mode.puzzle):
 		for (var alphXX = 0; alphXX < 10; alphXX++)
 		{
 			// Current pos in alphabet
-			var alphCurPos = (alphYY * alphLen + alphXX)
-			show_debug_message("alpha cur pos: " + string(alphCurPos));
+			var alphCurPos = clamp(((alphYY - 1) * (alphLen/3) + alphXX + 10), 0, alphLen - 1);
 			
 			// Set letter box sprite to selected
 			var alphSInd = 0;
@@ -100,7 +99,9 @@ case (tablet_mode.puzzle):
 			
 			// Draw letter box and letter
 			draw_sprite(sLetterBox, alphSInd, lettX, lettY);
-			//draw_text(lettX, lettY, alphabet[alphCurPos]);
+			draw_set_valign(fa_top);
+			draw_text(lettX, lettY, alphabet[alphCurPos]);
+			draw_set_valign(fa_center);
 		}
 	}
 	

@@ -59,7 +59,7 @@ case tablet_mode.journal:
 	}
 	
 case tablet_mode.puzzle:
-	if (keyboard_check_pressed(vk_anykey))
+	if (keyboard_check_pressed(global.HKConfirm) || gamepad_button_check_pressed(0, global.GPInteract))
 	{
 		kInput = alphabet[alphPos];
 		global.PText = string_replace(global.PText, "_", kInput);
@@ -82,6 +82,9 @@ case tablet_mode.puzzle:
 	
 	if (keyboard_check_pressed(vk_right)) alphPos++;
 	else if (keyboard_check_pressed(vk_left)) alphPos--;
+	else if (keyboard_check_pressed(vk_down)) && (alphPos + 10 < array_length_1d(alphabet) - 1) alphPos += 10;
+	else if (keyboard_check_pressed(vk_up)) && (alphPos - 10 > 0) alphPos -= 10;
+	alphPos = clamp(alphPos, 0, array_length_1d(alphabet)-1);
 	
 	break;
 	
