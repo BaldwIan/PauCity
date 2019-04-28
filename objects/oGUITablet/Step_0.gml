@@ -73,10 +73,9 @@ case tablet_mode.puzzle:
 	{
 		if (global.PText == global.PTargetString)
 		{
+			mode = tablet_mode.closed;
+			// Set puzzle to solved
 			global.PSolved = true;
-			global.PHint = "No Puzzle Active";
-			global.PTargetString = "x";
-			global.PText = "_";
 		}
 			
 		curPIndex = 0;

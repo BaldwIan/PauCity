@@ -8,8 +8,22 @@ if (!audio_is_playing(musMainLoop) && !audio_is_playing(musMainIntro))
 // increment curDoor to access next door
 if (global.PSolved)
 {
+	global.PHint = "No Puzzle Active";
+	global.PTargetString = "x";
+	global.PText = "_";
 	global.PSolved = false;
+
+	
 	var curDoor = global.PDoors[global.curPDoor];
 	if (curDoor.sprite_index == sDoor) curDoor.sprite_index = sDoorFlashing;
 	if (global.curPDoor+1 > array_length_1d(global.PDoors)) global.curPDoor++;
+	
+	// Zoom in camera, and go to door
+	global.cwidth = global.regCWidth * 0.75;
+	global.cheight = global.regCHeight * 0.75;
+	with (oCamera)
+	{
+		mode = cammode.follow_object;
+		following = curDoor;
+	}
 }

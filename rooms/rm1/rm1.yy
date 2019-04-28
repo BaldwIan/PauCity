@@ -17,7 +17,6 @@
         "9647e701-e781-4d57-b186-c59bfb139c50",
         "2c4f16d0-8ab2-4358-8dca-36c0e34aa097",
         "8edcb19f-d433-4d54-8172-542e29e9340a",
-        "a703fb88-5b8f-4e20-81fb-273a92158a2b",
         "68e03cb7-0842-4eeb-a303-dd6d6800ab5f",
         "066463bd-967f-4d0f-b649-5a7dd8289f76",
         "db223d75-208a-4c31-9c5d-07740ccdea6c",
@@ -27,8 +26,8 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Puzzle",
-            "id": "12314bbe-eda5-4551-8eea-bdf02c9d001d",
+            "name": "Effect",
+            "id": "7ae3be92-c38f-4fb9-80c7-c12bf648a628",
             "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
@@ -308,7 +307,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_236BF737","id": "a703fb88-5b8f-4e20-81fb-273a92158a2b","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_236BF737","objId": "e1af5c6e-dfae-4f76-bca3-5d423742d340","properties": null,"rotation": 1.732039,"scaleX": 5,"scaleY": 5,"mvc": "1.0","x": -192,"y": -192}
+
             ],
             "layers": [
 
