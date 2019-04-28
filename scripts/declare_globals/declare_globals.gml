@@ -137,7 +137,7 @@ global.PSolved = false;				// When true, door will open
 global.PDoors = [];					// List of doors in room, set in creation code of doors
 global.curPDoor = 0;				// Used for indexing door list
 global.PHint = "No Puzzle Active";
-global.PText = "_____";
-global.PTargetString = "xxxx";
+global.PText = "_";
+global.PTargetString = "x";
 
 #endregion puzzle

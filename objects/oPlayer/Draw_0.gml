@@ -14,3 +14,4 @@ var newXScale = sign(velocity_[0]);
 if (newXScale == 0) newXScale = image_xscale;
 image_xscale = newXScale;
 draw_self();
+

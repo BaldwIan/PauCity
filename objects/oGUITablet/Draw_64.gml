@@ -95,7 +95,7 @@ case (tablet_mode.puzzle):
 			
 			// Letter pos
 			var lettX = bbox_left + 32 + (70 * alphXX);
-			var lettY = bbox_top + 200 + (alphYY * 70);
+			var lettY = bbox_top + 200 + (alphYY * 86);
 			
 			// Draw letter box and letter
 			draw_sprite(sLetterBox, alphSInd, lettX, lettY);
