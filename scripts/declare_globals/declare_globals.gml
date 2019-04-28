@@ -141,14 +141,3 @@ global.PText = "_";
 global.PTargetString = "x";
 
 #endregion puzzle
-
-#region effects
-
-enum text_effects
-{
-	none,
-	float,
-	float_wiggle,
-}
-
-#endregion effects
