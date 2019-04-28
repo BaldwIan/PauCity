@@ -59,27 +59,35 @@ case tablet_mode.journal:
 	}
 	
 case tablet_mode.puzzle:
+// Get input for puzzle
 	if (keyboard_check_pressed(global.HKConfirm) || gamepad_button_check_pressed(0, global.GPInteract))
 	{
 		kInput = alphabet[alphPos];
 		global.PText = string_replace(global.PText, "_", kInput);
 		curPIndex++;
-		if (curPIndex >= string_length(global.PText))
+		
+	}
+	
+	// Check to reset/solve puzzle
+	if (curPIndex >= string_length(global.PText))
+	{
+		if (global.PText == global.PTargetString)
 		{
-			if (global.PText == global.PTargetString)
-			{
-				global.PSolved = true;
-			}
-			
-			curPIndex = 0;
+			global.PSolved = true;
+			global.PHint = "No Puzzle Active";
+			global.PTargetString = "null";
 			global.PText = "";
-			for (i = 0; i < string_length(global.PTargetString); i++)
-			{
-				global.PText += "_";
-			}
+		}
+			
+		curPIndex = 0;
+		global.PText = "";
+		for (i = 0; i < string_length(global.PTargetString); i++)
+		{
+			global.PText += "_";
 		}
 	}
 	
+	// Change position in vkeyboard
 	if (keyboard_check_pressed(vk_right)) alphPos++;
 	else if (keyboard_check_pressed(vk_left)) alphPos--;
 	else if (keyboard_check_pressed(vk_down)) && (alphPos + 10 < array_length_1d(alphabet) - 1) alphPos += 10;

@@ -53,8 +53,8 @@ switch (mode)
 		break;
 		
 	case cammode.shake_follow:
-		if (!instance_exists(following)) break;
-		rotation += random_range(-0.3, 0.3);
+		//if (!instance_exists(following)) break;
+		//rotation += random_range(-0.3, 0.3);
 		xTo = following.x;
 		yTo = following.y;
 		
