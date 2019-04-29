@@ -14,3 +14,5 @@ initWalkAnimSpeed = image_speed;
 // Sprites
 sprIdle = sCPlayerIdle;
 sprWalk = sCPlayerIdle;
+sprJump = sCPlayerJump;
+sprFall = sCPlayerFall;

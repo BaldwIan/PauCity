@@ -143,3 +143,24 @@ global.PText = "_";
 global.PTargetString = "x";
 
 #endregion puzzle
+
+#region cutscene
+
+global.ctsPos = -1;
+global.ctsType = -1;
+
+global.ctsAnims = [];
+
+// Cutscenes
+enum cutscenes
+{
+	testC,
+}
+
+// Action Types
+enum cutscene_actions
+{
+	move,
+}
+
+#endregion cutscene
