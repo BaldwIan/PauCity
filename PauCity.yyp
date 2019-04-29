@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "a969f275-15b1-45fa-a1b1-ba29be28fe0b",
+            "Value": {
+                "id": "efaaee08-cfe7-4d8c-89da-24f6da70b76a",
+                "resourcePath": "sounds\\sndDoorOpen\\sndDoorOpen.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a9db71ff-db38-4374-afaa-1c723999134c",
             "Value": {
                 "id": "cea3ee31-2254-429e-886d-8bee0a226d3a",
