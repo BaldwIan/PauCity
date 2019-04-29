@@ -73,9 +73,48 @@ case tablet_mode.puzzle:
 	{
 		if (global.PText == global.PTargetString)
 		{
-			mode = tablet_mode.closed;
 			// Set puzzle to solved
 			global.PSolved = true;
+			
+			// create green text effect
+			var textE = instance_create_layer(bbox_left + 32, bbox_top + 64, "Effect", oEText);
+			with (textE)
+			{
+				fadeTime = room_speed * 1;
+				text = global.PText;
+				xTo = random_range(-200, global.cwidth + 200);
+				yTo = -200;
+				c1 = $00ff00;
+				c2 = $00ff00;
+				c3 = $b2ffb2;
+				c4 = $b2ffb2;
+				moveSpd = 0.02;
+				rotationAmount = 2 * sign(xTo);
+				xS = 2;
+				yS = 2;
+			}
+			
+			//after puzzle is solved close tablet
+			mode = tablet_mode.closed;
+			
+		} else
+		{
+			// create red text effect
+			var textE = instance_create_layer(bbox_left + 32, bbox_top + 64, "Effect", oEText);
+			with (textE)
+			{
+				text = global.PText;
+				xTo = random_range(-200, global.cwidth + 200);
+				yTo = room_height + 200;
+				c1 = $0000ff;
+				c2 = $0000ff;
+				c3 = $0000ff;
+				c4 = $0000ff;
+				moveSpd = 0.05;
+				rotationAmount = random_range(-2, 2) * sign(xTo);
+				xS = 2;
+				yS = 2;
+			}
 		}
 			
 		curPIndex = 0;

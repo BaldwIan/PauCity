@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "250755d4-932b-430f-8b13-fef2d32d8247",
+            "Value": {
+                "id": "412c19ac-4be7-4744-a7b1-cdf081f04c21",
+                "resourcePath": "views\\250755d4-932b-430f-8b13-fef2d32d8247.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "260610de-84da-4de8-8ccb-13dc5edbd248",
             "Value": {
                 "id": "43036e0a-5aa7-4090-977a-ede2e67d5f36",
@@ -615,14 +623,6 @@
             }
         },
         {
-            "Key": "8c39f06c-a102-4499-8bf0-00106d888553",
-            "Value": {
-                "id": "b56ab19e-c82f-447f-bf45-d06cceaae351",
-                "resourcePath": "sprites\\sPlayerArm\\sPlayerArm.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8d78c336-4dbe-4454-97f9-d2d276f2ab70",
             "Value": {
                 "id": "9dc0ba78-30b3-45f4-95d0-472e59b6c64f",
@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "e2a169e0-2cf7-462a-a826-61e3ace00a30",
+            "Value": {
+                "id": "56c40790-54e0-449c-b6ad-b3f702e72905",
+                "resourcePath": "objects\\oActorParent\\oActorParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "9dd046e9-d10f-4a5e-95e6-79af879c09bf",
@@ -1052,6 +1060,14 @@
                 "id": "26779a0c-4ded-4000-8575-bba0d9fef57a",
                 "resourcePath": "sprites\\sPopUpDefault\\sPopUpDefault.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ff9f3e43-fb23-41eb-a351-223bd1e02749",
+            "Value": {
+                "id": "041c4070-2767-45f4-bdf1-053d69faec46",
+                "resourcePath": "views\\ff9f3e43-fb23-41eb-a351-223bd1e02749.yy",
+                "resourceType": "GMFolder"
             }
         }
     ],
