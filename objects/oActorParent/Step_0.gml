@@ -1,12 +1,10 @@
 // Movement
+var vector2X = 0;
+var vector2Y = 1;
+
 onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
 onGround = onGround || place_meeting(x, bbox_bottom, oSolid);
 
-// Move and contact objects
-move_and_contact_objects();										// Must have velocity_ array
-	
-// Move and contact tiles
-move_and_contact_tiles(collision_tile_map_id, 64, velocity_);	// Must have velocity_ array
 
 // Anim updating
 if (onGround)
@@ -26,4 +24,15 @@ if (newXScale == 0) newXScale = image_xscale;
 image_xscale = newXScale;
 draw_self();
 
+// Gravity
+velocity_[vector2Y] += gravity_;
 
+// Clamp velocity
+velocity_[vector2X] = clamp(velocity_[vector2X] + xInput, -maxVelocity[vector2X], maxVelocity[vector2X]);
+velocity_[vector2Y] = clamp(velocity_[vector2Y], -maxVelocity[vector2Y], maxVelocity[vector2Y]);
+
+// Move and contact objects
+move_and_contact_objects();										// Must have velocity_ array
+	
+// Move and contact tiles
+move_and_contact_tiles(collision_tile_map_id, 64, velocity_);	// Must have velocity_ array

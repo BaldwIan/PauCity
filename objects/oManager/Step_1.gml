@@ -15,7 +15,11 @@ if (global.ctsPos >= 0)
 	case cts_actions.move:
 		// Get data for move event
 		var dir  = data[0];	// -1 if left, 1 if right
-		actor.xInput
+		actor.xInput = dir * actor.acceleration;
+		break;
+		
+	default:
+		break;
 		
 	}
 }

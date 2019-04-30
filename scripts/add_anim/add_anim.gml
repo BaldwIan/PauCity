@@ -10,7 +10,7 @@ var atype_ = argument[2];
 var data_ = argument[3];
 
 // Array size
-var size = array_length_2d(global.ctsAnims, _cts);
+var size = array_length_2d(global.ctsAnims, cts_);
 
 // Add
 global.ctsAnims[cts_, size] = [actor_, atype_, data_];
