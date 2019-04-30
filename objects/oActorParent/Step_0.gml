@@ -22,7 +22,16 @@ if (onGround)
 var newXScale = sign(velocity_[0]);
 if (newXScale == 0) newXScale = image_xscale;
 image_xscale = newXScale;
-draw_self();
+
+// Movement
+
+// Friction
+if (xInput == 0)
+{
+	fricPercent = 0.2;
+	if (onGround) fricPercent = 0.7;
+	velocity_[vector2X] = lerp(velocity_[vector2X], 0, fricPercent);
+}
 
 // Gravity
 velocity_[vector2Y] += gravity_;

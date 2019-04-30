@@ -7,7 +7,7 @@ if (global.ctsPos >= 0)
 	var data  = anim[2];
 	
 	// Set action time
-	alarm[0] = data[array_length_1d(data) - 1];
+	if (alarm[0] <= 0) alarm[0] = room_speed * data[array_length_1d(data) - 1];
 	
 	// anim based on type
 	switch (type)

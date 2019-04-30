@@ -163,10 +163,16 @@ enum cts
 enum cts_actions
 {
 	move,
+	jump,
 }
 
 
-// Make test cutscene
-add_anim(cts.testC, oCPlayer, cts_actions.move, [1, 5]);
+// Make cutscenes - last term in data[] will be time in seconds for action to last
+// Test cutscene
+add_anim(cts.testC, oCPlayer, cts_actions.move, [1, 4]);
+add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.25]);
+
+add_anim(cts.testC, oCPlayer, cts_actions.jump, [0.1]);
+add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.35]);
 
 #endregion cutscene
