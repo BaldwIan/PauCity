@@ -162,6 +162,7 @@ enum cts
 // Action Types
 enum cts_actions
 {
+	wait,
 	move,
 	jump,
 }
@@ -171,8 +172,11 @@ enum cts_actions
 // Test cutscene
 add_anim(cts.testC, oCPlayer, cts_actions.move, [1, 4]);
 add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.25]);
-
-add_anim(cts.testC, oCPlayer, cts_actions.jump, [0.1]);
-add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.35]);
+repeat(6)
+{
+	add_anim(cts.testC, oCPlayer, cts_actions.jump, [0.1]);
+	add_anim(cts.testC, undefined, cts_actions.wait, [0.1]);
+	add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.5]);
+}
 
 #endregion cutscene
