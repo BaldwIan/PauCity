@@ -1,3 +1,5 @@
+// Script will only be used at start of game
+
 #region hotkeys
 
 // Controller
@@ -146,21 +148,25 @@ global.PTargetString = "x";
 
 #region cutscene
 
-global.ctsPos = -1;
-global.ctsType = -1;
+global.ctsPos = -1;		// current action in current cutscene 
+global.ctsType = -1;	// current cutscene
 
 global.ctsAnims = [];
 
 // Cutscenes
-enum cutscenes
+enum cts
 {
 	testC,
 }
 
 // Action Types
-enum cutscene_actions
+enum cts_actions
 {
 	move,
 }
+
+
+// Make test cutscene
+add_anim(cts.testC, oCPlayer, cts_actions.move, [1, 5]);
 
 #endregion cutscene

@@ -10,6 +10,7 @@ maxVelocity = [5, 32];
 acceleration = 2;
 onGround = tile_collide_at_points(collision_tile_map_id, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
 initWalkAnimSpeed = image_speed;
+xInput = 0;
 
 // Sprites
 sprIdle = sCPlayerIdle;
