@@ -26,8 +26,8 @@ if (global.PSolved)
 	if (global.curPDoor+1 > array_length_1d(global.PDoors)) global.curPDoor++;
 	
 	// Zoom in camera, and go to door
-	global.cwidth = global.regCWidth * 0.75;
-	global.cheight = global.regCHeight * 0.75;
+	oCamera.wTo = global.regCWidth * 0.75;
+	oCamera.hTo = global.regCHeight * 0.75;
 	with (oCamera)
 	{
 		mode = cammode.follow_object;

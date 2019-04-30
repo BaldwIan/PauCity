@@ -1,4 +1,5 @@
 var smoothPan = true;
+var smoothZoom = true;
 
 switch (mode)
 {
@@ -48,10 +49,12 @@ switch (mode)
 		}
 		break;
 		
+	// Buggy
 	case cammode.shake:
 		rotation = random_range(-4, 4);
 		break;
 		
+	// Buggy
 	case cammode.shake_follow:
 		//if (!instance_exists(following)) break;
 		//rotation += random_range(-0.3, 0.3);
@@ -61,16 +64,28 @@ switch (mode)
 	default:
 		break;
 }
+// Lerp to pos
 if (smoothPan)
 {
 	if (x + (xTo - x) / 15 > global.cwidth / 2) and (x + (xTo - x) / 15 < room_width - global.cwidth / 2) x += (xTo - x) / 5;
 	if (y + (yTo - y) / 15 > global.cheight / 2) and (y + (yTo - y) / 15 < room_height - global.cheight / 2) y += (yTo - y) / 5;
-} else
+} else	// instantly at new pos
 {
 	x = xTo;
 	y = yTo;
 }
 
+if (smoothZoom)
+{
+	global.cwidth = lerp(global.cwidth, wTo, 0.2);
+	global.cheight = lerp(global.cheight, hTo, 0.2);
+} else
+{
+	global.cwidth = wTo;
+	global.cheight = hTo;
+}
+
+// Set view again
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, rotation, 1, 0);
 var pm = matrix_build_projection_ortho(global.cwidth, global.cheight, 1, 10000);
 camera_set_view_mat(camera, vm);

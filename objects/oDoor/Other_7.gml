@@ -5,8 +5,8 @@ if (sprite_index == sDoorFlashing)
 	if (place_meeting(x, y, oSolid))
 	{
 		// Reset camera zoom
-		global.cwidth = global.regCWidth;
-		global.cheight = global.regCHeight;
+		oCamera.wTo = global.regCWidth;
+		oCamera.hTo = global.regCHeight;
 		
 		with (oCamera)
 		{
