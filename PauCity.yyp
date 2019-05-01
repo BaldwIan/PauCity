@@ -719,6 +719,14 @@
             }
         },
         {
+            "Key": "944a9645-ab7c-477d-bb5d-addffd43ef87",
+            "Value": {
+                "id": "23803e6c-9ae9-4ffd-b360-a18b033c46e2",
+                "resourcePath": "tilesets\\tilWindows\\tilWindows.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "949c68ac-304c-4762-b5da-2393c275a55a",
             "Value": {
                 "id": "5e2ee03a-0975-46c3-a198-6cf186ed9644",
@@ -1059,6 +1067,14 @@
             "Value": {
                 "id": "ce2d7878-7478-4da6-bf4a-499efb9ba02e",
                 "resourcePath": "sprites\\sPushButton\\sPushButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef728709-17f9-44a7-aea4-6c346e114756",
+            "Value": {
+                "id": "f760d8bb-ea71-47c2-9624-1445a872493d",
+                "resourcePath": "sprites\\sTilWindows\\sTilWindows.yy",
                 "resourceType": "GMSprite"
             }
         },
