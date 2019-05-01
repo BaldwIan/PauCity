@@ -26,7 +26,7 @@ if (!global.GUIUp)
 			image_index = 1;
 			velocity_[vector2Y] += gravity_;
 		}
-		if !(y > oPlayer.y) velocity_[vector2Y] += gravity_;
+		if (y > oPlayer.y) velocity_[vector2Y] += gravity_;
 	} else
 	{
 		image_index = 0;
