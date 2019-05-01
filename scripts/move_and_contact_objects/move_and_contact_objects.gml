@@ -5,7 +5,7 @@ var vector2Y = 1;
 if (place_meeting(x + velocity_[vector2X], y, oSolid))
 {
 	// Not yet colliding
-	while (!place_meeting(x + sign(velocity_[vector2X]), y, oSolid))
+	if (!place_meeting(x + sign(velocity_[vector2X]), y, oSolid))
 	{
 		x += sign(velocity_[vector2X]);	// Increments of 1
 	}
@@ -16,7 +16,7 @@ if (place_meeting(x + velocity_[vector2X], y, oSolid))
 if (place_meeting(x, y + velocity_[vector2Y], oSolid))
 {
 	// Not yet colliding
-	while (!place_meeting(x, y + sign(velocity_[vector2Y]), oSolid))
+	if (!place_meeting(x, y + sign(velocity_[vector2Y]), oSolid))
 	{
 		y += sign(velocity_[vector2Y]);	// Increments of 1
 	}
