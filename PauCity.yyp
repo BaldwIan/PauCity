@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1ea9da4b-90cd-4a81-9666-e48ac6e9d9a6",
+            "Value": {
+                "id": "61efbc7d-83e1-40ad-9edb-fdd3a6f5ab47",
+                "resourcePath": "sprites\\sPushable\\sPushable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f6f0cc1-f354-4c78-8860-ecd3e3442da2",
             "Value": {
                 "id": "ed1db4ce-e49d-4453-86a5-52415ce0d2cc",

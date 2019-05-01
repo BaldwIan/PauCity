@@ -77,8 +77,8 @@ if (smoothPan)
 
 if (smoothZoom)
 {
-	global.cwidth = lerp(global.cwidth, wTo, 0.02);
-	global.cheight = lerp(global.cheight, hTo, 0.02);
+	global.cwidth = lerp(global.cwidth, wTo, 0.1);
+	global.cheight = lerp(global.cheight, hTo, 0.1);
 } else
 {
 	global.cwidth = wTo;

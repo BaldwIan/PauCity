@@ -1,5 +1,6 @@
 if (global.ctsPos >= 0)
 {
+	
 	// get anim data
 	var anim = global.ctsAnims[global.ctsType, global.ctsPos];
 	var actor = anim[0];
@@ -22,4 +23,13 @@ if (global.ctsPos >= 0)
 		break;
 		
 	}
+}
+
+// Skip cutscene
+if (keyboard_check_pressed(ord("F")))
+{
+	room_goto_next();
+	global.ctsPos = -1;
+	global.ctsType = -1;
+	exit;
 }
