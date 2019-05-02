@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "09ad9449-87e6-4389-a9aa-d22e65a988b7",
+            "Value": {
+                "id": "38a5d840-0d8c-4859-a1bb-9b408eb5e040",
+                "resourcePath": "sprites\\sTextBox\\sTextBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a078b58-524e-41c3-b929-7f029e53dc6e",
             "Value": {
                 "id": "ff2f5f24-d4d8-4fd1-9de6-7d76fb792e56",
@@ -140,6 +148,14 @@
                 "id": "938e2f23-890c-46a9-b908-fd3380d62a5c",
                 "resourcePath": "sprites\\sPlayerIdle\\sPlayerIdle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1d4d2588-a877-4688-b217-18eebaaf6b1b",
+            "Value": {
+                "id": "67c71cdb-9533-413f-915f-8561c4e11db1",
+                "resourcePath": "fonts\\fntGame\\fntGame.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1019,6 +1035,14 @@
             "Value": {
                 "id": "82e1bc2a-4601-4d3c-9a08-890a40c2293b",
                 "resourcePath": "objects\\oDrawSurface\\oDrawSurface.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e23eda13-3570-45b4-a0a9-ae8c96c12e46",
+            "Value": {
+                "id": "bd925363-7221-41cd-a8a2-9c836864b315",
+                "resourcePath": "objects\\oTextBox\\oTextBox.yy",
                 "resourceType": "GMObject"
             }
         },

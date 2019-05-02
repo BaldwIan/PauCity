@@ -165,6 +165,7 @@ enum cts_actions
 	wait,
 	move,
 	jump,
+	dialogue,
 }
 
 

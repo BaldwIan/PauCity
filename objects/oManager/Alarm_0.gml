@@ -4,7 +4,7 @@
 var anim = global.ctsAnims[global.ctsType, global.ctsPos];
 var actor = anim[0];
 var type  = anim[1];
-//var data  = anim[2];	// Unused as of now
+var data  = anim[2];
 
 switch (type)
 {
@@ -15,6 +15,9 @@ case cts_actions.move:
 case cts_actions.jump:
 	actor.velocity_[1] = -actor.jumpSpd;
 	break;
+	
+case cts_actions.dialogue:
+	instance_create_layer(actor.x - 45 * data[0], actor.y - 50, "Effect", oTextBox);
 	
 default:
 	break;
