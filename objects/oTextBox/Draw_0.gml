@@ -5,5 +5,6 @@ draw_self();
 
 // Draw cur text
 draw_set_font(fntGame);
-draw_text_ext(bbox_left + 4, bbox_top + 8, visText, 16, sWidth - 8);
+draw_set_valign(fa_top);
+draw_text_ext(bbox_left + 8, bbox_top + 8, visText, 16, sWidth - 16);
 draw_set_font(fntDefault);
