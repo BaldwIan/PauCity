@@ -17,5 +17,5 @@ if (letIndex > string_length(text[texIndex]))
 	alarm[1] = resetTime;
 } else
 {
-	alarm[0] = room_speed * 0.25;
+	alarm[0] = room_speed * 0.1;
 }
