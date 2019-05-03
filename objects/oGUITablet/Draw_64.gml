@@ -28,15 +28,16 @@ case (tablet_mode.journal):
 	var TitleH = sprite_get_height(sJournalTitle);
 
 	//Set text allignment for content
-	draw_set_halign(fa_center);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	
 	// Draw content sprite
 	var contSX = bbox_left+1 + lBorder;
 	var contSY = bbox_top + tBorder + TitleDateH + spacing;
 	draw_sprite(sJournalContent, 0, contSX, contSY);
 	// Draw content text
-	var contTX = bbox_left + lBorder + ContentW/2;
-	var contTY = bbox_top + tBorder + TitleDateH + spacing + ContentH/4;
+	var contTX = bbox_left + lBorder + spacing;
+	var contTY = bbox_top + tBorder + TitleDateH + spacing + spacing;
 	draw_text_ext(contTX, contTY, contentSelected, 32, ContentW - spacing);
 	
 	// Draw Title-Date sprite
@@ -44,7 +45,7 @@ case (tablet_mode.journal):
 	var TitleDateSY = bbox_top + tBorder;
 	draw_sprite(sJournalTitleDate, 0, TitleDateSX, TitleDateSY);
 	// Draw Title-Date text
-	var TitleDateTX = bbox_left + lBorder + TitleDateW/2;
+	var TitleDateTX = bbox_left + lBorder + spacing;
 	var TitleDateTY = bbox_top + tBorder + 16;
 	draw_text_ext(TitleDateTX, TitleDateTY, titleSelected + " - " + dateSelected, 16, TitleDateW - spacing);
 
@@ -53,7 +54,7 @@ case (tablet_mode.journal):
 	var TitleSY = bbox_bottom+1 - bBorder - TitleH;
 	draw_sprite(sJournalTitle, 0, TitleSX, TitleSY);
 	// Draw Title text
-	var TitleTX = bbox_right+1 - TitleW/2 - rBorder - spacing;
+	var TitleTX = bbox_right+1 - TitleW - rBorder - spacing + spacing;
 	var TitleTY = bbox_bottom+1 - bBorder - TitleH/2 - spacing;
 	draw_text_ext(TitleTX, TitleTY, titleSelected, 16, TitleW - spacing);
 
@@ -61,10 +62,10 @@ case (tablet_mode.journal):
 	for (i = 0; i < min(JShownEntries, JDSHeight - (JScrolledAmount%JShownEntries)); i++)
 	{
 		var entryDate = ds_grid_get(global.journal, journal.date, i+JScrolledAmount);
-		var entryX = x + lBorder + ContentW + spacing*2;
-		var entryY = y + tBorder + TitleH + (i * EntryH) + spacing*(i+1);
-		var entryTextX = entryX + EntryW/2;
-		var entryTextY = entryY + EntryH/2;
+		var entryX = x + lBorder + ContentW;
+		var entryY = y + tBorder + TitleH + (i * EntryH) + spacing * (i + 1);
+		var entryTextX = entryX + spacing;
+		var entryTextY = entryY + spacing;
 		var entrySpriteIndex = 0;
 		if (JSelected == i + JScrolledAmount) entrySpriteIndex = 1;
 		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
