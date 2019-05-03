@@ -158,7 +158,7 @@ global.ctsAnims = [];
 // Cutscenes
 enum cts
 {
-	testC,
+	getJournal,
 }
 
 // Action Types
@@ -172,14 +172,7 @@ enum cts_actions
 
 
 // Make cutscenes - last term in data[] will be time in seconds for action to last
-// Test cutscene
-add_anim(cts.testC, oCPlayer, cts_actions.move, [1, 4]);
-add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.25]);
-repeat(6)
-{
-	add_anim(cts.testC, oCPlayer, cts_actions.jump, [0.1]);
-	add_anim(cts.testC, undefined, cts_actions.wait, [0.1]);
-	add_anim(cts.testC, oCPlayer, cts_actions.move, [-1, 0.5]);
-}
+// First cutscene
+add_anim(cts.getJournal, oCPlayer, cts_actions.wait, []);
 
 #endregion cutscene
