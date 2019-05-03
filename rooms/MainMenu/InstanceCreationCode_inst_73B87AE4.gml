@@ -1,2 +1,2 @@
 action = button_actions.goto_room;
-_room = rm1;
+_room = rm2;

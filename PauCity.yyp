@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "a1a02938-a650-4e90-aeac-abd5f56db6d1",
+            "Value": {
+                "id": "fd9adcf0-2b65-42ab-a1a0-274f2e80f57b",
+                "resourcePath": "sprites\\sTilMain\\sTilMain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a24559d8-c59b-4c91-9065-f833d4f7b676",
             "Value": {
                 "id": "a954479d-b14e-4889-bd4d-29b1be29839c",
