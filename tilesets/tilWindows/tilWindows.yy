@@ -5,11 +5,11 @@
     "name": "tilWindows",
     "auto_tile_sets": [
         {
-            "id": "09f28a52-7d3d-407a-91f1-e6e2ddeaf856",
+            "id": "2b68b6c3-0650-4097-b324-e35c30180d94",
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
-            "name": "autotile_2",
+            "name": "autotile_1",
             "tiles": [
                 1,
                 3,
@@ -17,10 +17,10 @@
                 9,
                 5,
                 7,
-                14,
+                16,
                 13,
                 4,
-                14,
+                15,
                 6,
                 11,
                 8,
@@ -61,7 +61,12 @@
             11,
             12,
             13,
-            14
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
         ],
         "SerialiseFrameCount": 1
     },
@@ -69,7 +74,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 15,
+    "tile_count": 20,
     "tileheight": 64,
     "tilehsep": 0,
     "tilevsep": 0,
