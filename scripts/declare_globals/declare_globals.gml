@@ -174,6 +174,6 @@ enum cts_actions
 // Make cutscenes - last term in data[] will be time in seconds for action to last
 // First cutscene
 add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.1]);
-add_anim
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 5]);
 
 #endregion cutscene
