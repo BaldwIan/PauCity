@@ -27,6 +27,16 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		instance_destroy(actor);
 		break;
 		
+	case cts_actions.cam_change_mode:
+		// Get data for cam
+		var newMode = data[0];
+		oCamera.mode = newMode;
+		
+	case cts_actions.cam_change_follow:
+		// Get data for new follow object
+		var newFollow = data[0];
+		oCamera.following = newFollow;
+		
 	default:
 		break;
 		

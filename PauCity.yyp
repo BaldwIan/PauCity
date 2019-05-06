@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "5766725f-8512-40c1-ac5b-fd25867f9cad",
+            "Value": {
+                "id": "1054a0fa-ff18-416f-853b-922bb0cc208f",
+                "resourcePath": "objects\\oCDetective\\oCDetective.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "58b4963c-0651-479b-9e05-f1f92ded0e37",
             "Value": {
                 "id": "c13af96a-49f3-41af-a47a-199950975ea6",
