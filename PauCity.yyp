@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "32551901-3fee-49e4-9e21-010c6b2d4f69",
+            "Value": {
+                "id": "e0cd0385-072c-4a19-99b7-327a3b84d2c2",
+                "resourcePath": "sprites\\sTilDirt\\sTilDirt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34860d8a-965c-439b-aa71-56fb01c7f06e",
             "Value": {
                 "id": "0ed5dcbf-8252-4560-931f-6e496289aeda",

@@ -1,3 +1,3 @@
 /// @description TEMP
-global.cheight *= 0.9;
-global.cwidth *= 0.9;
+hTo *= 0.9;
+wTo *= 0.9;

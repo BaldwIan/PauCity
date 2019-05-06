@@ -167,13 +167,23 @@ enum cts_actions
 	wait,
 	move,
 	jump,
+	change_obj,
 	dialogue,
 }
 
 
 // Make cutscenes - last term in data[] will be time in seconds for action to last
 // First cutscene
-add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.1]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 5]);
+/*
+add_anim(cts.getJournal, undefined, cts_actions.wait, [0.1]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);
+add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);
+add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);
+add_anim(cts.getJournal, undefined, cts_actions.wait, [1]);	// Change to 5 seconds later
+// Add dialogue
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 6]);*/
+add_anim(cts.getJournal, oCPlayer, cts_actions.change_obj, [oPlayer, 0.1]);
 
 #endregion cutscene
