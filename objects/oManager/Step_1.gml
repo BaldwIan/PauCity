@@ -1,3 +1,4 @@
+// If a cutscene is playing
 if (global.ctsPos >= 0)
 {
 	
@@ -31,5 +32,4 @@ if (keyboard_check_pressed(ord("F")))
 	room_goto_next();
 	global.ctsPos = -1;
 	global.ctsType = -1;
-	exit;
 }
