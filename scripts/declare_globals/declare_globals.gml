@@ -115,6 +115,7 @@ enum cammode
 	follow_mouse_drag,
 	follow_mouse_border,
 	follow_mouse_peak,
+	follow_point_peak,
 	move_to_target,
 	shake,
 	shake_follow,
@@ -171,6 +172,10 @@ enum cts_actions
 	dialogue,
 	cam_change_mode,
 	cam_change_follow,
+	cam_change_offset,
+	xScale,
+	yScale,
+	stop,
 }
 
 
@@ -185,8 +190,20 @@ add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);
 add_anim(cts.getJournal, undefined, cts_actions.wait, [1]);	// Change to 5 seconds later
-// Add dialogue
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 6]);
+// Add dialogue // to be added
+// More walking out of room
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0.01]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_point_peak, 0.1]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0.01]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [400, 0, 0.01]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.01]);
+add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);
+//add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0.01]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCPlayer, 0.01]);
+add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 3]);
+// Final cleanup of cutscene
 add_anim(cts.getJournal, oCPlayer, cts_actions.change_obj, [oPlayer, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_follow, [oPlayer, 0.1]);

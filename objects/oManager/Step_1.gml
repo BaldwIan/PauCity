@@ -27,15 +27,43 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		instance_destroy(actor);
 		break;
 		
+	case cts_actions.stop:
+		actor.velocity_[0] = 0;
+		actor.velocity_[1] = 0;
+		break;
+		
+	case cts_actions.xScale:
+		// Get new xScale
+		var newXS = data[0];
+		actor.image_xscale = newXS;
+		break;
+		
+	case cts_actions.yScale:
+		// Get new yScale
+		var newYS = data[0];
+		actor.image_yscale = newYS;
+		break;
+		
 	case cts_actions.cam_change_mode:
 		// Get data for cam
 		var newMode = data[0];
 		oCamera.mode = newMode;
+		break;
 		
 	case cts_actions.cam_change_follow:
 		// Get data for new follow object
 		var newFollow = data[0];
 		oCamera.following = newFollow;
+		break;
+		
+	case cts_actions.cam_change_offset:
+		// Get new xoff and yoff
+		var newX = data[0];
+		var newY = data[1];
+		
+		oCamera.followXOffset = newX;
+		oCamera.followYOffset = newY;
+		break;
 		
 	default:
 		break;

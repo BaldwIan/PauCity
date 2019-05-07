@@ -5,8 +5,8 @@ switch (mode)
 {
 	case cammode.follow_object:
 		if (!instance_exists(following)) break;
-		xTo = following.x;
-		yTo = following.y;
+		xTo = following.x + followXOffset;
+		yTo = following.y + followYOffset;
 		break;
 		
 	case cammode.follow_mouse_drag:
@@ -36,9 +36,9 @@ switch (mode)
 		break;
 		
 	case cammode.follow_mouse_peak:
-	if (!instance_exists(following)) break;
-		xTo = lerp(following.x, mouse_x, 0.2);
-		yTo = lerp(following.y, mouse_y, 0.2);
+		if (!instance_exists(following)) break;
+		xTo = lerp(following.x, mouse_x, 0.5);
+		yTo = lerp(following.y, mouse_y, 0.5);
 		break;
 		
 	case cammode.move_to_target:
