@@ -176,6 +176,8 @@ enum cts_actions
 	xScale,
 	yScale,
 	stop,
+	create,
+	destroy,
 }
 
 
@@ -184,6 +186,8 @@ enum cts_actions
 
 add_anim(cts.getJournal, undefined, cts_actions.wait, [0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [128, 0, 0.1]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.1]);
 add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);
 add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);
@@ -195,18 +199,25 @@ add_anim(cts.getJournal, undefined, cts_actions.wait, [1]);	// Change to 5 secon
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0.01]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_point_peak, 0.1]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oPlayer, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0.01]);
+
+
 add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [400, 0, 0.01]);
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.01]);
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);
-//add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0.01]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0.01]);
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCPlayer, 0.01]);
-add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 3]);
-// Final cleanup of cutscene
+add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.1]);
+add_anim(cts.getJournal, oSolid, cts_actions.create, [920, 1540, "oCollision",  0.01]);
+
+
+// Final cleanup of cutscene and make player moveable
 add_anim(cts.getJournal, oCPlayer, cts_actions.change_obj, [oPlayer, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0.1]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0.01]);	// Reset camera offset
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_follow, [oPlayer, 0.1]);
+// Destroy detective
+add_anim(cts.getJournal, oCDetective, cts_actions.destroy, [0.01]);
 
 
 #endregion cutscene

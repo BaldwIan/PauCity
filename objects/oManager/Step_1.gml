@@ -65,6 +65,18 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		oCamera.followYOffset = newY;
 		break;
 		
+	case cts_actions.create:
+		var xPos = data[0];
+		var yPos = data[1];
+		var lay = data[2];
+		
+		instance_create_layer(xPos, yPos, lay, actor);
+		break;
+		
+	case cts_actions.destroy:
+		// Destroy target object
+		instance_destroy(actor);
+		
 	default:
 		break;
 		
