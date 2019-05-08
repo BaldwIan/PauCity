@@ -1,3 +1,6 @@
+// Draw mode - reset at end of draw
+draw_set_font(fntGUI);
+
 // Draw base sprite
 draw_self();
 
@@ -111,3 +114,6 @@ case (tablet_mode.puzzle):
 default:
 	break;
 }
+
+// Reset font
+draw_set_font(fntDefault);

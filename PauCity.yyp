@@ -154,7 +154,7 @@
             "Key": "1d4d2588-a877-4688-b217-18eebaaf6b1b",
             "Value": {
                 "id": "67c71cdb-9533-413f-915f-8561c4e11db1",
-                "resourcePath": "fonts\\fntGame\\fntGame.yy",
+                "resourcePath": "fonts\\fntGUI\\fntGUI.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -636,6 +636,14 @@
                 "id": "4e49b91e-fa3b-46ea-9d8e-8e9d75d03411",
                 "resourcePath": "sprites\\sprGUISliderBar\\sprGUISliderBar.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81375449-79c4-4a38-ba00-594cec6ef554",
+            "Value": {
+                "id": "12268bd2-4df9-4182-8f9c-8c2bf4f7dc74",
+                "resourcePath": "fonts\\fntGame\\fntGame.yy",
+                "resourceType": "GMFont"
             }
         },
         {
