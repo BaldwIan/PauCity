@@ -3,13 +3,13 @@ activatable = false;
 activated = false;
 broken = false;
 textAlpha = 0;
-type = terminal_modes.none;
+mode = terminal_modes.none;
 
 // for puzzle
 newPuzzleHint = "Puzzle test";
 newPuzzleText = "test target";
 
-// for journal
+// for journal - set in creation code
 jTitle   = "deafult_title";
 jContent = "default_content";
 jDate    = "default_date";

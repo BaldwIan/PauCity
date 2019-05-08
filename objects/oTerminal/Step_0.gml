@@ -18,16 +18,43 @@ if (activatable)
 		// Make pop-up showing new puzzle
 		var popup = instance_create_layer(x, y, "GUI", oGUIPopUp);
 		
-		
-		// Set puzzle to active
-		global.PText = "";  // Reset text for backup
-		global.PTargetString = newPuzzleText;
-		global.PHint = newPuzzleHint;
-		
-		
-		with (popup)
+		switch (mode)
 		{
-			mode = popup_actions.puzzle;
+		case terminal_modes.none:
+			break;
+			
+		case terminal_modes.journal:
+			// Door will block every terminal
+			global.PSolved = true;
+			break;
+		
+			// journal entry from creation
+			add_journal_entry(jTitle, jContent, jDate, jAuthor);
+			
+			// Set pop-up mode
+			with (popup)
+			{
+				mode = popup_actions.journal;
+			}
+			
+			break;
+			
+		case terminal_modes.puzzle:
+			// Set puzzle to active
+			global.PText = "";  // Reset text for backup
+			global.PTargetString = newPuzzleText;
+			global.PHint = newPuzzleHint;
+			
+			// Set pop-up mode
+			with (popup)
+			{
+				mode = popup_actions.puzzle;
+			}
+			
+			break;
+			
+		default:
+			break;
 		}
 	}
 } else // Not activatable
