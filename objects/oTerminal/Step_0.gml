@@ -24,6 +24,8 @@ if (activatable)
 			break;
 			
 		case terminal_modes.journal:
+			add_journal_entry(jTitle, jContent, jDate, jAuthor);
+		
 			// Door will block every terminal
 			global.PSolved = true;
 			break;

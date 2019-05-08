@@ -1143,6 +1143,14 @@
             }
         },
         {
+            "Key": "f08305f2-0335-4d81-a336-04a93a49b33c",
+            "Value": {
+                "id": "6e8f0034-c412-4e6f-8df3-b0320ebab864",
+                "resourcePath": "datafiles_yy\\j1.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "f1beae9d-139b-4750-9e12-7e04a32f8891",
             "Value": {
                 "id": "ce5d13da-94f1-45d3-b4d4-48c0afc483c4",
