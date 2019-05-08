@@ -1127,6 +1127,14 @@
             }
         },
         {
+            "Key": "efe534c1-2f72-4938-9923-e3041783c2e5",
+            "Value": {
+                "id": "462ff8ca-6e50-430c-802d-c3d9b2102d99",
+                "resourcePath": "objects\\oCTablet\\oCTablet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f1beae9d-139b-4750-9e12-7e04a32f8891",
             "Value": {
                 "id": "ce5d13da-94f1-45d3-b4d4-48c0afc483c4",

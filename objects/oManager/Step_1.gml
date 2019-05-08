@@ -77,6 +77,10 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		// Destroy target object
 		instance_destroy(actor);
 		
+	case cts_actions.dialogue:
+		
+		break;
+		
 	default:
 		break;
 		

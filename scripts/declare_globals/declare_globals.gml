@@ -184,21 +184,21 @@ enum cts_actions
 // Make cutscenes - last term in data[] will be time in seconds for action to last
 // First cutscene
 
-add_anim(cts.getJournal, undefined, cts_actions.wait, [0.1]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [128, 0, 0.1]);
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.1]);
-add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);
-add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);
-add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);
-add_anim(cts.getJournal, undefined, cts_actions.wait, [1]);	// Change to 5 seconds later
+add_anim(cts.getJournal, undefined, cts_actions.wait, [0.1]);										// Move player
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [128, 0, 0.1]);					// Camera on detective
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.1]);				
+add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);									
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);									// Look back at detective
+add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);										
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);										// Move out of room
+add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);								// Move detective off
+add_anim(cts.getJournal, undefined, cts_actions.stop, [1]);											// Stop and get journal with dialogue
 // Add dialogue // to be added
 // More walking out of room
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);									// Move player out of house
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0.01]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_point_peak, 0.1]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0.1]);		// Camera on player
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oPlayer, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0.01]);
 

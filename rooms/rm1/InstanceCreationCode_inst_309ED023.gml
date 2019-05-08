@@ -1,1 +1,2 @@
-//newPuzzleHint = "
+newPuzzleHint = "";
+newPuzzleText = "";
