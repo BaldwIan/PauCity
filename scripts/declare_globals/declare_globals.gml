@@ -134,6 +134,7 @@ global.cheight = global.regCHeight;
 // Terminal types
 enum terminal_modes
 {
+	none,
 	puzzle,
 	journal,
 }

@@ -3,6 +3,7 @@ activatable = false;
 activated = false;
 broken = false;
 textAlpha = 0;
+type = terminal_modes.none;
 
 // for puzzle
 newPuzzleHint = "Puzzle test";
