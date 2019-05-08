@@ -76,9 +76,15 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 	case cts_actions.destroy:
 		// Destroy target object
 		instance_destroy(actor);
+		break;
 		
 	case cts_actions.dialogue:
-		
+		// Get pos and text info for dialogue
+		var tX = data[0];
+		var tY = data[1];
+		var newT = data[2];
+		var dialogue = instance_create_layer(tX, tY, "Effect", oTextBox);
+		with (dialogue) text = newT;
 		break;
 		
 	default:
