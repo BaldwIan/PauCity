@@ -386,7 +386,7 @@
             "Key": "4ab7a861-ac52-44ab-91e5-3e4ee56cf3d9",
             "Value": {
                 "id": "a5a128c3-5035-4622-9a4d-67874c41bc27",
-                "resourcePath": "scripts\\read_file\\read_file.yy",
+                "resourcePath": "scripts\\file_read\\file_read.yy",
                 "resourceType": "GMScript"
             }
         },
