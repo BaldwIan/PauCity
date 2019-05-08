@@ -65,7 +65,7 @@ case (tablet_mode.journal):
 	for (i = 0; i < min(JShownEntries, JDSHeight - (JScrolledAmount%JShownEntries)); i++)
 	{
 		var entryDate = ds_grid_get(global.journal, journal.date, i+JScrolledAmount);
-		var entryX = x + lBorder + ContentW;
+		var entryX = x + lBorder + ContentW + spacing;
 		var entryY = y + tBorder + TitleH + (i * EntryH) + spacing * (i + 1);
 		var entryTextX = entryX + spacing;
 		var entryTextY = entryY + spacing;
