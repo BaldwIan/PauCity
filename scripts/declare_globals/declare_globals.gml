@@ -186,7 +186,7 @@ enum cts_actions
 
 add_anim(cts.getJournal, undefined, cts_actions.wait, [0.1]);										// Move player
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [128, 0, 0.1]);					// Camera on detective
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-200, 0, 0.01]);				// Camera on detective
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0.1]);				
 add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);									
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);									// Look back at detective
@@ -200,7 +200,7 @@ add_anim(cts.getJournal, undefined, cts_actions.dialogue, [600, 1460,
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);									// Move player out of house
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0.01]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0.1]);		// Camera on player
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-200, 0, 0.01]);
+
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCPlayer, 0.1]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0.01]);
 
