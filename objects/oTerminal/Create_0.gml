@@ -7,3 +7,5 @@ textAlpha = 0;
 // for puzzle
 newPuzzleHint = "Puzzle test";
 newPuzzleText = "test target";
+
+// for journal

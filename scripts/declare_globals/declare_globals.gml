@@ -130,6 +130,14 @@ global.cheight = global.regCHeight;
 
 #region puzzle
 
+
+// Terminal types
+enum terminal_modes
+{
+	puzzle,
+	journal,
+}
+
 // Puzzle types
 /*	FOR LATER USE
 enum puzzles
@@ -139,6 +147,7 @@ enum puzzles
 	memory,
 	connect_lines,
 }*/
+
 //global.PActiveType = puzzles.none;	MIGHT BE USED LATER IF NOT WORD PUZZLES
 global.PSolved = false;				// When true, door will open
 global.PDoors = [];					// List of doors in room, set in creation code of doors
