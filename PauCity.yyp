@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1c419654-4faf-403d-a91d-58bf7972c444",
+            "Value": {
+                "id": "9b1e670a-cbae-4e64-b5fd-c5a33f03f0eb",
+                "resourcePath": "sprites\\sVignette\\sVignette.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1d4d2588-a877-4688-b217-18eebaaf6b1b",
             "Value": {
                 "id": "67c71cdb-9533-413f-915f-8561c4e11db1",

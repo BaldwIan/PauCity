@@ -193,7 +193,7 @@ enum cts_actions
 
 // Make cutscenes - last term in data[] will be time in seconds for action to last
 // First cutscene
-/*
+
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										// Move player			
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-200, 0, 0]);					// Camera on detective
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0]);				
@@ -219,7 +219,7 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);										// Approac
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);									// 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0]);
 add_anim(cts.getJournal, oCDetective, cts_actions.xScale, [-1, 0]);
-add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	*/
+add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	
 
 
 // Final cleanup of cutscene and make player moveable
