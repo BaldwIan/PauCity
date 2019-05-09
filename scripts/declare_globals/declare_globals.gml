@@ -204,7 +204,9 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);										// Move o
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);								// Move detective off
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);											// Stop and get journal with dialogue
 add_anim(cts.getJournal, undefined, cts_actions.dialogue, [600, 1460,
-														  ["Test for cutscene", "Test2", "Third test"], 5]);
+														  ["Test for cutscene lots of sound" +
+														    " doop boop etc", "Test2 more sound",
+															"Third test even more sounds and boops"], 5]);
 // More walking out of room
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);									// Move player out of house
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);

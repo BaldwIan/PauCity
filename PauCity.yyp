@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "924259ff-0b27-4c86-87a4-6ef3ff7bd604",
+            "Value": {
+                "id": "e4265d38-e381-423a-84e6-9ffe1d2bbbfb",
+                "resourcePath": "sounds\\sndTypeTick\\sndTypeTick.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "944a9645-ab7c-477d-bb5d-addffd43ef87",
             "Value": {
                 "id": "23803e6c-9ae9-4ffd-b360-a18b033c46e2",
