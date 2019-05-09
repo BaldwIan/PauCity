@@ -93,5 +93,5 @@ camera_set_proj_mat(camera, pm);
 
 
 // Camera won't go outside room
-x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
-y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);
+x = clamp(x + followXOffset, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
+y = clamp(y + followYOffset, 0 + global.cheight / 2, room_height - global.cheight / 2);

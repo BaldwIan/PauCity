@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "ff6c8e7b-4fff-4181-812c-76b0150dae59",
+            "Value": {
+                "id": "98f14e86-a5c5-4d3e-9929-48395f67238d",
+                "resourcePath": "objects\\oCutscene\\oCutscene.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ff9f3e43-fb23-41eb-a351-223bd1e02749",
             "Value": {
                 "id": "041c4070-2767-45f4-bdf1-053d69faec46",
