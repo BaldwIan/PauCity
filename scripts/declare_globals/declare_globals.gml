@@ -221,7 +221,7 @@ add_anim(cts.getJournal, undefined, cts_actions.dialogue, [650, 1460,
 															"As always, any information you find will be logged in your tablet for this mission.",
 															"The best of luck. I'll be keeping VERY close watch over the situation."
 															],
-															28]);
+															30]);
 add_anim(cts.getJournal, oCTablet, cts_actions.move, [-1, 0.07]);									// Move journal to player
 add_anim(cts.getJournal, oCTablet, cts_actions.jump, [0]);
 add_anim(cts.getJournal, oCTablet, cts_actions.move, [-1, 0.07]);									// Move journal to player
