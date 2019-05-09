@@ -9,7 +9,7 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 	var data  = anim[2];
 	
 	// Set action time
-	alarm[0] = room_speed * data[array_length_1d(data) - 1];
+	alarm[0] = 1 + room_speed * data[array_length_1d(data) - 1];	// Add one to fix not starting bug
 	
 	// anim based on type
 	switch (type)
@@ -92,7 +92,7 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		
 	}
 }
-
+show_debug_message(global.ctsPos);
 // Skip cutscene
 if (keyboard_check_pressed(ord("F")))
 {
