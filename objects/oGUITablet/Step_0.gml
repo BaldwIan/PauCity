@@ -25,6 +25,7 @@ if (gamepad_button_check_pressed(0, global.GPTablet) || keyboard_check_pressed(g
 	{
 	case (tablet_mode.closed):
 		mode = lastMode;
+		global.tabletNotification = false;
 		break;
 		
 	default:

@@ -112,6 +112,11 @@ case (tablet_mode.puzzle):
 	break;
 	
 default:
+	// Draw notification sprite shaking
+	if (global.tabletNotification)
+	{
+		draw_sprite(sTNotification, 0, display_get_width() - 150 + irandom_range(-16, 16), display_get_height() - 150 + irandom_range(-9, 9));
+	}
 	break;
 }
 

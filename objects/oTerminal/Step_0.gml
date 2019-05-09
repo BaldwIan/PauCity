@@ -13,6 +13,7 @@ if (activatable)
 	
 	if (interacting)
 	{
+		global.tabletNotification = true;
 		activated = true; // Can no longer be activated
 		
 		// Make pop-up showing new puzzle

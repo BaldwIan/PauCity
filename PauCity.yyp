@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "3ede9c27-98eb-4c12-afb8-2fddf87d323d",
+            "Value": {
+                "id": "73a91f70-67e4-4df1-981b-bb209a7e022b",
+                "resourcePath": "sprites\\sTNotification\\sTNotification.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3fc04a50-13bc-4192-ac15-c3175d441267",
             "Value": {
                 "id": "f8b16b9f-cedf-4764-a52e-ff8017c8a989",
