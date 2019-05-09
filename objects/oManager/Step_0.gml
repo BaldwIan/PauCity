@@ -23,7 +23,7 @@ if (global.PSolved)
 	
 	
 	if (curDoor.sprite_index == sDoor) curDoor.sprite_index = sDoorFlashing;
-	if (global.curPDoor+1 > array_length_1d(global.PDoors)) global.curPDoor++;
+	if (global.curPDoor+1 < array_length_1d(global.PDoors)) global.curPDoor++;
 	
 	// Zoom in camera, and go to door
 	oCamera.wTo = global.regCWidth * 0.75;
