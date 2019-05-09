@@ -169,6 +169,7 @@ global.ctsAnims = [];
 // Cutscenes
 enum cts
 {
+	none,
 	getJournal,
 }
 
@@ -193,6 +194,13 @@ enum cts_actions
 
 
 // Make cutscenes - last term in data[] will be time in seconds for action to last
+#region none_cts
+
+add_anim(cts.none, undefined, cts_actions.wait, [0]);
+
+#endregion none_cts
+
+#region get_journal_cts
 // First cutscene
 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.8, global.regCHeight * 0.8, 0]);
@@ -235,6 +243,8 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_follow, [oPlayer, 0]);
 // Destroy detective
 add_anim(cts.getJournal, oCDetective, cts_actions.destroy, [0]);
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+
+#endregion get_journal_cts
 
 
 #endregion cutscene

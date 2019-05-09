@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oCutscene",
     "eventList": [
-        
+        {
+            "id": "208c74e1-68cd-485b-82c7-7c8c7e6bee08",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ff6c8e7b-4fff-4181-812c-76b0150dae59"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
