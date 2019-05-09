@@ -197,7 +197,7 @@ enum cts_actions
 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.8, global.regCHeight * 0.8, 0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										// Move player			
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-200, 0, 0]);					// Camera on detective
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-150, 0, 0]);					// Camera on detective
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0]);				
 add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);									
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);									// Look back at detective
@@ -205,12 +205,13 @@ add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);										// Move out of room
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);								// Move detective off
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);											// Stop and get journal with dialogue
-add_anim(cts.getJournal, oCTablet, cts_actions.create, [570, 1450, "Dynamic", 0]);
-add_anim(cts.getJournal, undefined, cts_actions.dialogue, [600, 1460,
+add_anim(cts.getJournal, oCTablet, cts_actions.create, [540, 1450, "Dynamic", 0]);
+add_anim(cts.getJournal, undefined, cts_actions.dialogue, [650, 1460,
 														  ["Test for cutscene lots of sound" +
 														    " doop boop etc", "Test2 more sound",
-															"Third test even more sounds and boops"], 5]);
-// More walking out of room
+															"Third test even more sounds and boops"], 12.5]);
+add_anim(cts.getJournal, oCTablet, cts_actions.move, [-1, 0.15]);									// Move journal to player
+add_anim(cts.getJournal, oCTablet, cts_actions.destroy, [0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);									// Move player out of house
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0]);		// Camera on player
