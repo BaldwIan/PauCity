@@ -216,9 +216,12 @@ add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);								// M
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);											// Stop and get journal with dialogue
 add_anim(cts.getJournal, oCTablet, cts_actions.create, [540, 1450, "Dynamic", 0]);
 add_anim(cts.getJournal, undefined, cts_actions.dialogue, [650, 1460,
-														  ["Test for cutscene lots of sound" +
-														    " doop boop etc", "Test2 more sound",
-															"Third test even more sounds and boops"], 12.5]);
+														  ["It's been 3 days, you are the only detective worthy enough.",
+															"We've recently become certain that it WAS the entire city.", 
+															"As always, any information you find will be logged in your tablet for this mission.",
+															"The best of luck. I'll be keeping VERY close watch over the situation."
+															],
+															28]);
 add_anim(cts.getJournal, oCTablet, cts_actions.move, [-1, 0.07]);									// Move journal to player
 add_anim(cts.getJournal, oCTablet, cts_actions.jump, [0]);
 add_anim(cts.getJournal, oCTablet, cts_actions.move, [-1, 0.07]);									// Move journal to player
