@@ -102,7 +102,7 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		
 	}
 }
-show_debug_message(global.ctsPos);
+
 // Skip cutscene
 if (keyboard_check_pressed(ord("F")))
 {

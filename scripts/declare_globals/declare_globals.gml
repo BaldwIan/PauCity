@@ -224,7 +224,7 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1.75]);									// Move
 add_anim(cts.getJournal, oCPlayer, cts_actions.stop, [0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0]);		// Camera on player
 
-add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.82, global.regCHeight * 0.82, 0]);
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0]);
 

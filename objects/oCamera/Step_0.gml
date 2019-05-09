@@ -4,9 +4,12 @@ var smoothZoom = true;
 switch (mode)
 {
 	case cammode.follow_object:
+		// Check if object to follow exists
 		if (!instance_exists(following)) break;
-		xTo = following.x + followXOffset;
-		yTo = following.y + followYOffset;
+		
+		
+		xTo = following.x;
+		yTo = following.y;
 		break;
 		
 	case cammode.follow_mouse_drag:
@@ -64,6 +67,13 @@ switch (mode)
 	default:
 		break;
 }
+/*
+// Fix offscreen bug
+if (xTo + xOffset < global.cwidth / 2) xTo = global.cwidth / 2;
+else if (xTo + xOffset < room_width - global.cwidth / 2) xTo = room_width - global.cwidth / 2;
+if (yTo + yOffset < global.cheight / 2) yTo = global.cheight / 2;
+else if (yTo + yOffset < room_height - global.cheight / 2) yTo = room_height - global.cheight / 2;
+*/
 // Lerp to pos
 if (smoothPan)
 {
@@ -93,5 +103,5 @@ camera_set_proj_mat(camera, pm);
 
 
 // Camera won't go outside room
-x = clamp(x + followXOffset, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
-y = clamp(y + followYOffset, 0 + global.cheight / 2, room_height - global.cheight / 2);
+x = clamp(x, 0 + global.cwidth / 2, room_width - global.cwidth / 2);
+y = clamp(y, 0 + global.cheight / 2, room_height - global.cheight / 2);

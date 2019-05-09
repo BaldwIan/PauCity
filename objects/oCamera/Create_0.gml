@@ -23,8 +23,8 @@ following = oPlayer;
 xTo = x;
 yTo = y;
 
-followXOffset = 0;
-followYOffset = 0;
+xOffset = 0;
+yOffset = 0;
 
 wTo = global.cwidth;	// width to lerp to
 hTo = global.cheight;	// height to lerp to
