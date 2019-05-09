@@ -43,6 +43,8 @@ if (!global.GUIUp)
 		// Jumping
 		if (gamepad_button_check_pressed(0, gpUp) || keyboard_check_pressed(kUp))
 		{
+			audio_sound_pitch(sndJump, random_range(1, 1.2));
+			audio_play_sound(sndJump, 1.0, false);
 			velocity_[vector2Y] = -jumpSpd;
 		}
 	} else
