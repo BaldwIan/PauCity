@@ -8,8 +8,8 @@ switch (mode)
 		if (!instance_exists(following)) break;
 		
 		
-		xTo = following.x;
-		yTo = following.y;
+		xTo = following.x + xOffset;
+		yTo = following.y + yOffset;
 		break;
 		
 	case cammode.follow_mouse_drag:
