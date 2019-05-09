@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oCTablet",
     "eventList": [
-        
+        {
+            "id": "4dd04712-f2f6-4820-a71b-948c420d7f09",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "efe534c1-2f72-4938-9923-e3041783c2e5"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

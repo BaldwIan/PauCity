@@ -65,6 +65,16 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		oCamera.followYOffset = newY;
 		break;
 		
+	case cts_actions.cam_change_zoom:
+		// Get new width and height
+		var newW = data[0];
+		var newH = data[1];
+		
+		oCamera.wTo = newW;
+		oCamera.hTo = newH;
+		
+		break;
+		
 	case cts_actions.create:
 		var xPos = data[0];
 		var yPos = data[1];
