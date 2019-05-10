@@ -1,0 +1,1 @@
+global.PDoors[3] = id;

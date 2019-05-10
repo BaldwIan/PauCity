@@ -244,7 +244,7 @@ add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  
 
 // Final cleanup of cutscene and make player moveable
 add_anim(cts.getJournal, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
-add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_mode, [cammode.follow_mouse_drag, 0]);
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0]);	// Reset camera offset
 add_anim(cts.getJournal, oCPlayer, cts_actions.cam_change_follow, [oPlayer, 0]);
 // Destroy detective
