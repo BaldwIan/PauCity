@@ -11,9 +11,6 @@ if (global.PSolved)
 	// Door being opened
 	var curDoor = global.PDoors[global.curPDoor];
 	
-	// Door open sound
-	audio_play_sound(sndDoorOpen, 1, false);
-	
 	// Reset puzzle vars
 	global.PHint = "No Puzzle Active";
 	global.PTargetString = "x";

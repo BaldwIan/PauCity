@@ -38,10 +38,7 @@ if (activatable)
 			add_journal_entry(jTitle, jContent, jDate, jAuthor);
 			
 			// Set pop-up mode
-			with (popup)
-			{
-				mode = popup_actions.journal;
-			}
+			popup.mode = popup_actions.journal;
 			
 			break;
 			
@@ -52,10 +49,9 @@ if (activatable)
 			global.PHint = newPuzzleHint;
 			
 			// Set pop-up mode
-			with (popup)
-			{
-				mode = popup_actions.puzzle;
-			}
+			popup.mode = popup_actions.puzzle;
+			
+			show_debug_message("terminal pop-up");d
 			
 			break;
 			
