@@ -1,3 +1,3 @@
-mode = terminal_modes.puzzle;
+mode = tablet_mode.puzzle;
 newPuzzleHint = "";
 newPuzzleText = "";
