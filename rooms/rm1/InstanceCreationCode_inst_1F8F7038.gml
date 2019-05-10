@@ -3,4 +3,4 @@ mode = terminal_modes.journal;
 jTitle   = "journal 2 title";
 jContent = file_read("j2.txt");
 jDate    = "journaL 2 DATE";
-jAuthor  = "journal 2 author";
+jAuthor  = "Martha Hath";

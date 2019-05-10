@@ -68,11 +68,13 @@ case (tablet_mode.journal):
 		var entryX = x + lBorder + ContentW + spacing;
 		var entryY = y + tBorder + TitleH + (i * EntryH) + spacing * (i + 1);
 		var entryTextX = entryX + spacing;
-		var entryTextY = entryY + spacing;
+		var entryDTextY = entryY + 4;
+		var entryATextY = entryY + 32;
 		var entrySpriteIndex = 0;
 		if (JSelected == i + JScrolledAmount) entrySpriteIndex = 1;
 		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
-		draw_text(entryTextX, entryTextY, entryDate);
+		draw_text(entryTextX, entryDTextY, entryDate);
+		draw_text(entryTextX, entryATextY, "by: " + authorSelected);
 	}
 	
 	// Reset horiz text allignment
