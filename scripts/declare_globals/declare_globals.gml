@@ -261,7 +261,7 @@ add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWid
 
 #region spawn_box1
 
-add_anim(cts.spawnBox1, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
+add_anim(cts.spawnBox1, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
 add_anim(cts.spawnBox1, oPushable, cts_actions.create, [1405, 2685, "Interactive", 0]);
 add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_mode, [cammode.move_to_target, 0]);
 add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
