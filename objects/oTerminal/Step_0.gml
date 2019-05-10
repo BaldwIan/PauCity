@@ -51,7 +51,7 @@ if (activatable)
 			// Set pop-up mode
 			popup.mode = popup_actions.puzzle;
 			
-			show_debug_message("terminal pop-up");d
+			show_debug_message("terminal pop-up");
 			
 			break;
 			
