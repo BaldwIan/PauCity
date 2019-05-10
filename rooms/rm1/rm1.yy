@@ -144,10 +144,10 @@
         },
         {
             "__type": "GMRAssetLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "TestAssetLayer",
+            "name": "Decor",
             "id": "50d1b57a-2f4b-4134-9d48-8c0c586fa900",
             "assets": [
-
+{"__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat","name": "graphic_33366CAC","id": "7dde01bc-d250-4829-8fc2-9bd4315c5e13","animationFPS": 15,"animationSpeedType": "0","colour": { "Value": 4294967295 },"frameIndex": 0,"ignore": false,"inheritItemSettings": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRSpriteGraphic","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","spriteId": "0743fd8d-bf99-4c88-b9c0-fc4d86a219b6","userdefined_animFPS": false,"x": 480,"y": 1568}
             ],
             "depth": 400,
             "grid_x": 32,
