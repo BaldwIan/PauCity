@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "71b2b803-3ded-4625-927d-eb092d2bb572",
+            "Value": {
+                "id": "882f0e70-b62f-4295-b8f9-721b61f77169",
+                "resourcePath": "sounds\\sndNotification\\sndNotification.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "73a72f32-7c10-4bc4-ad24-18ddf5141937",
             "Value": {
                 "id": "29789e1f-653b-4587-a1fc-58a12af3c0cd",

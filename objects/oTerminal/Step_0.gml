@@ -13,7 +13,10 @@ if (activatable)
 	
 	if (interacting)
 	{
+		// Notification
 		global.tabletNotification = true;
+		audio_play_sound(sndNotification, 1.0, false);
+		
 		activated = true; // Can no longer be activated
 		
 		// Make pop-up showing new puzzle
