@@ -15,8 +15,12 @@ draw_set_halign(fa_left);
 // Set font
 draw_set_font(fntDefault);
 
-// JOURNAL TESTING
-add_journal_entry("Journal Test", "Content Test inside the journal 111111 111111111111 11111 111111111 1111111111 11111111111 111111111111 1111111 11111 111111111111 111111 111111 111111 1111111111 111111111 1111111", "01/02/2019", "Ian B");
+// First Journal Entry
+var jTitleIntro = "A Welcoming";
+var jContentIntro = file_read("jIntro.txt");
+var jDateIntro = "undated";
+var jAuthorIntro = "Null";
+add_journal_entry(jTitleIntro, jContentIntro, jDateIntro, jAuthorIntro);
 
 room_goto(rm1);
 
