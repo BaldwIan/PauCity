@@ -1,9 +1,10 @@
 // var inits
 activatable = false;
 activated = false;
-broken = false;
+//broken = false;
 textAlpha = 0;
 mode = terminal_modes.none;
+opensDoor = true;	// False for terminals that don't open a door - set in creation code
 
 // for puzzle
 newPuzzleHint = "Puzzle test";

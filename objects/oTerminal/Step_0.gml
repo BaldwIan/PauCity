@@ -31,7 +31,7 @@ if (activatable)
 			add_journal_entry(jTitle, jContent, jDate, jAuthor);
 		
 			// Door will block every terminal
-			global.PSolved = true;
+			if (opensDoor) global.PSolved = true;
 			break;
 		
 			// journal entry from creation
