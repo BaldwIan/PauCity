@@ -75,6 +75,15 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		
 		break;
 		
+	case cts_actions.cam_change_pos:
+		// Get new pos
+		var newXTo = data[0];
+		var newYTo = data[1];
+		
+		oCamera.xTo = newXTo;
+		oCamera.yTo = newYTo;
+		break;
+		
 	case cts_actions.create:
 		var xPos = data[0];
 		var yPos = data[1];

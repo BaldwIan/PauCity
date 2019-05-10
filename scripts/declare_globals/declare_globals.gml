@@ -172,9 +172,12 @@ enum cts
 {
 	none,
 	getJournal,
+	spawnBox1,
 }
 
 // Action Types
+#region cts_acts
+
 enum cts_actions
 {
 	wait,
@@ -186,12 +189,15 @@ enum cts_actions
 	cam_change_follow,
 	cam_change_offset,
 	cam_change_zoom,
+	cam_change_pos,
 	xScale,
 	yScale,
 	stop,
 	create,
 	destroy,
 }
+
+#endregion cts_acts
 
 
 // Make cutscenes - last term in data[] will be time in seconds for action to last
@@ -203,7 +209,7 @@ add_anim(cts.none, undefined, cts_actions.wait, [0]);
 
 #region get_journal_cts
 // First cutscene
-
+/*
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.8, global.regCHeight * 0.8, 0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										// Move player			
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-150, 0, 0]);					// Camera on detective
@@ -239,7 +245,7 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);										// Approac
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);									// 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0]);
 add_anim(cts.getJournal, oCDetective, cts_actions.xScale, [-1, 0]);
-add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	
+add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	*/
 
 
 // Final cleanup of cutscene and make player moveable
@@ -253,5 +259,18 @@ add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWid
 
 #endregion get_journal_cts
 
+#region spawn_box1
+
+add_anim(cts.spawnBox1, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
+add_anim(cts.spawnBox1, oPushable, cts_actions.create, [1405, 2685, "Interactive", 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_mode, [cammode.move_to_target, 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_pos, [1405, 2685, 2]);
+add_anim(cts.spawnBox1, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+
+#endregion spawn_box1
 
 #endregion cutscene
