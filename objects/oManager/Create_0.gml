@@ -16,9 +16,9 @@ draw_set_halign(fa_left);
 draw_set_font(fntDefault);
 
 // First Journal Entry
-var jTitleIntro = "A Welcoming";
+var jTitleIntro = "agent: 80 65 85";
 var jContentIntro = file_read("jIntro.txt");
-var jDateIntro = "undated";
+var jDateIntro = "assignment: 67 73 84 89";
 var jAuthorIntro = "Null";
 add_journal_entry(jTitleIntro, jContentIntro, jDateIntro, jAuthorIntro);
 
