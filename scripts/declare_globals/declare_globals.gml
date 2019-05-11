@@ -173,6 +173,8 @@ enum cts
 	none,
 	getJournal,
 	spawnBox1,
+	exitRoom,
+	enterRoom,
 }
 
 // Action Types
@@ -195,6 +197,8 @@ enum cts_actions
 	stop,
 	create,
 	destroy,
+	fade_out_black,
+	next_room,
 }
 
 #endregion cts_acts
@@ -203,7 +207,16 @@ enum cts_actions
 // Make cutscenes - last term in data[] will be time in seconds for action to last
 #region none_cts
 
-add_anim(cts.none, undefined, cts_actions.wait, [0]);
+add_anim(cts.none, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
+//add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+
+// Contents for cts go here
+
+add_anim(cts.none, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
 
 #endregion none_cts
 
@@ -272,5 +285,23 @@ add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
 add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
 
 #endregion spawn_box1
+
+#region exit_room
+
+// Start
+add_anim(cts.exitRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
+add_anim(cts.exitRoom, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+add_anim(cts.exitRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+
+// Contents
+add_anim(cts.exitRoom, undefined, cts_actions.fade_out_black, [1]);
+add_anim(cts.exitRoom, oCPlayer, cts_actions.move, [1, 5]);
+add_anim(cts.exitRoom, undefined, cts_actions.next_room, [0]);
+
+// Cleanup
+add_anim(cts.exitRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+
+#endregion exit_room
+
 
 #endregion cutscene

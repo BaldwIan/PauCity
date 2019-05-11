@@ -106,6 +106,15 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		with (dialogue) text = newT;
 		break;
 		
+	case cts_actions.fade_black:
+		// No params needed
+		alarm[1] = 1;
+		break;
+		
+	case cts_actions.next_room:
+		room_goto_next();
+		break;
+		
 	default:
 		break;
 		

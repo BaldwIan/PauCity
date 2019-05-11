@@ -24,5 +24,4 @@ add_journal_entry(jTitleIntro, jContentIntro, jDateIntro, jAuthorIntro);
 
 room_goto(rm1);
 
-
-
+ctsBlackA = 0;

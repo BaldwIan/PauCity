@@ -1,0 +1,1 @@
+myCts = cts.exitRoom;
