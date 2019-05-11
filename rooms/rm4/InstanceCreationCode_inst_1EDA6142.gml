@@ -1,4 +1,4 @@
-mode = terminal_modes.none;
+mode = terminal_modes.journal;
 
 // for journal - set in creation code
 jTitle   = "Stock";

@@ -4,6 +4,10 @@ draw_set_font(fntGUI);
 // Draw base sprite
 draw_self();
 
+// dimension vars
+var baseW = sprite_get_width(sGUITabletBase);
+var baseH = sprite_get_height(sGUITabletBase);
+
 switch (mode)
 {
 case (tablet_mode.journal):
@@ -14,7 +18,8 @@ case (tablet_mode.journal):
 	var authorSelected = ds_grid_get(global.journal, journal.author, JSelected);
 	var JDSHeight = ds_grid_height(global.journal);
 	
-	// dimension vars
+
+	
 	var EntryW = sprite_get_width(sJournalEntry);
 	var EntryH = sprite_get_height(sJournalEntry);
 	
@@ -83,9 +88,11 @@ case (tablet_mode.journal):
 	break;
 	
 case (tablet_mode.puzzle):
+
+	draw_set_valign(fa_bottom);
 	// Draw puzzle text
-	draw_text(bbox_left + 32, bbox_top + 64, global.PHint);
-	draw_text(bbox_left + 32, bbox_top + 128, global.PText);
+	draw_text_ext(bbox_left + 32, bbox_top + 128, global.PHint, 32, baseW - spacing * 4);
+	draw_text(bbox_left + 400, bbox_top + 350, global.PText);
 	
 	// Draw puzzle keyboard
 	for (var alphYY = 0; alphYY < 3; alphYY++)
@@ -101,8 +108,8 @@ case (tablet_mode.puzzle):
 			if (alphCurPos == alphPos) alphSInd = 1;
 			
 			// Letter pos
-			var lettX = bbox_left + 32 + (70 * alphXX);
-			var lettY = bbox_top + 200 + (alphYY * 86);
+			var lettX = bbox_left + 150 + (70 * alphXX);
+			var lettY = bbox_top + 400 + (alphYY * 86);
 			
 			// Draw letter box and letter
 			draw_sprite(sLetterBox, alphSInd, lettX, lettY);

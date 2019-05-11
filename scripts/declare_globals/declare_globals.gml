@@ -224,7 +224,7 @@ add_anim(cts.none, undefined, cts_actions.cam_change_zoom, [global.regCWidth, gl
 
 #region get_journal_cts
 // First cutscene
-///*
+/*
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.8, global.regCHeight * 0.8, 0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										// Move player			
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-150, 0, 0]);					// Camera on detective
@@ -260,7 +260,7 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);										// Approac
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);									// 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0]);
 add_anim(cts.getJournal, oCDetective, cts_actions.xScale, [-1, 0]);
-add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	//*/
+add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	*/
 
 
 // Final cleanup of cutscene and make player moveable
