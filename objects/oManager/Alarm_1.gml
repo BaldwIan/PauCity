@@ -1,10 +1,11 @@
 /// @description Fade Out Black cts
 
-if (ctsBlackA >= 1)
+if (ctsBlackAInc > 0 && ctsBlackA >= 1 ^^ ctsBlackAInc < 0 && ctsBlackA <= 0)
 {
-	ctsBlackA = 1;
+	if (ctsBlackAInc > 0) ctsBlackA = 1;
+	else ctsBlackA = 0;
 } else
 {
-	ctsBlackA += 0.004;
+	ctsBlackA += ctsBlackAInc;
 	alarm[1] = 1;
 }

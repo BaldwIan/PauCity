@@ -1,1 +1,1 @@
-cutscene_start(cts.getJournal);
+cutscene_start(cts.enterRoom);

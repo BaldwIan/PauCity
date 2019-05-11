@@ -198,6 +198,7 @@ enum cts_actions
 	create,
 	destroy,
 	fade_out_black,
+	fade_in_black,
 	next_room,
 }
 
@@ -302,6 +303,22 @@ add_anim(cts.exitRoom, undefined, cts_actions.next_room, [0]);
 add_anim(cts.exitRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
 
 #endregion exit_room
+
+#region enter_room
+
+add_anim(cts.enterRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
+add_anim(cts.enterRoom, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+add_anim(cts.enterRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+
+add_anim(cts.enterRoom, undefined, cts_actions.fade_in_black, [0]);
+add_anim(cts.enterRoom, oCPlayer, cts_actions.move, [1, 3]);
+
+add_anim(cts.enterRoom, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
+add_anim(cts.enterRoom, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.enterRoom, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
+add_anim(cts.enterRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+
+#endregion enter_room
 
 
 #endregion cutscene
