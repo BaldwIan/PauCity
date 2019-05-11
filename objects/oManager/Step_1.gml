@@ -121,7 +121,7 @@ if (global.ctsPos >= 0 && alarm[0] <= 0)
 		break;
 		
 	case cts_actions.next_room:
-		room_goto_next();
+		alarm[3] = 5;
 		break;
 		
 	default:

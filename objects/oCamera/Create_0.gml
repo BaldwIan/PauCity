@@ -3,7 +3,7 @@ mode = cammode.follow_object;	// Change to altar cam movement
 camera = camera_create();
 
 // Layered from 0 - n
-BG = [sBGGround1, sBGInd1_1, sBGInd1_2, sBGInd1_3];
+BG = [sBGGround1, sBGInd1_1, sBGInd1_2, sBGInd1_3, sBlank64, sBlank64, sBlank64, sBlank64, sBlank64, sBlank64];
 
 // Cam View Vars
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
