@@ -65,6 +65,7 @@ case (tablet_mode.journal):
 	for (i = 0; i < min(JShownEntries, JDSHeight - (JScrolledAmount%JShownEntries)); i++)
 	{
 		var entryDate = ds_grid_get(global.journal, journal.date, i+JScrolledAmount);
+		var entryAuthor = ds_grid_get(global.journal, journal.author, i+JScrolledAmount);
 		var entryX = x + lBorder + ContentW + spacing;
 		var entryY = y + tBorder + TitleH + (i * EntryH) + spacing * (i + 1);
 		var entryTextX = entryX + spacing;
@@ -74,7 +75,7 @@ case (tablet_mode.journal):
 		if (JSelected == i + JScrolledAmount) entrySpriteIndex = 1;
 		draw_sprite(sJournalEntry, entrySpriteIndex, entryX, entryY);
 		draw_text(entryTextX, entryDTextY, entryDate);
-		draw_text(entryTextX, entryATextY, "by: " + authorSelected);
+		draw_text(entryTextX, entryATextY, "by: " + entryAuthor);
 	}
 	
 	// Reset horiz text allignment

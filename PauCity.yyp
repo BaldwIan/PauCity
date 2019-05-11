@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "26b7698f-e6cc-4ceb-9ba8-5400069de2d4",
+            "Value": {
+                "id": "5b43aadc-7b14-4243-b0c7-507ab76b2aa7",
+                "resourcePath": "datafiles_yy\\j4.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "27e0a2a1-fb1b-407f-9456-93a5a5c21887",
             "Value": {
                 "id": "4b8a51bb-eb26-4eb2-ac89-4409dddfdcd8",
@@ -268,6 +276,14 @@
                 "id": "e74c7788-7217-432f-b5a8-90a2e8aac8bc",
                 "resourcePath": "sprites\\sDoor\\sDoor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ddb59d9-617c-42be-a392-ae651f788e55",
+            "Value": {
+                "id": "0f3f6b66-8820-4373-8e98-a454dc1a95f1",
+                "resourcePath": "datafiles_yy\\j5.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -396,6 +412,14 @@
                 "id": "8ce78edd-ea9f-4228-a1c4-b1d27aafaf9c",
                 "resourcePath": "views\\498e65a5-c0a6-4b6e-b309-334014877b0f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4a19ef87-7b60-45c1-b798-539fcabc37e2",
+            "Value": {
+                "id": "308e7fb0-adcf-4666-956d-b519016711b1",
+                "resourcePath": "datafiles_yy\\j1.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1095,6 +1119,14 @@
             }
         },
         {
+            "Key": "d396e675-f5e2-49c4-9905-f5aa900e19db",
+            "Value": {
+                "id": "47c5259c-190f-4f79-af9f-16d71f58d227",
+                "resourcePath": "datafiles_yy\\j3.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "d3ce6238-9d9e-4b66-8266-a14a87b692e6",
             "Value": {
                 "id": "865c2e63-adab-42a1-818b-01f70ec721a8",
@@ -1228,14 +1260,6 @@
                 "id": "462ff8ca-6e50-430c-802d-c3d9b2102d99",
                 "resourcePath": "objects\\oCTablet\\oCTablet.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f08305f2-0335-4d81-a336-04a93a49b33c",
-            "Value": {
-                "id": "6e8f0034-c412-4e6f-8df3-b0320ebab864",
-                "resourcePath": "datafiles_yy\\j1.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
