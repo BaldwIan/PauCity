@@ -1,8 +1,13 @@
 /// @description Letter for cur dialogue
 letIndex++;
-visText += string_copy(text[texIndex], letIndex, 1);	// Sub string
+
+var curChar = string_char_at(text[texIndex], letIndex);	// Sub string
+visText += curChar
 audio_sound_pitch(sndTypeTick, random_range(0.35, 0.625));
 audio_play_sound(sndTypeTick, 1.0, false);
+
+var resetTime = room_speed * 0.5;
+
 
 // If cur dialogue filled out
 if (letIndex > string_length(text[texIndex]))
@@ -14,10 +19,12 @@ if (letIndex > string_length(text[texIndex]))
 	}
 	letIndex = 0;
 	
-	var resetTime = room_speed * 0.5;
-	alarm[0] = resetTime;
+	
 	alarm[1] = resetTime;
 } else
 {
-	alarm[0] = room_speed * 0.1;
+	resetTime = room_speed * 0.1;
 }
+
+if (curChar == "." || curChar == ",") resetTime *= 4;
+alarm[0] = resetTime;
