@@ -1,6 +1,6 @@
 mode = terminal_modes.journal;
 // for journal - set in creation code
-jTitle   = "";
+jTitle   = "Announcement";
 jContent = file_read("j6.txt");
-jDate    = "";
-jAuthor  = "";
+jDate    = "8:00 9/9/2443 PST";
+jAuthor  = "Simon Linch";
