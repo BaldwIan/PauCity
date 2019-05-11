@@ -1,7 +1,7 @@
 event_inherited();
 
 // Sprites
-sprIdle = sCPlayerIdle;
-sprWalk = sCPlayerWalk;
-
-image_blend = c_red;
+sprIdle = sCDetectiveIdle;
+sprWalk = sCDetectiveWalk;
+sprFall = sCDetectiveWalk;
+sprJump = sCDetectiveWalk;

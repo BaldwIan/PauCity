@@ -175,6 +175,7 @@ enum cts
 	spawnBox1,
 	exitRoom,
 	enterRoom,
+	linch,
 }
 
 // Action Types
@@ -223,13 +224,13 @@ add_anim(cts.none, undefined, cts_actions.cam_change_zoom, [global.regCWidth, gl
 
 #region get_journal_cts
 // First cutscene
-/*
+///*
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.8, global.regCHeight * 0.8, 0]);
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 0.5]);										// Move player			
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [-150, 0, 0]);					// Camera on detective
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_follow, [oCDetective, 0]);				
 add_anim(cts.getJournal, undefined, cts_actions.wait, [1, 0.5]);									
-add_anim(cts.getJournal, oCPlayer, cts_actions.move, [-1, 0.05]);									// Look back at detective
+add_anim(cts.getJournal, oCPlayer, cts_actions.xScale, [-1, 0]);									// Look back at detective
 add_anim(cts.getJournal, undefined, cts_actions.wait, [0.5]);										
 add_anim(cts.getJournal, oCPlayer, cts_actions.move, [1, 1]);										// Move out of room
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 0.75]);								// Move detective off
@@ -259,7 +260,7 @@ add_anim(cts.getJournal, oCPlayer, cts_actions.wait, [0.5]);										// Approac
 add_anim(cts.getJournal, oCDetective, cts_actions.move, [-1, 1]);									// 
 add_anim(cts.getJournal, undefined, cts_actions.cam_change_offset, [0, 0, 0]);
 add_anim(cts.getJournal, oCDetective, cts_actions.xScale, [-1, 0]);
-add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	*/
+add_anim(cts.getJournal, oSolid, cts_actions.create, [910, 1530, "oCollision",  0]);	//*/
 
 
 // Final cleanup of cutscene and make player moveable
@@ -290,12 +291,13 @@ add_anim(cts.spawnBox1, undefined, cts_actions.cam_change_zoom, [global.regCWidt
 #region exit_room
 
 // Start
-add_anim(cts.exitRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
-add_anim(cts.exitRoom, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
 add_anim(cts.exitRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+add_anim(cts.exitRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
+add_anim(cts.exitRoom, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+
 
 // Contents
-add_anim(cts.exitRoom, undefined, cts_actions.fade_out_black, [1]);
+add_anim(cts.exitRoom, undefined, cts_actions.fade_out_black, [0]);
 add_anim(cts.exitRoom, oCPlayer, cts_actions.move, [1, 5]);
 add_anim(cts.exitRoom, undefined, cts_actions.next_room, [0]);
 
@@ -306,7 +308,7 @@ add_anim(cts.exitRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth
 
 #region enter_room
 
-add_anim(cts.enterRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 1]);
+add_anim(cts.enterRoom, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
 add_anim(cts.enterRoom, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
 add_anim(cts.enterRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
 
@@ -319,6 +321,21 @@ add_anim(cts.enterRoom, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
 add_anim(cts.enterRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
 
 #endregion enter_room
+
+#region linch
+
+add_anim(cts.linch, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
+add_anim(cts.linch, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+
+// Contents for cts go here
+
+add_anim(cts.none, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
+add_anim(cts.none, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+
+#endregion linch
 
 
 #endregion cutscene
