@@ -54,6 +54,8 @@ enum button_actions
 	goto_room,
 	Tjournal_switch,
 	Tpuzzle_switch,
+	stay_pau,
+	leave_pau,
 }
 
 #endregion button_actions
@@ -326,14 +328,17 @@ add_anim(cts.enterRoom, undefined, cts_actions.cam_change_zoom, [global.regCWidt
 
 add_anim(cts.linch, undefined, cts_actions.cam_change_zoom, [global.regCWidth * 0.9, global.regCHeight * 0.9, 0]);
 add_anim(cts.linch, oPlayer, cts_actions.change_obj, [oCPlayer, 0]);
-add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oCPlayer, 0]);	// Uncomment to follow player
+add_anim(cts.linch, undefined, cts_actions.cam_change_follow, [oCLinch, 0]);	// Uncomment to follow player
 
 // Contents for cts go here
+add_anim(cts.linch, oCLinch, cts_actions.move, [-1, 0.5]);
+add_anim(cts.linch, undefined, cts_actions.dialogue, [11600, 370, ["Sorry detective, it's not that simple..."], 10]);
+add_anim(cts.linch, undefined, cts_actions.fade_out_black, [0]);
 
-add_anim(cts.none, oCPlayer, cts_actions.change_obj, [oPlayer, 0]);
-add_anim(cts.none, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
-add_anim(cts.none, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
-add_anim(cts.none, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
+add_anim(cts.linch, undefined, cts_actions.next_room, [0]);
+add_anim(cts.linch, undefined, cts_actions.cam_change_mode, [cammode.follow_object, 0]);
+add_anim(cts.linch, undefined, cts_actions.cam_change_follow, [oPlayer, 0]);
+add_anim(cts.linch, undefined, cts_actions.cam_change_zoom, [global.regCWidth, global.regCHeight, 0]);
 
 #endregion linch
 
