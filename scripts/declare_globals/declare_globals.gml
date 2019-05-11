@@ -9,7 +9,7 @@ global.GPJump = gp_face1;
 //global.GPHoriz = gp_axislh;
 #endregion movement
 #region control
-global.GPTablet   = gp_start;
+global.GPTablet   = gp_face4;
 global.GPInteract = gp_face3;
 global.GPUp    = gp_padu;
 global.GPDown  = gp_padd;
